@@ -527,18 +527,60 @@
 
         <!-- Penjelasan Ilmiah Rationale -->
         <div class="card model-explanation-card">
-          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--color-primary-text);">
-            Mengapa Linear Regression Menjadi Pilihan Terbaik?
-          </h3>
-          <p style="font-size: 14px; margin-bottom: 12px; color: var(--color-text-main);">
-            1. <strong>Bebas Overfitting:</strong> Model pohon (<em>Random Forest</em>, <em>Gradient Boosting</em>, <em>XGBoost</em>) menunjukkan tanda overfitting yang kuat pada data kecil ini ($N = 306$). Pada validasi silang antarprovinsi (<em>GroupKFold</em>), model pohon menghasilkan $R^2$ negatif ($-0.37$ s.d. $-0.42$), yang berarti prediksinya lebih buruk daripada sekadar menebak rata-rata.
-          </p>
-          <p style="font-size: 14px; margin-bottom: 12px; color: var(--color-text-main);">
-            2. <strong>Bebas Distorsi Polinomial:</strong> Polinomial Derajat 3 memiliki $R^2$ matematis sedikit lebih tinggi, namun di batas atas (RLS $> 10.5$ th) kurvanya <em>berbalik naik</em> ke atas secara tidak alami. Linear Regression memberikan hubungan menurun yang logis dan konsisten.
-          </p>
-          <p style="font-size: 14px; color: var(--color-text-main);">
-            3. <strong>Transparansi Kebijakan:</strong> Koefisien $\beta_1 = -2.4734$ memberikan angka yang lugas dan dapat dipertanggungjawabkan kepada pemangku kebijakan publik.
-          </p>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <i data-lucide="award" style="width: 20px; height: 20px;"></i>
+            </div>
+            <div>
+              <h3 style="font-size: 18px; margin: 0; color: var(--color-primary-text); font-weight: 700;">
+                Mengapa Linear Regression Menjadi Pilihan Terbaik?
+              </h3>
+              <p style="font-size: 13px; color: var(--color-text-muted); margin: 2px 0 0;">
+                Rasional ilmiah berdasarkan uji validasi silang empiris dan prinsip parsimoni statistik (Occam's Razor)
+              </p>
+            </div>
+          </div>
+
+          <div class="rationale-points-grid" style="display: flex; flex-direction: column; gap: 16px;">
+            <!-- Point 1 -->
+            <div style="background: var(--color-bg-page); border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
+                <span style="font-size: 14px; font-weight: 700; color: var(--color-text-main);">
+                  1. Bebas Masalah Overfitting Pohon Keputusan
+                </span>
+                <span class="badge red" style="font-size: 11px;">R² Negatif pada Validasi Silang</span>
+              </div>
+              <p style="font-size: 13px; line-height: 1.6; color: #3B4858; margin: 0;">
+                Model ensemble berbasis pohon (<em>Random Forest</em>, <em>Gradient Boosting</em>, <em>XGBoost</em>) mengalami <em>overfitting</em> berat pada sampel panel terbatas (<em>N</em> = 306 observasi). Pada pengujian validasi silang antarprovinsi (<em>GroupKFold</em>), model pohon menghasilkan nilai koefisien determinasi <em>R</em>² negatif (<strong style="color: #C5221F;">-0.37 s.d. -0.42</strong>), yang menandakan bahwa prediksi model pohon justru lebih buruk daripada sekadar menebak nilai rata-rata sampel.
+              </p>
+            </div>
+
+            <!-- Point 2 -->
+            <div style="background: var(--color-bg-page); border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
+                <span style="font-size: 14px; font-weight: 700; color: var(--color-text-main);">
+                  2. Menghindari Distorsi Kurva Polinomial
+                </span>
+                <span class="badge amber" style="font-size: 11px;">Anomali Batas Atas</span>
+              </div>
+              <p style="font-size: 13px; line-height: 1.6; color: #3B4858; margin: 0;">
+                Meskipun Polinomial Derajat 3 menghasilkan <em>R</em>² matematis sedikit lebih tinggi pada data latih, kurva polinomial tersebut <em>berbalik naik</em> ke atas secara tidak alami pada batas atas empiris (capaian RLS &gt; 10.5 tahun). Sebaliknya, model <strong>Linear Regression (OLS)</strong> mempertahankan pola hubungan monoton menurun yang logis, konsisten, dan sesuai teori ekonomi pembangunan.
+              </p>
+            </div>
+
+            <!-- Point 3 -->
+            <div style="background: var(--color-bg-page); border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
+                <span style="font-size: 14px; font-weight: 700; color: var(--color-text-main);">
+                  3. Transparansi &amp; Akuntabilitas Kebijakan Publik
+                </span>
+                <span class="badge green" style="font-size: 11px;">Koefisien Kemiringan β₁ = -2.4734</span>
+              </div>
+              <p style="font-size: 13px; line-height: 1.6; color: #3B4858; margin: 0;">
+                Koefisien kemiringan (<em>slope</em>) <strong style="color: #0E52A0;">β₁ = -2.4734</strong> memberikan angka yang terukur dan dapat dipertanggungjawabkan secara langsung kepada perencana kebijakan: setiap penambahan rata-rata 1 tahun lama sekolah berasosiasi dengan potensi penurunan angka kemiskinan sebesar <strong>-2.47% poin</strong>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
