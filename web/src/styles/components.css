@@ -8,7 +8,7 @@
   top: 16px;
   z-index: 100;
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 1240px;
   padding: 0 var(--space-16);
   transition: all var(--transition-normal);
 }
@@ -18,11 +18,11 @@
   align-items: center;
   justify-content: space-between;
   height: 64px;
-  padding: 0 var(--space-24);
-  background: rgba(255, 255, 255, 0.88);
+  padding: 0 16px 0 24px;
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: var(--radius-pill);
   box-shadow: 0 10px 30px rgba(11, 27, 51, 0.08);
 }
@@ -36,6 +36,7 @@
   color: var(--color-text-main);
   text-decoration: none;
   letter-spacing: -0.02em;
+  flex-shrink: 0;
 }
 
 .brand-logo .dot {
@@ -45,7 +46,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: var(--space-24);
+  gap: 20px;
   list-style: none;
 }
 
@@ -54,6 +55,7 @@
   font-weight: var(--font-weight-medium);
   color: var(--color-text-muted);
   transition: color var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-links a:hover,
@@ -65,11 +67,14 @@
   display: flex;
   align-items: center;
   gap: var(--space-12);
+  flex-shrink: 0;
 }
 
 .nav-cta .btn {
-  padding: 8px var(--space-20);
+  padding: 9px 20px;
   font-size: 13px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .mobile-menu-toggle {
@@ -147,6 +152,51 @@
   max-width: 660px;
   margin: 0 auto;
   text-shadow: 0 2px 8px rgba(11, 27, 51, 0.2);
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-16);
+  margin-top: var(--space-28);
+  flex-wrap: wrap;
+}
+
+.hero-btn-main {
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 10px 24px rgba(26, 110, 216, 0.4);
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.hero-btn-secondary {
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-text-main);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.hero-btn-secondary:hover {
+  background: #FFFFFF;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(11, 27, 51, 0.12);
 }
 
 /* Smartphone Device Mockup Wrapper */
@@ -459,7 +509,7 @@
 
 /* Bottom Right: OLS Regression Pill */
 .float-right-model {
-  bottom: 40px;
+  bottom: 70px;
   right: 10px;
   min-width: 250px;
   animation-delay: -4s;
@@ -1995,9 +2045,18 @@ select.form-select {
 }
 
 /* ==========================================================================
-   RESPONSIVE BREAKPOINTS (375px, 768px, 992px)
+   RESPONSIVE BREAKPOINTS (375px, 768px, 1024px)
    ========================================================================== */
-@media (max-width: 992px) {
+@media (max-width: 1140px) {
+  .nav-links {
+    gap: 14px;
+  }
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1024px) {
   .bento-row,
   .bento-row.reversed,
   .map-layout,
