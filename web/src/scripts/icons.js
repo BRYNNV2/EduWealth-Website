@@ -23,7 +23,14 @@ import {
   Star,
   Sparkles,
   ArrowRight,
-  ShieldCheck
+  ShieldCheck,
+  Phone,
+  Mail,
+  Send,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Globe
 } from 'lucide';
 
 export function initIcons() {
@@ -52,7 +59,14 @@ export function initIcons() {
       Star,
       Sparkles,
       ArrowRight,
-      ShieldCheck
+      ShieldCheck,
+      Phone,
+      Mail,
+      Send,
+      Twitter,
+      Instagram,
+      Linkedin,
+      Globe
     }
   });
 }

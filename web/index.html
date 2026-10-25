@@ -645,56 +645,205 @@
     </section>
   </main>
 
-  <!-- 10. FOOTER CTA SECTION (Deep Ocean Blue from Reference) -->
-  <footer class="site-footer" id="footer">
+  <!-- 10. FLOATING NEWSLETTER BANNER & FOOTER (Matches Reference Design) -->
+  <div class="footer-banner-wrapper">
     <div class="container">
-      <div class="footer-cta-card">
-        <h2>Kajian Terbuka & Dapat Direproduksi Penuh</h2>
-        <p>
-          Seluruh dataset, notebook eksperimen, dan model JavaScript tersedia bebas untuk penelitian akademik lanjutan dan verifikasi metodologi kebijakan publik.
-        </p>
-        <div class="footer-btn-row">
-          <a href="#simulator" class="btn btn-primary">
-            <i data-lucide="sliders-horizontal" style="width: 16px; height: 16px;"></i>
-            Coba Simulator
-          </a>
-          <a href="#metodologi" class="btn btn-secondary">
-            <i data-lucide="database" style="width: 16px; height: 16px;"></i>
-            Pelajari Metodologi
-          </a>
+      <div class="footer-floating-banner">
+        <!-- Sparkle Accents -->
+        <span class="banner-sparkle s1">✦</span>
+        <span class="banner-sparkle s2">★</span>
+        <span class="banner-sparkle s3">✦</span>
+
+        <!-- Left 3D Data Graphic -->
+        <div class="banner-graphic-box">
+          <svg class="banner-graphic-svg" viewBox="0 0 280 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi 3D Sains Data dan Pendidikan">
+            <defs>
+              <linearGradient id="barGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFFFFF"/>
+                <stop offset="100%" stop-color="#93C5FD"/>
+              </linearGradient>
+              <linearGradient id="barGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#60A5FA"/>
+                <stop offset="100%" stop-color="#1D4ED8"/>
+              </linearGradient>
+              <linearGradient id="barGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#38BDF8"/>
+                <stop offset="100%" stop-color="#0284C7"/>
+              </linearGradient>
+              <linearGradient id="capGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1E293B"/>
+                <stop offset="100%" stop-color="#0F172A"/>
+              </linearGradient>
+              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="6" result="blur"/>
+                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+              </filter>
+            </defs>
+
+            <!-- Ground Ellipse Shadow -->
+            <ellipse cx="140" cy="175" rx="100" ry="14" fill="#0A2558" opacity="0.4" />
+
+            <!-- Isometric 3D Bar 1 (Short) -->
+            <path d="M60 120 L90 105 L110 115 L80 130 Z" fill="#93C5FD"/>
+            <path d="M60 120 L80 130 L80 165 L60 155 Z" fill="#60A5FA"/>
+            <path d="M80 130 L110 115 L110 150 L80 165 Z" fill="#2563EB"/>
+
+            <!-- Isometric 3D Bar 2 (Medium) -->
+            <path d="M115 95 L145 80 L165 90 L135 105 Z" fill="#BAE6FD"/>
+            <path d="M115 95 L135 105 L135 165 L115 155 Z" fill="#38BDF8"/>
+            <path d="M135 105 L165 90 L165 150 L135 165 Z" fill="#0284C7"/>
+
+            <!-- Isometric 3D Bar 3 (Tall with Top Glow) -->
+            <path d="M170 65 L200 50 L220 60 L190 75 Z" fill="#FFFFFF"/>
+            <path d="M170 65 L190 75 L190 165 L170 155 Z" fill="#93C5FD"/>
+            <path d="M190 75 L220 60 L220 150 L190 165 Z" fill="#3B82F6"/>
+
+            <!-- 3D Graduation Cap on Top Pillar -->
+            <g transform="translate(165, 10)">
+              <!-- Cap Diamond -->
+              <path d="M40 18 L75 32 L40 46 L5 32 Z" fill="url(#capGrad)" filter="url(#glow)"/>
+              <path d="M40 18 L75 32 L40 42 L5 32 Z" fill="#334155"/>
+              <!-- Skull Cap -->
+              <path d="M22 36 L22 46 C22 53 58 53 58 46 L58 36 Z" fill="#0F172A"/>
+              <!-- Gold Button & Tassel -->
+              <circle cx="40" cy="30" r="3" fill="#FBBF24"/>
+              <path d="M40 30 Q58 32 62 44" stroke="#FBBF24" stroke-width="2.5" fill="none"/>
+              <rect x="60" y="44" width="4" height="9" rx="1.5" fill="#F59E0B"/>
+            </g>
+
+            <!-- Floating Data Node / Sparkline Pill -->
+            <g transform="translate(30, 40)" filter="url(#glow)">
+              <rect x="0" y="0" width="84" height="34" rx="17" fill="#FFFFFF" opacity="0.95"/>
+              <circle cx="16" cy="17" r="7" fill="#22C55E"/>
+              <path d="M13 17 L15 19 L19 14" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+              <path d="M32 21 L42 13 L52 17 L66 10" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            </g>
+
+            <!-- Sparkle Stars -->
+            <path d="M230 40 L233 46 L239 49 L233 52 L230 58 L227 52 L221 49 L227 46 Z" fill="#FFFFFF"/>
+            <path d="M35 110 L37 114 L41 116 L37 118 L35 122 L33 118 L29 116 L33 114 Z" fill="#BAE6FD"/>
+          </svg>
+        </div>
+
+        <!-- Right Form Content -->
+        <div class="banner-content-box">
+          <h2 class="banner-title">Berlangganan Ringkasan Riset & Pembaruan Data</h2>
+          <p class="banner-subtitle">
+            Dapatkan akses langsung ke ringkasan eksekutif, rilis data panel BPS tahunan, dan pembaruan model Machine Learning langsung ke surel Anda.
+          </p>
+          <form class="banner-form-group" onsubmit="event.preventDefault(); alert('Terima kasih! Anda telah terdaftar untuk menerima pembaruan riset EduWealth.');">
+            <span class="banner-form-icon">
+              <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+            </span>
+            <input type="email" class="banner-input" placeholder="Masukkan alamat email Anda..." required aria-label="Alamat Email untuk Berlangganan" />
+            <button type="submit" class="banner-submit-btn">Berlangganan</button>
+          </form>
+          <div class="banner-disclaimer">
+            Anda dapat berhenti berlangganan kapan saja. Baca <a href="#faq">kebijakan privasi</a> kami.
+          </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="footer-meta-grid">
-        <div>
-          <div style="font-size: 16px; font-weight: 800; margin-bottom: 8px; color: #FFFFFF;">
-            EduSejahtera<span style="color: #2F80ED;">.</span>
-          </div>
-          <p style="margin-bottom: 12px; color: #B0C2D8; line-height: 1.6;">
-            Platform analitik sains data independen yang mengkaji hubungan pendidikan dan kesejahteraan sosial di 34 provinsi Indonesia menggunakan metode Machine Learning transparan.
+  <!-- MAIN FOOTER (White Background with 5 Columns) -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <!-- Col 1: Brand & Socials -->
+        <div class="footer-brand-col">
+          <a href="#" class="footer-brand-title">
+            EduWealth<span class="dot">.</span>
+          </a>
+          <p class="footer-brand-desc">
+            Platform analitik sains data terbuka yang meneliti hubungan capaian rata-rata lama sekolah (RLS) terhadap tingkat kemiskinan pada 34 provinsi di Indonesia.
           </p>
-          <div style="color: #8A9BB3;">
-            Sumber Data Primer: Badan Pusat Statistik Republik Indonesia (2015–2023).
+          <div class="footer-social-row">
+            <a href="https://github.com/BRYNNV2/EduWealth-Website" target="_blank" class="social-circle-btn" aria-label="GitHub">
+              <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+            </a>
+            <a href="#" class="social-circle-btn" aria-label="Twitter">
+              <i data-lucide="twitter" style="width: 16px; height: 16px;"></i>
+            </a>
+            <a href="#" class="social-circle-btn" aria-label="Instagram">
+              <i data-lucide="instagram" style="width: 16px; height: 16px;"></i>
+            </a>
+            <a href="#" class="social-circle-btn" aria-label="LinkedIn">
+              <i data-lucide="linkedin" style="width: 16px; height: 16px;"></i>
+            </a>
+            <a href="#" class="social-circle-btn" aria-label="Website">
+              <i data-lucide="globe" style="width: 16px; height: 16px;"></i>
+            </a>
           </div>
         </div>
 
+        <!-- Col 2: Riset & Model -->
         <div>
-          <div style="font-weight: bold; margin-bottom: 12px; color: #FFFFFF; text-transform: uppercase; letter-spacing: 0.05em;">
-            Tautan Cepat
-          </div>
-          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
-            <li><a href="#metodologi">Metodologi & Data</a></li>
+          <div class="footer-col-title">Riset & Model</div>
+          <ul class="footer-links-list">
+            <li><a href="#metodologi">Tentang Riset</a></li>
+            <li><a href="#metodologi">Pembersihan Data</a></li>
+            <li><a href="#model">Pipeline Scikit-Learn</a></li>
+            <li><a href="#model">Evaluasi 5-Fold CV</a></li>
+            <li><a href="#model">Klasterisasi K-Means</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Sumber Resmi -->
+        <div>
+          <div class="footer-col-title">Sumber Resmi</div>
+          <ul class="footer-links-list">
+            <li><a href="https://bps.go.id" target="_blank">Badan Pusat Statistik (BPS)</a></li>
+            <li><a href="https://big.go.id" target="_blank">Badan Informasi Geospasial</a></li>
+            <li><a href="#temuan">Publikasi Maret P0</a></li>
+            <li><a href="#temuan">Data RLS 2015–2023</a></li>
+            <li><a href="#metodologi">GeoJSON 34 Provinsi</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Eksplorasi Data -->
+        <div>
+          <div class="footer-col-title">Eksplorasi</div>
+          <ul class="footer-links-list">
             <li><a href="#temuan">Diagram Pencaran OLS</a></li>
-            <li><a href="#peta">Peta Spasial Choropleth</a></li>
-            <li><a href="#simulator">Simulator Proyeksi</a></li>
-            <li><a href="#model">Komparasi 7 Algoritma</a></li>
+            <li><a href="#peta">Peta Spasial 34 Prov</a></li>
+            <li><a href="#simulator">Simulator Prediksi</a></li>
+            <li><a href="#simulator">Skenario What-If</a></li>
             <li><a href="#faq">Tanya Jawab (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Kontak Tim -->
+        <div>
+          <div class="footer-col-title">Hubungi Tim</div>
+          <ul class="footer-contact-list">
+            <li class="contact-item">
+              <i data-lucide="phone" style="width: 16px; height: 16px;"></i>
+              <span>(0771) 456-7890</span>
+            </li>
+            <li class="contact-item">
+              <i data-lucide="mail" style="width: 16px; height: 16px;"></i>
+              <span>riset@eduwealth.id</span>
+            </li>
+            <li class="contact-item">
+              <i data-lucide="map-pin" style="width: 16px; height: 16px;"></i>
+              <span>Tanjungpinang, Kepulauan Riau</span>
+            </li>
           </ul>
         </div>
       </div>
 
-      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 32px; padding-top: 24px; text-align: center; font-size: 12px; color: #8A9BB3;">
-        © 2026 EduSejahtera — Proyek Sains Data Terbuka. Dibangun dengan standar keunggulan visual, integritas statistik, dan transparansi ilmiah.
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          © Copyright 2026 by <strong>EduWealth</strong>. All rights reserved.
+        </div>
+        <ul class="footer-legal-links">
+          <li><a href="#faq">Privacy Policy</a></li>
+          <li><a href="#faq">Terms of Use</a></li>
+          <li><a href="https://github.com/BRYNNV2/EduWealth-Website" target="_blank">GitHub Repo</a></li>
+          <li><a href="#hero">Site Map</a></li>
+        </ul>
       </div>
     </div>
   </footer>
