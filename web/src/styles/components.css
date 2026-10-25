@@ -4,13 +4,20 @@
    1. NAVBAR (Capsule Glassmorphism)
    ========================================================================== */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 16px;
+  left: 0;
+  right: 0;
   z-index: 100;
   margin: 0 auto;
   max-width: 1240px;
   padding: 0 var(--space-16);
   transition: all var(--transition-normal);
+  pointer-events: none;
+}
+
+.site-header .navbar {
+  pointer-events: auto;
 }
 
 .navbar {
@@ -92,7 +99,7 @@
 .hero-section {
   position: relative;
   background: url('/hero-sky.jpg') no-repeat center top / cover;
-  padding-top: 50px;
+  padding-top: 110px;
   padding-bottom: 90px;
   overflow: hidden;
 }
@@ -2072,6 +2079,24 @@ select.form-select {
 
   .nav-links {
     display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 72px;
+    left: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 16px 36px rgba(11, 27, 51, 0.15);
+    gap: 16px;
+    z-index: 101;
+    pointer-events: auto;
   }
 
   .mobile-menu-toggle {
