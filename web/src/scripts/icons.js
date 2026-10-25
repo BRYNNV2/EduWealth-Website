@@ -1,0 +1,58 @@
+import {
+  createIcons,
+  AlertCircle,
+  Award,
+  BarChart2,
+  CheckCircle,
+  CheckCircle2,
+  ChevronDown,
+  Code,
+  Cpu,
+  Database,
+  Github,
+  HelpCircle,
+  Info,
+  Landmark,
+  MapPin,
+  Menu,
+  PieChart,
+  PlayCircle,
+  SlidersHorizontal,
+  Table,
+  TrendingDown,
+  Star,
+  Sparkles,
+  ArrowRight,
+  ShieldCheck
+} from 'lucide';
+
+export function initIcons() {
+  createIcons({
+    icons: {
+      AlertCircle,
+      Award,
+      BarChart2,
+      CheckCircle,
+      CheckCircle2,
+      ChevronDown,
+      Code,
+      Cpu,
+      Database,
+      Github,
+      HelpCircle,
+      Info,
+      Landmark,
+      MapPin,
+      Menu,
+      PieChart,
+      PlayCircle,
+      SlidersHorizontal,
+      Table,
+      TrendingDown,
+      Star,
+      Sparkles,
+      ArrowRight,
+      ShieldCheck
+    }
+  });
+}

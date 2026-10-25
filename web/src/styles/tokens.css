@@ -1,0 +1,79 @@
+/* Design Tokens - EduSejahtera Project 2 */
+:root {
+  /* Warna Inti (Kontras WCAG AA Terpenuhi >= 4.5:1) */
+  --color-primary: #1A6ED8;          /* Biru langit pekat (kontras 4.65:1 dengan putih) */
+  --color-primary-hover: #1357AE;    /* Biru tua hover */
+  --color-primary-light: #EBF3FE;    /* Biru muda lembut */
+  --color-primary-text: #0E52A0;     /* Biru gelap untuk teks pada latar biru muda (kontras 5.8:1) */
+  --color-primary-surface: #F0F6FF;
+  
+  --color-text-main: #0B1B33;        /* Kontras 14:1 dengan putih */
+  --color-text-muted: #475872;       /* Kontras 5.2:1 dengan putih */
+  --color-text-light: #5A6D8A;       /* Kontras 4.6:1 dengan putih */
+  
+  --color-bg-page: #F5F9FF;
+  --color-bg-card: #FFFFFF;
+  --color-border: #E2ECF8;
+  --color-border-hover: #C5DCF8;
+  
+  /* Aksen & Kategori Indikator (Kontras WCAG AA/AAA >= 4.5:1) */
+  --color-accent-amber: #7A4500;     /* Amber pekat (kontras 7.5:1 pada latar terang) */
+  --color-accent-amber-light: #FEF6EB;
+  --color-danger-red: #C5221F;       /* Merah pekat berstandar kontras WCAG AA */
+  --color-danger-red-light: #FDECEC;
+  --color-success-green: #136B36;    /* Hijau hutan berstandar kontras WCAG AA (kontras > 5.5:1) */
+  --color-success-green-light: #EAF7F1;
+
+  /* Skala Warna Peta Choropleth (Colorblind-friendly interpolations) */
+  --map-color-low: #2DA771;
+  --map-color-mid: #F2A93B;
+  --map-color-high: #E5484D;
+
+  /* Tipografi */
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 2rem;      /* 32px */
+  --font-size-4xl: 2.5rem;    /* 40px */
+  --font-size-5xl: 3.25rem;   /* 52px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Spasi Berbasis Kelipatan 8px */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-80: 80px;
+
+  /* Bentuk & Dimensi */
+  --radius-card: 24px;
+  --radius-folder: 28px;
+  --radius-inner: 16px;
+  --radius-pill: 999px;
+  --max-width: 1200px;
+
+  /* Folder-tab Container Colors */
+  --color-folder-bg: #E8F2FD;
+  --color-folder-border: #D0E4FA;
+
+  /* Konsistensi Bayangan Lembut & Pop-Out */
+  --shadow-soft: 0 10px 30px rgba(11, 27, 51, 0.05);
+  --shadow-elevated: 0 16px 40px rgba(11, 27, 51, 0.08);
+  --shadow-float: 0 24px 60px rgba(11, 27, 51, 0.12);
+  --shadow-card-pop: 0 20px 48px rgba(26, 110, 216, 0.12), 0 4px 12px rgba(0, 0, 0, 0.03);
+
+  /* Transisi */
+  --transition-fast: 200ms ease;
+  --transition-normal: 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}

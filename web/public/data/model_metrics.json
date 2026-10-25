@@ -1,0 +1,58 @@
+[
+  {
+    "Model": "Polynomial Regression (Deg 3)",
+    "Train R²": 0.2818920615688123,
+    "Test R² (Mean)": 0.24063768162654328,
+    "Test R² (Std)": 0.09463358467880012,
+    "MAE (Test)": 3.893928751328564,
+    "RMSE (Test)": 4.8060580250004605
+  },
+  {
+    "Model": "Random Forest Regressor",
+    "Train R²": 0.38279906953518444,
+    "Test R² (Mean)": 0.18097618864235085,
+    "Test R² (Std)": 0.10977938562404531,
+    "MAE (Test)": 3.991756328815588,
+    "RMSE (Test)": 4.986916920380496
+  },
+  {
+    "Model": "Support Vector Regressor (SVR)",
+    "Train R²": 0.22605439426297788,
+    "Test R² (Mean)": 0.1669931741388818,
+    "Test R² (Std)": 0.10703527976519649,
+    "MAE (Test)": 3.6985586452302384,
+    "RMSE (Test)": 5.041789303641513
+  },
+  {
+    "Model": "Linear Regression (Baseline)",
+    "Train R²": 0.1766346066095656,
+    "Test R² (Mean)": 0.12749235546264373,
+    "Test R² (Std)": 0.08700457510570853,
+    "MAE (Test)": 4.0506376580908645,
+    "RMSE (Test)": 5.174131184824819
+  },
+  {
+    "Model": "XGBoost Regressor",
+    "Train R²": 0.45087457654375135,
+    "Test R² (Mean)": 0.11498979917566776,
+    "Test R² (Std)": 0.14351349328226856,
+    "MAE (Test)": 4.068349343360889,
+    "RMSE (Test)": 5.1697729606407306
+  },
+  {
+    "Model": "Gradient Boosting Regressor",
+    "Train R²": 0.4989534014716225,
+    "Test R² (Mean)": 0.10346973732377655,
+    "Test R² (Std)": 0.12902878832084014,
+    "MAE (Test)": 4.133578008394876,
+    "RMSE (Test)": 5.21240524264835
+  },
+  {
+    "Model": "Polynomial Regression (Deg 2)",
+    "Train R²": 0.21760980748101005,
+    "Test R² (Mean)": 0.09544734157985224,
+    "Test R² (Std)": 0.1288206330965893,
+    "MAE (Test)": 4.191038542253414,
+    "RMSE (Test)": 5.247720280321831
+  }
+]

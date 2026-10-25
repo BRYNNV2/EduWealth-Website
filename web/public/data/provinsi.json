@@ -1,0 +1,2654 @@
+[
+  {
+    "nama": "ACEH",
+    "kode": "11",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.182,
+    "mean_kemiskinan": 15.711,
+    "latest_tahun": 2023,
+    "latest_rls": 9.55,
+    "latest_kemiskinan": 14.45,
+    "prediksi": 9.25,
+    "residual": 6.461,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.78,
+        "kemiskinan": 17.08,
+        "prediksi": 10.245,
+        "residual": 6.835
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.865,
+        "kemiskinan": 16.73,
+        "prediksi": 10.035,
+        "residual": 6.695
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.99,
+        "kemiskinan": 16.89,
+        "prediksi": 9.726,
+        "residual": 7.164
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.1,
+        "kemiskinan": 15.97,
+        "prediksi": 9.453,
+        "residual": 6.517
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.185,
+        "kemiskinan": 15.32,
+        "prediksi": 9.243,
+        "residual": 6.077
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.335,
+        "kemiskinan": 14.99,
+        "prediksi": 8.872,
+        "residual": 6.118
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.385,
+        "kemiskinan": 15.33,
+        "prediksi": 8.749,
+        "residual": 6.581
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.45,
+        "kemiskinan": 14.64,
+        "prediksi": 8.588,
+        "residual": 6.052
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.55,
+        "kemiskinan": 14.45,
+        "prediksi": 8.34,
+        "residual": 6.11
+      }
+    ]
+  },
+  {
+    "nama": "BALI",
+    "kode": "51",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.828,
+    "mean_kemiskinan": 4.241,
+    "latest_tahun": 2023,
+    "latest_rls": 9.42,
+    "latest_kemiskinan": 4.25,
+    "prediksi": 10.127,
+    "residual": -5.886,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.255,
+        "kemiskinan": 4.74,
+        "prediksi": 11.543,
+        "residual": -6.803
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.365,
+        "kemiskinan": 4.25,
+        "prediksi": 11.271,
+        "residual": -7.021
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.55,
+        "kemiskinan": 4.25,
+        "prediksi": 10.814,
+        "residual": -6.564
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.66,
+        "kemiskinan": 4.01,
+        "prediksi": 10.542,
+        "residual": -6.532
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.845,
+        "kemiskinan": 3.79,
+        "prediksi": 10.084,
+        "residual": -6.294
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.945,
+        "kemiskinan": 3.78,
+        "prediksi": 9.837,
+        "residual": -6.057
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.06,
+        "kemiskinan": 4.53,
+        "prediksi": 9.552,
+        "residual": -5.022
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.35,
+        "kemiskinan": 4.57,
+        "prediksi": 8.835,
+        "residual": -4.265
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.42,
+        "kemiskinan": 4.25,
+        "prediksi": 8.662,
+        "residual": -4.412
+      }
+    ]
+  },
+  {
+    "nama": "BANTEN",
+    "kode": "36",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.729,
+    "mean_kemiskinan": 5.779,
+    "latest_tahun": 2023,
+    "latest_rls": 9.17,
+    "latest_kemiskinan": 6.17,
+    "prediksi": 10.371,
+    "residual": -4.592,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.26,
+        "kemiskinan": 5.9,
+        "prediksi": 11.531,
+        "residual": -5.631
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.36,
+        "kemiskinan": 5.42,
+        "prediksi": 11.284,
+        "residual": -5.864
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.525,
+        "kemiskinan": 5.45,
+        "prediksi": 10.876,
+        "residual": -5.426
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.61,
+        "kemiskinan": 5.24,
+        "prediksi": 10.665,
+        "residual": -5.425
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.73,
+        "kemiskinan": 5.09,
+        "prediksi": 10.369,
+        "residual": -5.279
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.89,
+        "kemiskinan": 5.92,
+        "prediksi": 9.973,
+        "residual": -4.053
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.915,
+        "kemiskinan": 6.66,
+        "prediksi": 9.911,
+        "residual": -3.251
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.1,
+        "kemiskinan": 6.16,
+        "prediksi": 9.453,
+        "residual": -3.293
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.17,
+        "kemiskinan": 6.17,
+        "prediksi": 9.28,
+        "residual": -3.11
+      }
+    ]
+  },
+  {
+    "nama": "BENGKULU",
+    "kode": "17",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.68,
+    "mean_kemiskinan": 15.691,
+    "latest_tahun": 2023,
+    "latest_rls": 9.025,
+    "latest_kemiskinan": 14.04,
+    "prediksi": 10.492,
+    "residual": 5.199,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.295,
+        "kemiskinan": 17.88,
+        "prediksi": 11.445,
+        "residual": 6.435
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.365,
+        "kemiskinan": 17.32,
+        "prediksi": 11.271,
+        "residual": 6.049
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.46,
+        "kemiskinan": 16.45,
+        "prediksi": 11.036,
+        "residual": 5.414
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.605,
+        "kemiskinan": 15.43,
+        "prediksi": 10.678,
+        "residual": 4.752
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.72,
+        "kemiskinan": 15.23,
+        "prediksi": 10.393,
+        "residual": 4.837
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.84,
+        "kemiskinan": 15.03,
+        "prediksi": 10.097,
+        "residual": 4.933
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.89,
+        "kemiskinan": 15.22,
+        "prediksi": 9.973,
+        "residual": 5.247
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.92,
+        "kemiskinan": 14.62,
+        "prediksi": 9.899,
+        "residual": 4.721
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.025,
+        "kemiskinan": 14.04,
+        "prediksi": 9.639,
+        "residual": 4.401
+      }
+    ]
+  },
+  {
+    "nama": "DI YOGYAKARTA",
+    "kode": "34",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.435,
+    "mean_kemiskinan": 12.507,
+    "latest_tahun": 2023,
+    "latest_rls": 9.835,
+    "latest_kemiskinan": 11.04,
+    "prediksi": 8.625,
+    "residual": 3.882,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 9.02,
+        "kemiskinan": 14.91,
+        "prediksi": 9.651,
+        "residual": 5.259
+      },
+      {
+        "tahun": 2016,
+        "rls": 9.135,
+        "kemiskinan": 13.34,
+        "prediksi": 9.367,
+        "residual": 3.973
+      },
+      {
+        "tahun": 2017,
+        "rls": 9.235,
+        "kemiskinan": 13.02,
+        "prediksi": 9.12,
+        "residual": 3.9
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.335,
+        "kemiskinan": 12.13,
+        "prediksi": 8.872,
+        "residual": 3.258
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.395,
+        "kemiskinan": 11.7,
+        "prediksi": 8.724,
+        "residual": 2.976
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.56,
+        "kemiskinan": 12.28,
+        "prediksi": 8.316,
+        "residual": 3.964
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.645,
+        "kemiskinan": 12.8,
+        "prediksi": 8.105,
+        "residual": 4.695
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.755,
+        "kemiskinan": 11.34,
+        "prediksi": 7.833,
+        "residual": 3.507
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.835,
+        "kemiskinan": 11.04,
+        "prediksi": 7.635,
+        "residual": 3.405
+      }
+    ]
+  },
+  {
+    "nama": "DKI JAKARTA",
+    "kode": "31",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 11.086,
+    "mean_kemiskinan": 4.097,
+    "latest_tahun": 2023,
+    "latest_rls": 11.455,
+    "latest_kemiskinan": 4.44,
+    "prediksi": 4.541,
+    "residual": -0.444,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 10.705,
+        "kemiskinan": 3.93,
+        "prediksi": 5.484,
+        "residual": -1.554
+      },
+      {
+        "tahun": 2016,
+        "rls": 10.88,
+        "kemiskinan": 3.75,
+        "prediksi": 5.051,
+        "residual": -1.301
+      },
+      {
+        "tahun": 2017,
+        "rls": 11.02,
+        "kemiskinan": 3.77,
+        "prediksi": 4.704,
+        "residual": -0.934
+      },
+      {
+        "tahun": 2018,
+        "rls": 11.045,
+        "kemiskinan": 3.57,
+        "prediksi": 4.643,
+        "residual": -1.073
+      },
+      {
+        "tahun": 2019,
+        "rls": 11.06,
+        "kemiskinan": 3.47,
+        "prediksi": 4.606,
+        "residual": -1.136
+      },
+      {
+        "tahun": 2020,
+        "rls": 11.13,
+        "kemiskinan": 4.53,
+        "prediksi": 4.432,
+        "residual": 0.098
+      },
+      {
+        "tahun": 2021,
+        "rls": 11.175,
+        "kemiskinan": 4.72,
+        "prediksi": 4.321,
+        "residual": 0.399
+      },
+      {
+        "tahun": 2022,
+        "rls": 11.305,
+        "kemiskinan": 4.69,
+        "prediksi": 4.0,
+        "residual": 0.69
+      },
+      {
+        "tahun": 2023,
+        "rls": 11.455,
+        "kemiskinan": 4.44,
+        "prediksi": 3.629,
+        "residual": 0.811
+      }
+    ]
+  },
+  {
+    "nama": "GORONTALO",
+    "kode": "75",
+    "cluster_id": 2,
+    "cluster_name": "Klaster Prioritas (RLS Rendah, Kemiskinan Tinggi)",
+    "mean_rls": 7.562,
+    "mean_kemiskinan": 16.38,
+    "latest_tahun": 2023,
+    "latest_rls": 8.1,
+    "latest_kemiskinan": 15.15,
+    "prediksi": 13.257,
+    "residual": 3.123,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.05,
+        "kemiskinan": 18.32,
+        "prediksi": 14.524,
+        "residual": 3.796
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.115,
+        "kemiskinan": 17.72,
+        "prediksi": 14.363,
+        "residual": 3.357
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.27,
+        "kemiskinan": 17.65,
+        "prediksi": 13.98,
+        "residual": 3.67
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.45,
+        "kemiskinan": 16.81,
+        "prediksi": 13.535,
+        "residual": 3.275
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.37,
+        "kemiskinan": 15.52,
+        "prediksi": 13.732,
+        "residual": 1.788
+      },
+      {
+        "tahun": 2020,
+        "rls": 7.81,
+        "kemiskinan": 15.22,
+        "prediksi": 12.644,
+        "residual": 2.576
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.9,
+        "kemiskinan": 15.61,
+        "prediksi": 12.422,
+        "residual": 3.188
+      },
+      {
+        "tahun": 2022,
+        "rls": 7.995,
+        "kemiskinan": 15.42,
+        "prediksi": 12.187,
+        "residual": 3.233
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.1,
+        "kemiskinan": 15.15,
+        "prediksi": 11.927,
+        "residual": 3.223
+      }
+    ]
+  },
+  {
+    "nama": "JAMBI",
+    "kode": "15",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 8.382,
+    "mean_kemiskinan": 7.983,
+    "latest_tahun": 2023,
+    "latest_rls": 8.81,
+    "latest_kemiskinan": 7.58,
+    "prediksi": 11.23,
+    "residual": -3.247,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.95,
+        "kemiskinan": 8.86,
+        "prediksi": 12.298,
+        "residual": -3.438
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.065,
+        "kemiskinan": 8.41,
+        "prediksi": 12.013,
+        "residual": -3.603
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.145,
+        "kemiskinan": 8.19,
+        "prediksi": 11.816,
+        "residual": -3.626
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.22,
+        "kemiskinan": 7.92,
+        "prediksi": 11.63,
+        "residual": -3.71
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.44,
+        "kemiskinan": 7.6,
+        "prediksi": 11.086,
+        "residual": -3.486
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.54,
+        "kemiskinan": 7.58,
+        "prediksi": 10.839,
+        "residual": -3.259
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.59,
+        "kemiskinan": 8.09,
+        "prediksi": 10.715,
+        "residual": -2.625
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.675,
+        "kemiskinan": 7.62,
+        "prediksi": 10.505,
+        "residual": -2.885
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.81,
+        "kemiskinan": 7.58,
+        "prediksi": 10.171,
+        "residual": -2.591
+      }
+    ]
+  },
+  {
+    "nama": "JAWA BARAT",
+    "kode": "32",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 8.357,
+    "mean_kemiskinan": 8.168,
+    "latest_tahun": 2023,
+    "latest_rls": 8.83,
+    "latest_kemiskinan": 7.62,
+    "prediksi": 11.292,
+    "residual": -3.124,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.855,
+        "kemiskinan": 9.53,
+        "prediksi": 12.533,
+        "residual": -3.003
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.945,
+        "kemiskinan": 8.95,
+        "prediksi": 12.31,
+        "residual": -3.36
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.14,
+        "kemiskinan": 8.71,
+        "prediksi": 11.828,
+        "residual": -3.118
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.155,
+        "kemiskinan": 7.45,
+        "prediksi": 11.791,
+        "residual": -4.341
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.365,
+        "kemiskinan": 6.91,
+        "prediksi": 11.271,
+        "residual": -4.361
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.54,
+        "kemiskinan": 7.88,
+        "prediksi": 10.839,
+        "residual": -2.959
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.605,
+        "kemiskinan": 8.4,
+        "prediksi": 10.678,
+        "residual": -2.278
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.775,
+        "kemiskinan": 8.06,
+        "prediksi": 10.257,
+        "residual": -2.197
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.83,
+        "kemiskinan": 7.62,
+        "prediksi": 10.121,
+        "residual": -2.501
+      }
+    ]
+  },
+  {
+    "nama": "JAWA TENGAH",
+    "kode": "33",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 7.534,
+    "mean_kemiskinan": 11.876,
+    "latest_tahun": 2023,
+    "latest_rls": 8.02,
+    "latest_kemiskinan": 10.77,
+    "prediksi": 13.326,
+    "residual": -1.45,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.045,
+        "kemiskinan": 13.58,
+        "prediksi": 14.536,
+        "residual": -0.956
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.165,
+        "kemiskinan": 13.27,
+        "prediksi": 14.239,
+        "residual": -0.969
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.285,
+        "kemiskinan": 13.01,
+        "prediksi": 13.943,
+        "residual": -0.933
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.365,
+        "kemiskinan": 11.32,
+        "prediksi": 13.745,
+        "residual": -2.425
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.545,
+        "kemiskinan": 10.8,
+        "prediksi": 13.3,
+        "residual": -2.5
+      },
+      {
+        "tahun": 2020,
+        "rls": 7.7,
+        "kemiskinan": 11.41,
+        "prediksi": 12.916,
+        "residual": -1.506
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.755,
+        "kemiskinan": 11.79,
+        "prediksi": 12.78,
+        "residual": -0.99
+      },
+      {
+        "tahun": 2022,
+        "rls": 7.93,
+        "kemiskinan": 10.93,
+        "prediksi": 12.347,
+        "residual": -1.417
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.02,
+        "kemiskinan": 10.77,
+        "prediksi": 12.125,
+        "residual": -1.355
+      }
+    ]
+  },
+  {
+    "nama": "JAWA TIMUR",
+    "kode": "35",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 7.624,
+    "mean_kemiskinan": 11.192,
+    "latest_tahun": 2023,
+    "latest_rls": 8.115,
+    "latest_kemiskinan": 10.35,
+    "prediksi": 13.103,
+    "residual": -1.911,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.16,
+        "kemiskinan": 12.34,
+        "prediksi": 14.252,
+        "residual": -1.912
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.25,
+        "kemiskinan": 12.05,
+        "prediksi": 14.029,
+        "residual": -1.979
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.355,
+        "kemiskinan": 11.77,
+        "prediksi": 13.77,
+        "residual": -2.0
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.405,
+        "kemiskinan": 10.98,
+        "prediksi": 13.646,
+        "residual": -2.666
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.61,
+        "kemiskinan": 10.37,
+        "prediksi": 13.139,
+        "residual": -2.769
+      },
+      {
+        "tahun": 2020,
+        "rls": 7.8,
+        "kemiskinan": 11.09,
+        "prediksi": 12.669,
+        "residual": -1.579
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.89,
+        "kemiskinan": 11.4,
+        "prediksi": 12.446,
+        "residual": -1.046
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.035,
+        "kemiskinan": 10.38,
+        "prediksi": 12.088,
+        "residual": -1.708
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.115,
+        "kemiskinan": 10.35,
+        "prediksi": 11.89,
+        "residual": -1.54
+      }
+    ]
+  },
+  {
+    "nama": "KALIMANTAN BARAT",
+    "kode": "61",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 7.264,
+    "mean_kemiskinan": 7.422,
+    "latest_tahun": 2023,
+    "latest_rls": 7.67,
+    "latest_kemiskinan": 6.71,
+    "prediksi": 13.995,
+    "residual": -6.573,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 6.925,
+        "kemiskinan": 8.03,
+        "prediksi": 14.833,
+        "residual": -6.803
+      },
+      {
+        "tahun": 2016,
+        "rls": 6.965,
+        "kemiskinan": 7.87,
+        "prediksi": 14.734,
+        "residual": -6.864
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.04,
+        "kemiskinan": 7.88,
+        "prediksi": 14.549,
+        "residual": -6.669
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.115,
+        "kemiskinan": 7.77,
+        "prediksi": 14.363,
+        "residual": -6.593
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.3,
+        "kemiskinan": 7.49,
+        "prediksi": 13.906,
+        "residual": -6.416
+      },
+      {
+        "tahun": 2020,
+        "rls": 7.36,
+        "kemiskinan": 7.17,
+        "prediksi": 13.757,
+        "residual": -6.587
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.435,
+        "kemiskinan": 7.15,
+        "prediksi": 13.572,
+        "residual": -6.422
+      },
+      {
+        "tahun": 2022,
+        "rls": 7.565,
+        "kemiskinan": 6.73,
+        "prediksi": 13.25,
+        "residual": -6.52
+      },
+      {
+        "tahun": 2023,
+        "rls": 7.67,
+        "kemiskinan": 6.71,
+        "prediksi": 12.99,
+        "residual": -6.28
+      }
+    ]
+  },
+  {
+    "nama": "KALIMANTAN SELATAN",
+    "kode": "63",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 8.163,
+    "mean_kemiskinan": 4.628,
+    "latest_tahun": 2023,
+    "latest_rls": 8.55,
+    "latest_kemiskinan": 4.29,
+    "prediksi": 11.772,
+    "residual": -7.144,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.76,
+        "kemiskinan": 4.99,
+        "prediksi": 12.768,
+        "residual": -7.778
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.89,
+        "kemiskinan": 4.85,
+        "prediksi": 12.446,
+        "residual": -7.596
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.985,
+        "kemiskinan": 4.73,
+        "prediksi": 12.211,
+        "residual": -7.481
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.995,
+        "kemiskinan": 4.54,
+        "prediksi": 12.187,
+        "residual": -7.647
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.19,
+        "kemiskinan": 4.55,
+        "prediksi": 11.704,
+        "residual": -7.154
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.29,
+        "kemiskinan": 4.38,
+        "prediksi": 11.457,
+        "residual": -7.077
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.34,
+        "kemiskinan": 4.83,
+        "prediksi": 11.333,
+        "residual": -6.503
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.465,
+        "kemiskinan": 4.49,
+        "prediksi": 11.024,
+        "residual": -6.534
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.55,
+        "kemiskinan": 4.29,
+        "prediksi": 10.814,
+        "residual": -6.524
+      }
+    ]
+  },
+  {
+    "nama": "KALIMANTAN TENGAH",
+    "kode": "62",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 8.471,
+    "mean_kemiskinan": 5.277,
+    "latest_tahun": 2023,
+    "latest_rls": 8.765,
+    "latest_kemiskinan": 5.11,
+    "prediksi": 11.009,
+    "residual": -5.732,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.01,
+        "kemiskinan": 5.94,
+        "prediksi": 12.149,
+        "residual": -6.209
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.11,
+        "kemiskinan": 5.66,
+        "prediksi": 11.902,
+        "residual": -6.242
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.265,
+        "kemiskinan": 5.37,
+        "prediksi": 11.519,
+        "residual": -6.149
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.7,
+        "kemiskinan": 5.17,
+        "prediksi": 10.443,
+        "residual": -5.273
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.495,
+        "kemiskinan": 4.98,
+        "prediksi": 10.95,
+        "residual": -5.97
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.57,
+        "kemiskinan": 4.82,
+        "prediksi": 10.764,
+        "residual": -5.944
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.625,
+        "kemiskinan": 5.16,
+        "prediksi": 10.628,
+        "residual": -5.468
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.7,
+        "kemiskinan": 5.28,
+        "prediksi": 10.443,
+        "residual": -5.163
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.765,
+        "kemiskinan": 5.11,
+        "prediksi": 10.282,
+        "residual": -5.172
+      }
+    ]
+  },
+  {
+    "nama": "KALIMANTAN TIMUR",
+    "kode": "64",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.599,
+    "mean_kemiskinan": 6.173,
+    "latest_tahun": 2023,
+    "latest_rls": 10.025,
+    "latest_kemiskinan": 6.11,
+    "prediksi": 8.219,
+    "residual": -2.046,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 9.125,
+        "kemiskinan": 6.23,
+        "prediksi": 9.392,
+        "residual": -3.162
+      },
+      {
+        "tahun": 2016,
+        "rls": 9.215,
+        "kemiskinan": 6.11,
+        "prediksi": 9.169,
+        "residual": -3.059
+      },
+      {
+        "tahun": 2017,
+        "rls": 9.34,
+        "kemiskinan": 6.19,
+        "prediksi": 8.86,
+        "residual": -2.67
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.46,
+        "kemiskinan": 6.03,
+        "prediksi": 8.563,
+        "residual": -2.533
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.68,
+        "kemiskinan": 5.94,
+        "prediksi": 8.019,
+        "residual": -2.079
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.745,
+        "kemiskinan": 6.1,
+        "prediksi": 7.858,
+        "residual": -1.758
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.825,
+        "kemiskinan": 6.54,
+        "prediksi": 7.66,
+        "residual": -1.12
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.975,
+        "kemiskinan": 6.31,
+        "prediksi": 7.289,
+        "residual": -0.979
+      },
+      {
+        "tahun": 2023,
+        "rls": 10.025,
+        "kemiskinan": 6.11,
+        "prediksi": 7.166,
+        "residual": -1.056
+      }
+    ]
+  },
+  {
+    "nama": "KALIMANTAN UTARA",
+    "kode": "65",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.121,
+    "mean_kemiskinan": 6.754,
+    "latest_tahun": 2023,
+    "latest_rls": 9.475,
+    "latest_kemiskinan": 6.45,
+    "prediksi": 9.401,
+    "residual": -2.647,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.685,
+        "kemiskinan": 6.24,
+        "prediksi": 10.48,
+        "residual": -4.24
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.785,
+        "kemiskinan": 6.23,
+        "prediksi": 10.233,
+        "residual": -4.003
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.855,
+        "kemiskinan": 7.22,
+        "prediksi": 10.059,
+        "residual": -2.839
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.105,
+        "kemiskinan": 7.09,
+        "prediksi": 9.441,
+        "residual": -2.351
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.175,
+        "kemiskinan": 6.63,
+        "prediksi": 9.268,
+        "residual": -2.638
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.235,
+        "kemiskinan": 6.8,
+        "prediksi": 9.12,
+        "residual": -2.32
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.345,
+        "kemiskinan": 7.36,
+        "prediksi": 8.847,
+        "residual": -1.487
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.43,
+        "kemiskinan": 6.77,
+        "prediksi": 8.637,
+        "residual": -1.867
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.475,
+        "kemiskinan": 6.45,
+        "prediksi": 8.526,
+        "residual": -2.076
+      }
+    ]
+  },
+  {
+    "nama": "KEPULAUAN BANGKA BELITUNG",
+    "kode": "19",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 7.895,
+    "mean_kemiskinan": 4.899,
+    "latest_tahun": 2023,
+    "latest_rls": 8.28,
+    "latest_kemiskinan": 4.52,
+    "prediksi": 12.434,
+    "residual": -7.535,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.565,
+        "kemiskinan": 5.4,
+        "prediksi": 13.25,
+        "residual": -7.85
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.31,
+        "kemiskinan": 5.22,
+        "prediksi": 13.881,
+        "residual": -8.661
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.79,
+        "kemiskinan": 5.2,
+        "prediksi": 12.694,
+        "residual": -7.494
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.84,
+        "kemiskinan": 5.25,
+        "prediksi": 12.57,
+        "residual": -7.32
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.96,
+        "kemiskinan": 4.62,
+        "prediksi": 12.273,
+        "residual": -7.653
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.04,
+        "kemiskinan": 4.53,
+        "prediksi": 12.075,
+        "residual": -7.545
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.12,
+        "kemiskinan": 4.9,
+        "prediksi": 11.877,
+        "residual": -6.977
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.15,
+        "kemiskinan": 4.45,
+        "prediksi": 11.803,
+        "residual": -7.353
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.28,
+        "kemiskinan": 4.52,
+        "prediksi": 11.482,
+        "residual": -6.962
+      }
+    ]
+  },
+  {
+    "nama": "KEPULAUAN RIAU",
+    "kode": "21",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.971,
+    "mean_kemiskinan": 6.039,
+    "latest_tahun": 2023,
+    "latest_rls": 10.445,
+    "latest_kemiskinan": 5.69,
+    "prediksi": 7.3,
+    "residual": -1.261,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 9.61,
+        "kemiskinan": 6.24,
+        "prediksi": 8.192,
+        "residual": -1.952
+      },
+      {
+        "tahun": 2016,
+        "rls": 9.665,
+        "kemiskinan": 5.98,
+        "prediksi": 8.056,
+        "residual": -2.076
+      },
+      {
+        "tahun": 2017,
+        "rls": 9.57,
+        "kemiskinan": 6.06,
+        "prediksi": 8.291,
+        "residual": -2.231
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.805,
+        "kemiskinan": 6.2,
+        "prediksi": 7.71,
+        "residual": -1.51
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.98,
+        "kemiskinan": 5.9,
+        "prediksi": 7.277,
+        "residual": -1.377
+      },
+      {
+        "tahun": 2020,
+        "rls": 10.115,
+        "kemiskinan": 5.92,
+        "prediksi": 6.943,
+        "residual": -1.023
+      },
+      {
+        "tahun": 2021,
+        "rls": 10.18,
+        "kemiskinan": 6.12,
+        "prediksi": 6.782,
+        "residual": -0.662
+      },
+      {
+        "tahun": 2022,
+        "rls": 10.365,
+        "kemiskinan": 6.24,
+        "prediksi": 6.325,
+        "residual": -0.085
+      },
+      {
+        "tahun": 2023,
+        "rls": 10.445,
+        "kemiskinan": 5.69,
+        "prediksi": 6.127,
+        "residual": -0.437
+      }
+    ]
+  },
+  {
+    "nama": "LAMPUNG",
+    "kode": "18",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 7.951,
+    "mean_kemiskinan": 12.859,
+    "latest_tahun": 2023,
+    "latest_rls": 8.57,
+    "latest_kemiskinan": 11.11,
+    "prediksi": 12.295,
+    "residual": 0.564,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.555,
+        "kemiskinan": 14.35,
+        "prediksi": 13.275,
+        "residual": 1.075
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.63,
+        "kemiskinan": 14.29,
+        "prediksi": 13.089,
+        "residual": 1.201
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.785,
+        "kemiskinan": 13.69,
+        "prediksi": 12.706,
+        "residual": 0.984
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.82,
+        "kemiskinan": 13.14,
+        "prediksi": 12.619,
+        "residual": 0.521
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.91,
+        "kemiskinan": 12.62,
+        "prediksi": 12.397,
+        "residual": 0.223
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.045,
+        "kemiskinan": 12.34,
+        "prediksi": 12.063,
+        "residual": 0.277
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.075,
+        "kemiskinan": 12.62,
+        "prediksi": 11.989,
+        "residual": 0.631
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.17,
+        "kemiskinan": 11.57,
+        "prediksi": 11.754,
+        "residual": -0.184
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.57,
+        "kemiskinan": 11.11,
+        "prediksi": 10.764,
+        "residual": 0.346
+      }
+    ]
+  },
+  {
+    "nama": "MALUKU",
+    "kode": "81",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.734,
+    "mean_kemiskinan": 17.85,
+    "latest_tahun": 2023,
+    "latest_rls": 10.225,
+    "latest_kemiskinan": 16.42,
+    "prediksi": 7.886,
+    "residual": 9.964,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 9.165,
+        "kemiskinan": 19.51,
+        "prediksi": 9.293,
+        "residual": 10.217
+      },
+      {
+        "tahun": 2016,
+        "rls": 9.275,
+        "kemiskinan": 19.18,
+        "prediksi": 9.021,
+        "residual": 10.159
+      },
+      {
+        "tahun": 2017,
+        "rls": 9.4,
+        "kemiskinan": 18.45,
+        "prediksi": 8.711,
+        "residual": 9.739
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.58,
+        "kemiskinan": 18.12,
+        "prediksi": 8.266,
+        "residual": 9.854
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.81,
+        "kemiskinan": 17.69,
+        "prediksi": 7.697,
+        "residual": 9.993
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.935,
+        "kemiskinan": 17.44,
+        "prediksi": 7.388,
+        "residual": 10.052
+      },
+      {
+        "tahun": 2021,
+        "rls": 10.03,
+        "kemiskinan": 17.87,
+        "prediksi": 7.153,
+        "residual": 10.717
+      },
+      {
+        "tahun": 2022,
+        "rls": 10.185,
+        "kemiskinan": 15.97,
+        "prediksi": 6.77,
+        "residual": 9.2
+      },
+      {
+        "tahun": 2023,
+        "rls": 10.225,
+        "kemiskinan": 16.42,
+        "prediksi": 6.671,
+        "residual": 9.749
+      }
+    ]
+  },
+  {
+    "nama": "MALUKU UTARA",
+    "kode": "82",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.868,
+    "mean_kemiskinan": 6.588,
+    "latest_tahun": 2023,
+    "latest_rls": 9.265,
+    "latest_kemiskinan": 6.46,
+    "prediksi": 10.028,
+    "residual": -3.44,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.355,
+        "kemiskinan": 6.84,
+        "prediksi": 11.296,
+        "residual": -4.456
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.525,
+        "kemiskinan": 6.33,
+        "prediksi": 10.876,
+        "residual": -4.546
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.61,
+        "kemiskinan": 6.35,
+        "prediksi": 10.665,
+        "residual": -4.315
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.715,
+        "kemiskinan": 6.64,
+        "prediksi": 10.406,
+        "residual": -3.766
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.995,
+        "kemiskinan": 6.77,
+        "prediksi": 9.713,
+        "residual": -2.943
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.04,
+        "kemiskinan": 6.78,
+        "prediksi": 9.602,
+        "residual": -2.822
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.085,
+        "kemiskinan": 6.89,
+        "prediksi": 9.491,
+        "residual": -2.601
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.22,
+        "kemiskinan": 6.23,
+        "prediksi": 9.157,
+        "residual": -2.927
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.265,
+        "kemiskinan": 6.46,
+        "prediksi": 9.045,
+        "residual": -2.585
+      }
+    ]
+  },
+  {
+    "nama": "NUSA TENGGARA BARAT",
+    "kode": "52",
+    "cluster_id": 2,
+    "cluster_name": "Klaster Prioritas (RLS Rendah, Kemiskinan Tinggi)",
+    "mean_rls": 7.218,
+    "mean_kemiskinan": 14.956,
+    "latest_tahun": 2023,
+    "latest_rls": 7.7,
+    "latest_kemiskinan": 13.85,
+    "prediksi": 14.109,
+    "residual": 0.847,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 6.765,
+        "kemiskinan": 17.1,
+        "prediksi": 15.229,
+        "residual": 1.871
+      },
+      {
+        "tahun": 2016,
+        "rls": 6.835,
+        "kemiskinan": 16.48,
+        "prediksi": 15.056,
+        "residual": 1.424
+      },
+      {
+        "tahun": 2017,
+        "rls": 6.95,
+        "kemiskinan": 16.07,
+        "prediksi": 14.771,
+        "residual": 1.299
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.085,
+        "kemiskinan": 14.75,
+        "prediksi": 14.437,
+        "residual": 0.313
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.32,
+        "kemiskinan": 14.56,
+        "prediksi": 13.856,
+        "residual": 0.704
+      },
+      {
+        "tahun": 2020,
+        "rls": 7.36,
+        "kemiskinan": 13.97,
+        "prediksi": 13.757,
+        "residual": 0.213
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.405,
+        "kemiskinan": 14.14,
+        "prediksi": 13.646,
+        "residual": 0.494
+      },
+      {
+        "tahun": 2022,
+        "rls": 7.54,
+        "kemiskinan": 13.68,
+        "prediksi": 13.312,
+        "residual": 0.368
+      },
+      {
+        "tahun": 2023,
+        "rls": 7.7,
+        "kemiskinan": 13.85,
+        "prediksi": 12.916,
+        "residual": 0.934
+      }
+    ]
+  },
+  {
+    "nama": "NUSA TENGGARA TIMUR",
+    "kode": "53",
+    "cluster_id": 2,
+    "cluster_name": "Klaster Prioritas (RLS Rendah, Kemiskinan Tinggi)",
+    "mean_rls": 7.488,
+    "mean_kemiskinan": 21.221,
+    "latest_tahun": 2023,
+    "latest_rls": 7.89,
+    "latest_kemiskinan": 19.96,
+    "prediksi": 13.441,
+    "residual": 7.78,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 6.94,
+        "kemiskinan": 22.61,
+        "prediksi": 14.796,
+        "residual": 7.814
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.035,
+        "kemiskinan": 22.19,
+        "prediksi": 14.561,
+        "residual": 7.629
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.165,
+        "kemiskinan": 21.85,
+        "prediksi": 14.239,
+        "residual": 7.611
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.62,
+        "kemiskinan": 21.35,
+        "prediksi": 13.114,
+        "residual": 8.236
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.57,
+        "kemiskinan": 21.09,
+        "prediksi": 13.238,
+        "residual": 7.852
+      },
+      {
+        "tahun": 2020,
+        "rls": 7.645,
+        "kemiskinan": 20.9,
+        "prediksi": 13.052,
+        "residual": 7.848
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.705,
+        "kemiskinan": 20.99,
+        "prediksi": 12.904,
+        "residual": 8.086
+      },
+      {
+        "tahun": 2022,
+        "rls": 7.82,
+        "kemiskinan": 20.05,
+        "prediksi": 12.619,
+        "residual": 7.431
+      },
+      {
+        "tahun": 2023,
+        "rls": 7.89,
+        "kemiskinan": 19.96,
+        "prediksi": 12.446,
+        "residual": 7.514
+      }
+    ]
+  },
+  {
+    "nama": "PAPUA",
+    "kode": "94",
+    "cluster_id": 2,
+    "cluster_name": "Klaster Prioritas (RLS Rendah, Kemiskinan Tinggi)",
+    "mean_rls": 6.6,
+    "mean_kemiskinan": 27.299,
+    "latest_tahun": 2023,
+    "latest_rls": 7.035,
+    "latest_kemiskinan": 26.03,
+    "prediksi": 15.637,
+    "residual": 11.662,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 5.935,
+        "kemiskinan": 28.17,
+        "prediksi": 17.282,
+        "residual": 10.888
+      },
+      {
+        "tahun": 2016,
+        "rls": 6.11,
+        "kemiskinan": 28.54,
+        "prediksi": 16.849,
+        "residual": 11.691
+      },
+      {
+        "tahun": 2017,
+        "rls": 6.23,
+        "kemiskinan": 27.62,
+        "prediksi": 16.552,
+        "residual": 11.068
+      },
+      {
+        "tahun": 2018,
+        "rls": 6.48,
+        "kemiskinan": 27.74,
+        "prediksi": 15.934,
+        "residual": 11.806
+      },
+      {
+        "tahun": 2019,
+        "rls": 6.6,
+        "kemiskinan": 27.53,
+        "prediksi": 15.637,
+        "residual": 11.893
+      },
+      {
+        "tahun": 2020,
+        "rls": 6.655,
+        "kemiskinan": 26.64,
+        "prediksi": 15.501,
+        "residual": 11.139
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.44,
+        "kemiskinan": 26.86,
+        "prediksi": 13.559,
+        "residual": 13.301
+      },
+      {
+        "tahun": 2022,
+        "rls": 6.915,
+        "kemiskinan": 26.56,
+        "prediksi": 14.858,
+        "residual": 11.702
+      },
+      {
+        "tahun": 2023,
+        "rls": 7.035,
+        "kemiskinan": 26.03,
+        "prediksi": 14.561,
+        "residual": 11.469
+      }
+    ]
+  },
+  {
+    "nama": "PAPUA BARAT",
+    "kode": "91",
+    "cluster_id": 2,
+    "cluster_name": "Klaster Prioritas (RLS Rendah, Kemiskinan Tinggi)",
+    "mean_rls": 8.698,
+    "mean_kemiskinan": 22.951,
+    "latest_tahun": 2023,
+    "latest_rls": 9.17,
+    "latest_kemiskinan": 20.49,
+    "prediksi": 10.448,
+    "residual": 12.503,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.25,
+        "kemiskinan": 25.82,
+        "prediksi": 11.556,
+        "residual": 14.264
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.305,
+        "kemiskinan": 25.43,
+        "prediksi": 11.42,
+        "residual": 14.01
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.395,
+        "kemiskinan": 25.1,
+        "prediksi": 11.197,
+        "residual": 13.903
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.55,
+        "kemiskinan": 23.01,
+        "prediksi": 10.814,
+        "residual": 12.196
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.695,
+        "kemiskinan": 22.17,
+        "prediksi": 10.455,
+        "residual": 11.715
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.855,
+        "kemiskinan": 21.37,
+        "prediksi": 10.059,
+        "residual": 11.311
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.975,
+        "kemiskinan": 21.84,
+        "prediksi": 9.763,
+        "residual": 12.077
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.085,
+        "kemiskinan": 21.33,
+        "prediksi": 9.491,
+        "residual": 11.839
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.17,
+        "kemiskinan": 20.49,
+        "prediksi": 9.28,
+        "residual": 11.21
+      }
+    ]
+  },
+  {
+    "nama": "RIAU",
+    "kode": "14",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.966,
+    "mean_kemiskinan": 7.339,
+    "latest_tahun": 2023,
+    "latest_rls": 9.335,
+    "latest_kemiskinan": 6.68,
+    "prediksi": 9.785,
+    "residual": -2.446,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.485,
+        "kemiskinan": 8.42,
+        "prediksi": 10.975,
+        "residual": -2.555
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.585,
+        "kemiskinan": 7.98,
+        "prediksi": 10.727,
+        "residual": -2.747
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.755,
+        "kemiskinan": 7.78,
+        "prediksi": 10.307,
+        "residual": -2.527
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.915,
+        "kemiskinan": 7.39,
+        "prediksi": 9.911,
+        "residual": -2.521
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.025,
+        "kemiskinan": 7.08,
+        "prediksi": 9.639,
+        "residual": -2.559
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.135,
+        "kemiskinan": 6.82,
+        "prediksi": 9.367,
+        "residual": -2.547
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.21,
+        "kemiskinan": 7.12,
+        "prediksi": 9.181,
+        "residual": -2.061
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.25,
+        "kemiskinan": 6.78,
+        "prediksi": 9.082,
+        "residual": -2.302
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.335,
+        "kemiskinan": 6.68,
+        "prediksi": 8.872,
+        "residual": -2.192
+      }
+    ]
+  },
+  {
+    "nama": "SULAWESI BARAT",
+    "kode": "76",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 7.615,
+    "mean_kemiskinan": 11.457,
+    "latest_tahun": 2023,
+    "latest_rls": 8.14,
+    "latest_kemiskinan": 11.49,
+    "prediksi": 13.126,
+    "residual": -1.67,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.02,
+        "kemiskinan": 12.4,
+        "prediksi": 14.598,
+        "residual": -2.198
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.155,
+        "kemiskinan": 11.74,
+        "prediksi": 14.264,
+        "residual": -2.524
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.315,
+        "kemiskinan": 11.3,
+        "prediksi": 13.868,
+        "residual": -2.568
+      },
+      {
+        "tahun": 2018,
+        "rls": 7.47,
+        "kemiskinan": 11.25,
+        "prediksi": 13.485,
+        "residual": -2.235
+      },
+      {
+        "tahun": 2019,
+        "rls": 7.5,
+        "kemiskinan": 11.02,
+        "prediksi": 13.411,
+        "residual": -2.391
+      },
+      {
+        "tahun": 2020,
+        "rls": 7.895,
+        "kemiskinan": 10.87,
+        "prediksi": 12.434,
+        "residual": -1.564
+      },
+      {
+        "tahun": 2021,
+        "rls": 7.96,
+        "kemiskinan": 11.29,
+        "prediksi": 12.273,
+        "residual": -0.983
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.08,
+        "kemiskinan": 11.75,
+        "prediksi": 11.976,
+        "residual": -0.226
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.14,
+        "kemiskinan": 11.49,
+        "prediksi": 11.828,
+        "residual": -0.338
+      }
+    ]
+  },
+  {
+    "nama": "SULAWESI SELATAN",
+    "kode": "73",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 8.217,
+    "mean_kemiskinan": 8.972,
+    "latest_tahun": 2023,
+    "latest_rls": 8.775,
+    "latest_kemiskinan": 8.7,
+    "prediksi": 11.637,
+    "residual": -2.665,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.655,
+        "kemiskinan": 9.39,
+        "prediksi": 13.028,
+        "residual": -3.638
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.77,
+        "kemiskinan": 9.4,
+        "prediksi": 12.743,
+        "residual": -3.343
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.97,
+        "kemiskinan": 9.38,
+        "prediksi": 12.248,
+        "residual": -2.868
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.04,
+        "kemiskinan": 9.06,
+        "prediksi": 12.075,
+        "residual": -3.015
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.26,
+        "kemiskinan": 8.69,
+        "prediksi": 11.531,
+        "residual": -2.841
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.39,
+        "kemiskinan": 8.72,
+        "prediksi": 11.21,
+        "residual": -2.49
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.47,
+        "kemiskinan": 8.78,
+        "prediksi": 11.012,
+        "residual": -2.232
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.625,
+        "kemiskinan": 8.63,
+        "prediksi": 10.628,
+        "residual": -1.998
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.775,
+        "kemiskinan": 8.7,
+        "prediksi": 10.257,
+        "residual": -1.557
+      }
+    ]
+  },
+  {
+    "nama": "SULAWESI TENGAH",
+    "kode": "72",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.616,
+    "mean_kemiskinan": 13.489,
+    "latest_tahun": 2023,
+    "latest_rls": 8.995,
+    "latest_kemiskinan": 12.41,
+    "prediksi": 10.652,
+    "residual": 2.837,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.965,
+        "kemiskinan": 14.66,
+        "prediksi": 12.261,
+        "residual": 2.399
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.11,
+        "kemiskinan": 14.45,
+        "prediksi": 11.902,
+        "residual": 2.548
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.56,
+        "kemiskinan": 14.14,
+        "prediksi": 10.789,
+        "residual": 3.351
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.515,
+        "kemiskinan": 14.01,
+        "prediksi": 10.9,
+        "residual": 3.11
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.74,
+        "kemiskinan": 13.48,
+        "prediksi": 10.344,
+        "residual": 3.136
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.825,
+        "kemiskinan": 12.92,
+        "prediksi": 10.134,
+        "residual": 2.786
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.88,
+        "kemiskinan": 13.0,
+        "prediksi": 9.998,
+        "residual": 3.002
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.95,
+        "kemiskinan": 12.33,
+        "prediksi": 9.824,
+        "residual": 2.506
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.995,
+        "kemiskinan": 12.41,
+        "prediksi": 9.713,
+        "residual": 2.697
+      }
+    ]
+  },
+  {
+    "nama": "SULAWESI TENGGARA",
+    "kode": "74",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.823,
+    "mean_kemiskinan": 11.858,
+    "latest_tahun": 2023,
+    "latest_rls": 9.31,
+    "latest_kemiskinan": 11.43,
+    "prediksi": 10.139,
+    "residual": 1.719,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.245,
+        "kemiskinan": 12.9,
+        "prediksi": 11.568,
+        "residual": 1.332
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.345,
+        "kemiskinan": 12.88,
+        "prediksi": 11.321,
+        "residual": 1.559
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.465,
+        "kemiskinan": 12.81,
+        "prediksi": 11.024,
+        "residual": 1.786
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.695,
+        "kemiskinan": 11.63,
+        "prediksi": 10.455,
+        "residual": 1.175
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.915,
+        "kemiskinan": 11.24,
+        "prediksi": 9.911,
+        "residual": 1.329
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.05,
+        "kemiskinan": 11.0,
+        "prediksi": 9.577,
+        "residual": 1.423
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.135,
+        "kemiskinan": 11.66,
+        "prediksi": 9.367,
+        "residual": 2.293
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.245,
+        "kemiskinan": 11.17,
+        "prediksi": 9.095,
+        "residual": 2.075
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.31,
+        "kemiskinan": 11.43,
+        "prediksi": 8.934,
+        "residual": 2.496
+      }
+    ]
+  },
+  {
+    "nama": "SULAWESI UTARA",
+    "kode": "71",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.353,
+    "mean_kemiskinan": 7.844,
+    "latest_tahun": 2023,
+    "latest_rls": 9.775,
+    "latest_kemiskinan": 7.38,
+    "prediksi": 8.827,
+    "residual": -0.982,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.88,
+        "kemiskinan": 8.65,
+        "prediksi": 9.998,
+        "residual": -1.348
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.93,
+        "kemiskinan": 8.34,
+        "prediksi": 9.874,
+        "residual": -1.534
+      },
+      {
+        "tahun": 2017,
+        "rls": 9.145,
+        "kemiskinan": 8.1,
+        "prediksi": 9.342,
+        "residual": -1.242
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.24,
+        "kemiskinan": 7.8,
+        "prediksi": 9.107,
+        "residual": -1.307
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.425,
+        "kemiskinan": 7.66,
+        "prediksi": 8.65,
+        "residual": -0.99
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.49,
+        "kemiskinan": 7.62,
+        "prediksi": 8.489,
+        "residual": -0.869
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.615,
+        "kemiskinan": 7.77,
+        "prediksi": 8.18,
+        "residual": -0.41
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.68,
+        "kemiskinan": 7.28,
+        "prediksi": 8.019,
+        "residual": -0.739
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.775,
+        "kemiskinan": 7.38,
+        "prediksi": 7.784,
+        "residual": -0.404
+      }
+    ]
+  },
+  {
+    "nama": "SUMATERA BARAT",
+    "kode": "13",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 8.892,
+    "mean_kemiskinan": 6.569,
+    "latest_tahun": 2023,
+    "latest_rls": 9.285,
+    "latest_kemiskinan": 5.95,
+    "prediksi": 9.969,
+    "residual": -3.4,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 8.475,
+        "kemiskinan": 7.31,
+        "prediksi": 10.999,
+        "residual": -3.689
+      },
+      {
+        "tahun": 2016,
+        "rls": 8.605,
+        "kemiskinan": 7.09,
+        "prediksi": 10.678,
+        "residual": -3.588
+      },
+      {
+        "tahun": 2017,
+        "rls": 8.73,
+        "kemiskinan": 6.87,
+        "prediksi": 10.369,
+        "residual": -3.499
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.765,
+        "kemiskinan": 6.65,
+        "prediksi": 10.282,
+        "residual": -3.632
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.92,
+        "kemiskinan": 6.42,
+        "prediksi": 9.899,
+        "residual": -3.479
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.995,
+        "kemiskinan": 6.28,
+        "prediksi": 9.713,
+        "residual": -3.433
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.07,
+        "kemiskinan": 6.63,
+        "prediksi": 9.528,
+        "residual": -2.898
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.18,
+        "kemiskinan": 5.92,
+        "prediksi": 9.256,
+        "residual": -3.336
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.285,
+        "kemiskinan": 5.95,
+        "prediksi": 8.996,
+        "residual": -3.046
+      }
+    ]
+  },
+  {
+    "nama": "SUMATERA SELATAN",
+    "kode": "16",
+    "cluster_id": 1,
+    "cluster_name": "Klaster Menengah (RLS Sedang, Kemiskinan Moderat)",
+    "mean_rls": 8.132,
+    "mean_kemiskinan": 12.852,
+    "latest_tahun": 2023,
+    "latest_rls": 8.5,
+    "latest_kemiskinan": 11.78,
+    "prediksi": 11.849,
+    "residual": 1.004,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 7.77,
+        "kemiskinan": 14.25,
+        "prediksi": 12.743,
+        "residual": 1.507
+      },
+      {
+        "tahun": 2016,
+        "rls": 7.83,
+        "kemiskinan": 13.54,
+        "prediksi": 12.595,
+        "residual": 0.945
+      },
+      {
+        "tahun": 2017,
+        "rls": 7.985,
+        "kemiskinan": 13.19,
+        "prediksi": 12.211,
+        "residual": 0.979
+      },
+      {
+        "tahun": 2018,
+        "rls": 8.0,
+        "kemiskinan": 12.8,
+        "prediksi": 12.174,
+        "residual": 0.626
+      },
+      {
+        "tahun": 2019,
+        "rls": 8.18,
+        "kemiskinan": 12.71,
+        "prediksi": 11.729,
+        "residual": 0.981
+      },
+      {
+        "tahun": 2020,
+        "rls": 8.235,
+        "kemiskinan": 12.66,
+        "prediksi": 11.593,
+        "residual": 1.067
+      },
+      {
+        "tahun": 2021,
+        "rls": 8.295,
+        "kemiskinan": 12.84,
+        "prediksi": 11.445,
+        "residual": 1.395
+      },
+      {
+        "tahun": 2022,
+        "rls": 8.39,
+        "kemiskinan": 11.9,
+        "prediksi": 11.21,
+        "residual": 0.69
+      },
+      {
+        "tahun": 2023,
+        "rls": 8.5,
+        "kemiskinan": 11.78,
+        "prediksi": 10.937,
+        "residual": 0.843
+      }
+    ]
+  },
+  {
+    "nama": "SUMATERA UTARA",
+    "kode": "12",
+    "cluster_id": 0,
+    "cluster_name": "Klaster Maju (RLS Tinggi, Kemiskinan Terkendali)",
+    "mean_rls": 9.435,
+    "mean_kemiskinan": 9.276,
+    "latest_tahun": 2023,
+    "latest_rls": 9.825,
+    "latest_kemiskinan": 8.15,
+    "prediksi": 8.625,
+    "residual": 0.651,
+    "history": [
+      {
+        "tahun": 2015,
+        "rls": 9.04,
+        "kemiskinan": 10.53,
+        "prediksi": 9.602,
+        "residual": 0.928
+      },
+      {
+        "tahun": 2016,
+        "rls": 9.13,
+        "kemiskinan": 10.35,
+        "prediksi": 9.379,
+        "residual": 0.971
+      },
+      {
+        "tahun": 2017,
+        "rls": 9.255,
+        "kemiskinan": 10.22,
+        "prediksi": 9.07,
+        "residual": 1.15
+      },
+      {
+        "tahun": 2018,
+        "rls": 9.345,
+        "kemiskinan": 9.22,
+        "prediksi": 8.847,
+        "residual": 0.373
+      },
+      {
+        "tahun": 2019,
+        "rls": 9.465,
+        "kemiskinan": 8.83,
+        "prediksi": 8.551,
+        "residual": 0.279
+      },
+      {
+        "tahun": 2020,
+        "rls": 9.55,
+        "kemiskinan": 8.75,
+        "prediksi": 8.34,
+        "residual": 0.41
+      },
+      {
+        "tahun": 2021,
+        "rls": 9.585,
+        "kemiskinan": 9.01,
+        "prediksi": 8.254,
+        "residual": 0.756
+      },
+      {
+        "tahun": 2022,
+        "rls": 9.72,
+        "kemiskinan": 8.42,
+        "prediksi": 7.92,
+        "residual": 0.5
+      },
+      {
+        "tahun": 2023,
+        "rls": 9.825,
+        "kemiskinan": 8.15,
+        "prediksi": 7.66,
+        "residual": 0.49
+      }
+    ]
+  }
+]

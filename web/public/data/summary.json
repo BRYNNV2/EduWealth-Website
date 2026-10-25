@@ -1,0 +1,41 @@
+{
+  "topik": "Analisis Hubungan Rata-rata Lama Sekolah terhadap Persentase Penduduk Miskin Antarprovinsi di Indonesia",
+  "periode": "2015-2023",
+  "jumlah_provinsi": 34,
+  "total_observasi": 306,
+  "statistik_nasional": {
+    "rls_mean": 8.544,
+    "rls_median": 8.555,
+    "rls_std": 0.959,
+    "rls_min": 5.935,
+    "rls_max": 11.455,
+    "kemiskinan_mean": 10.829,
+    "kemiskinan_median": 9.035,
+    "kemiskinan_std": 5.651,
+    "kemiskinan_min": 3.47,
+    "kemiskinan_max": 28.54
+  },
+  "korelasi": {
+    "pearson": {
+      "koefisien": -0.42,
+      "p_value": 1.6673448464663204e-14,
+      "interpretasi": "Negatif Sedang (Signifikan)"
+    },
+    "spearman": {
+      "koefisien": -0.3454,
+      "p_value": 5.349156296648165e-10,
+      "interpretasi": "Monotonik Negatif (Signifikan)"
+    }
+  },
+  "model_terpilih": {
+    "nama": "Linear Regression (Baseline OLS)",
+    "persamaan": "Kemiskinan = 31.9615 - 2.4734 * RLS",
+    "intercept": 31.961485263944304,
+    "koefisien_rls": -2.4734132466208907,
+    "r2_score": 0.1764,
+    "mae": 4.0257,
+    "rmse": 5.1197,
+    "cv_test_r2_mean": 0.1275,
+    "alasan_pemilihan": "Model linear memberikan prediksi yang konsisten, berlogika ekonomi teruji, transparan bagi pembuat kebijakan, dan bebas dari risiko overfitting pohon keputusan pada sampel kecil."
+  }
+}

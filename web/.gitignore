@@ -1,0 +1,7 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+lighthouse-*.json
+extract_icons.py
+parse_lh.py

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduSejahtera — Analisis Hubungan RLS terhadap Kemiskinan di Indonesia</title>
+  <meta name="description" content="Kajian empiris data panel BPS (2015–2023) pada 34 provinsi di Indonesia: menguji hubungan Rata-rata Lama Sekolah (RLS) terhadap tingkat kemiskinan dengan model Machine Learning yang tervalidasi.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A6ED8' stroke-width='2'><path d='M22 10v6M2 10l10-5 10 5-10 5z'/><path d='M6 12v5c3 3 9 3 12 0v-5'/></svg>">
+</head>
+<body>
+
+  <!-- 1. NAVBAR (Capsule Glassmorphism) -->
+  <header class="site-header" id="navbar">
+    <div class="navbar">
+      <a href="#" class="brand-logo" aria-label="EduSejahtera Beranda">
+        EduSejahtera<span class="dot">.</span>
+      </a>
+
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="#metodologi">Metodologi</a></li>
+          <li><a href="#temuan">Temuan Data</a></li>
+          <li><a href="#peta">Peta Spasial</a></li>
+          <li><a href="#simulator">Simulator</a></li>
+          <li><a href="#model">Komparasi Model</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#simulator" class="btn btn-primary" id="btnNavCobaSimulator">
+          <i data-lucide="sliders-horizontal" style="width: 15px; height: 15px;"></i>
+          Coba Simulator
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Buka Menu Navigasi" id="btnMobileToggle">
+          <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 2. HERO SECTION (Daylight Sky & Smartphone Mockup) -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <i data-lucide="database" style="width: 14px; height: 14px;"></i>
+            Data Panel BPS RI (2015–2023) • N = 306
+          </div>
+          <h1 class="hero-title">Pendidikan, Jalan Keluar dari Kemiskinan?</h1>
+          <p class="hero-subtitle">
+            Kajian empiris data 34 provinsi di Indonesia mengungkap seberapa kuat capaian lama sekolah berasosiasi dengan penurunan tingkat kemiskinan daerah.
+          </p>
+        </div>
+
+        <!-- Smartphone Mockup with 3 Floating Cards (Matches Reference) -->
+        <div class="hero-phone-container">
+          <!-- Floating Card Left: 5-Star Review Style -->
+          <div class="floating-phone-card float-left-review">
+            <div class="review-stars">
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+              <i data-lucide="star"></i>
+            </div>
+            <div class="review-title">100% Data BPS Valid</div>
+            <div class="review-subtitle">34 Provinsi Seimbang (2015–2023)</div>
+          </div>
+
+          <!-- Central Smartphone Device -->
+          <div class="smartphone-frame">
+            <div class="phone-notch">
+              <span class="notch-cam"></span>
+            </div>
+            <div class="phone-screen">
+              <div class="phone-app-header">
+                <div class="phone-user-chip">
+                  <div class="user-avatar-circle">
+                    <i data-lucide="shield-check" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                  </div>
+                  <div>
+                    <div class="user-name">EduSejahtera Panel</div>
+                    <div class="user-role">Agregat BPS Nasional</div>
+                  </div>
+                </div>
+                <i data-lucide="sliders-horizontal" style="width: 16px; height: 16px; color: var(--color-text-muted);"></i>
+              </div>
+
+              <!-- Main Stat Display inside Phone -->
+              <div class="phone-balance-card">
+                <div class="phone-balance-label">Rata-Rata Penduduk Miskin</div>
+                <div class="phone-balance-amount tabular-nums">10.83%</div>
+                <div class="phone-balance-delta">
+                  <i data-lucide="trending-down" style="width: 13px; height: 13px;"></i>
+                  <span>RLS Nasional: 8.54 th (-2.47%/th)</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons inside Phone -->
+              <div class="phone-quick-actions">
+                <a href="#simulator" class="phone-action-btn primary">
+                  <i data-lucide="sliders-horizontal" style="width: 13px; height: 13px;"></i>
+                  <span>Simulasi</span>
+                </a>
+                <a href="#peta" class="phone-action-btn secondary">
+                  <i data-lucide="map-pin" style="width: 13px; height: 13px;"></i>
+                  <span>Peta 34 Prov</span>
+                </a>
+              </div>
+
+              <!-- Benchmark Provinces List inside Phone -->
+              <div class="phone-recent-title">
+                <span>Provinsi Benchmark</span>
+                <span class="view-all">2023</span>
+              </div>
+              <div class="phone-item-list">
+                <div class="phone-item-row">
+                  <div class="item-name-group">
+                    <div class="item-icon green"><i data-lucide="award" style="width: 13px; height: 13px;"></i></div>
+                    <div>
+                      <div class="item-name">Bali</div>
+                      <div class="item-sub">RLS 9.30 th</div>
+                    </div>
+                  </div>
+                  <div class="item-stat low">4.10% Miskin</div>
+                </div>
+
+                <div class="phone-item-row">
+                  <div class="item-name-group">
+                    <div class="item-icon blue"><i data-lucide="landmark" style="width: 13px; height: 13px;"></i></div>
+                    <div>
+                      <div class="item-name">DKI Jakarta</div>
+                      <div class="item-sub">RLS 11.10 th</div>
+                    </div>
+                  </div>
+                  <div class="item-stat low">4.60% Miskin</div>
+                </div>
+
+                <div class="phone-item-row">
+                  <div class="item-name-group">
+                    <div class="item-icon red"><i data-lucide="alert-circle" style="width: 13px; height: 13px;"></i></div>
+                    <div>
+                      <div class="item-name">Papua</div>
+                      <div class="item-sub">RLS 7.15 th</div>
+                    </div>
+                  </div>
+                  <div class="item-stat high">26.03% Miskin</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Card Top Right: Pearson Metric -->
+          <div class="floating-phone-card float-right-metric">
+            <div class="stat-icon-circle blue">
+              <i data-lucide="trending-down" style="width: 18px; height: 18px;"></i>
+            </div>
+            <div>
+              <div class="float-metric-label">Korelasi Pearson (r)</div>
+              <div class="float-metric-val tabular-nums" id="heroStatCorrelation">-0.42</div>
+              <div class="float-metric-sub">Signifikan (p = 1.67e-14)</div>
+            </div>
+          </div>
+
+          <!-- Floating Card Bottom Right: OLS Model -->
+          <div class="floating-phone-card float-right-model">
+            <div class="stat-icon-circle green">
+              <i data-lucide="check-circle" style="width: 18px; height: 18px;"></i>
+            </div>
+            <div>
+              <div class="float-metric-label">Model Terpilih: Linear OLS</div>
+              <div class="float-metric-eq">Kemiskinan = 31.96 - 2.47 × RLS</div>
+              <div class="float-metric-sub">R² = <span id="heroStatR2">17.6%</span> • Bebas Overfitting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STRIP TOOLS & METODOLOGI (Our Recent Client & Partner Style) -->
+    <section class="tools-strip-section" aria-label="Alat dan Sumber Data Penelitian">
+      <div class="container tools-strip-inner">
+        <div class="tools-strip-label">Dasar Metodologi & Sumber Data Resmi:</div>
+        <div class="tools-badges-list">
+          <div class="tool-item">
+            <i data-lucide="landmark" style="width: 18px; height: 18px; color: var(--color-text-muted);"></i>
+            <span>Badan Pusat Statistik</span>
+          </div>
+          <div class="tool-item">
+            <i data-lucide="code" style="width: 18px; height: 18px; color: var(--color-text-muted);"></i>
+            <span>Python 3</span>
+          </div>
+          <div class="tool-item">
+            <i data-lucide="cpu" style="width: 18px; height: 18px; color: var(--color-text-muted);"></i>
+            <span>Scikit-Learn</span>
+          </div>
+          <div class="tool-item">
+            <i data-lucide="table" style="width: 18px; height: 18px; color: var(--color-text-muted);"></i>
+            <span>Pandas & NumPy</span>
+          </div>
+          <div class="tool-item">
+            <i data-lucide="pie-chart" style="width: 18px; height: 18px; color: var(--color-text-muted);"></i>
+            <span>Apache ECharts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FOLDER-TAB CARDS (Why Choose Us Style from Reference) -->
+    <section class="section-padding" id="metodologi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tahapan Riset</span>
+          <h2 class="section-title">Metodologi Sains Data yang Ketat & Transparan</h2>
+          <p class="section-desc">
+            Tiga pilar analisis komputasional dari kurasi data mentah hingga inferensi berbasis browser.
+          </p>
+        </div>
+
+        <div class="methodology-grid">
+          <!-- Folder Card 1 -->
+          <article class="folder-tab-card">
+            <div class="folder-tab-header">Tahap 01</div>
+            <div class="folder-inner-preview">
+              <div class="preview-mini-table">
+                <div class="preview-table-row header">
+                  <span>Variabel Panel</span>
+                  <span>Rentang</span>
+                  <span>Status</span>
+                </div>
+                <div class="preview-table-row">
+                  <span>RLS (Tahun)</span>
+                  <span class="tabular-nums">5.93 – 11.46</span>
+                  <span class="badge-ok">✓ Valid</span>
+                </div>
+                <div class="preview-table-row">
+                  <span>Kemiskinan (%)</span>
+                  <span class="tabular-nums">3.61 – 28.40</span>
+                  <span class="badge-ok">✓ Valid</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="folder-title">Ekstraksi & Kurasi Data</h3>
+            <p class="folder-desc">
+              Mengekstraksi persentase kemiskinan Semester 1 (Maret) dan capaian RLS 34 provinsi periode 2015–2023 dari BPS RI. Memastikan data panel seimbang tanpa nilai hilang.
+            </p>
+          </article>
+
+          <!-- Folder Card 2 -->
+          <article class="folder-tab-card">
+            <div class="folder-tab-header">Tahap 02</div>
+            <div class="folder-inner-preview">
+              <div class="preview-mini-model">
+                <div class="model-comp-pill">
+                  <span>Linear OLS (Terpilih)</span>
+                  <strong style="color: var(--color-primary-text);">R² 0.1764</strong>
+                </div>
+                <div class="model-comp-pill danger">
+                  <span>Random Forest / XGB</span>
+                  <strong>Overfitting ⚠️</strong>
+                </div>
+                <div class="model-comp-sub">5-Fold CV & GroupKFold Wilayah</div>
+              </div>
+            </div>
+            <h3 class="folder-title">Benchmarking 7 Model ML</h3>
+            <p class="folder-desc">
+              Menguji Linear, Polinomial Derajat 2–3, Random Forest, Gradient Boosting, XGBoost, dan SVR secara objektif dengan metrik R², MAE, dan RMSE.
+            </p>
+          </article>
+
+          <!-- Folder Card 3 -->
+          <article class="folder-tab-card">
+            <div class="folder-tab-header">Tahap 03</div>
+            <div class="folder-inner-preview">
+              <div class="preview-mini-inference">
+                <div class="inference-code-line">
+                  <code>predict(8.5 th)</code>
+                </div>
+                <div class="inference-result-pill">
+                  <span>Output: 10.94%</span>
+                  <span class="badge-instant">0.00ms</span>
+                </div>
+                <div class="inference-sub">Dijalankan lokal di browser via m2cgen</div>
+              </div>
+            </div>
+            <h3 class="folder-title">Inferensi Klien & Clustering</h3>
+            <p class="folder-desc">
+              Model linear terbaik dikonversi ke kode JavaScript murni menggunakan library m2cgen untuk inferensi instan tanpa server, dilengkapi segmentasi 3 klaster K-Means.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. BENTO ZIG-ZAG SECTION (Empirical Findings & Spatial Anomaly) -->
+    <section class="section-padding" id="temuan" style="background-color: #FFFFFF;">
+      <div class="container bento-section">
+        <!-- Row 1: Scatter Plot + Empirical Findings -->
+        <div class="bento-row">
+          <div class="bento-text-side">
+            <span class="section-tag">Bukti Empiris</span>
+            <h2 class="bento-title">Korelasi Linier Negatif yang Konsisten</h2>
+            <p class="bento-desc">
+              Korelasi Pearson sebesar <strong>-0.4200</strong> (p = 1.67e-14) menegaskan arah hubungan terbalik yang nyata: setiap penambahan 1 tahun rata-rata lama sekolah berasosiasi dengan penurunan kemiskinan rata-rata <strong>2.47% poin</strong>.
+            </p>
+            <div class="bento-badge-group">
+              <div class="avatar-stack">
+                <span class="avatar-dot blue"></span>
+                <span class="avatar-dot amber"></span>
+                <span class="avatar-dot green"></span>
+              </div>
+              <span><strong id="heroStatProvinces">34</strong> Provinsi Teranalisis (2015–2023)</span>
+            </div>
+            <a href="#simulator" class="btn btn-primary">
+              Coba Simulator Prediksi
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+          <div class="card chart-card">
+            <div class="chart-header">
+              <div>
+                <h3 style="font-size: 18px; margin-bottom: 4px;">Diagram Pencaran RLS vs Kemiskinan</h3>
+                <p style="font-size: 13px; color: var(--color-text-muted);">Garis biru menunjukkan estimasi Ordinary Least Squares (OLS)</p>
+              </div>
+            </div>
+            <div id="scatterChartContainer" class="chart-container" role="region" aria-label="Diagram pencaran RLS terhadap Kemiskinan"></div>
+            <div class="chart-footnote">Sumber Data: Badan Pusat Statistik RI (Agregat Provinsi 2015–2023)</div>
+          </div>
+        </div>
+
+        <!-- Row 2 (Zig-zag): Researcher Photo + Typology Anomaly Narrative -->
+        <div class="bento-row reversed">
+          <div class="bento-photo-card">
+            <img src="./researcher.jpg" alt="Peneliti Data Sains Menguji Data" class="bento-photo" />
+            <div class="floating-donut-card">
+              <div class="donut-icon-circle">
+                <i data-lucide="pie-chart" style="width: 22px; height: 22px;"></i>
+              </div>
+              <div>
+                <div class="donut-title">Tipologi 3 Klaster Wilayah</div>
+                <div class="donut-legend">
+                  <span class="leg-item green">Maju (41%)</span>
+                  <span class="leg-item amber">Menengah (44%)</span>
+                  <span class="leg-item red">Prioritas (15%)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bento-text-side">
+            <span class="section-tag">Anomali & Tipologi Spasial</span>
+            <h2 class="bento-title">Dua Sisi Mata Uang: Mengapa Aceh & Papua Berbeda?</h2>
+            <p class="bento-desc">
+              Nilai R² = 17.6% membuktikan bahwa pendidikan berperan nyata, namun bukan satu-satunya penentu. Sekitar <strong>82.4% variansi kemiskinan dipengaruhi oleh faktor pasar kerja formal, industrialisasi, dan jaring pengaman sosial</strong>.
+            </p>
+            <ul class="bento-checklist">
+              <li class="bento-check-item">
+                <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                <div>
+                  <strong>Anomali Struktural Aceh:</strong> Capaian RLS tinggi (9.55 tahun) namun persentase kemiskinan masih 14.45% akibat minimnya serapan industri manufaktur lokal.
+                </div>
+              </li>
+              <li class="bento-check-item">
+                <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                <div>
+                  <strong>Outlier Ekstrem Papua:</strong> Kemiskinan tertinggi (26.03%) dengan RLS 7.15 tahun menuntut akselerasi infrastruktur pendidikan dan konektivitas holistik.
+                </div>
+              </li>
+              <li class="bento-check-item">
+                <i data-lucide="check-circle-2" style="width: 18px; height: 18px;"></i>
+                <div>
+                  <strong>Segmentasi 3 Klaster K-Means:</strong> Memberikan peta objektif bagi kementerian untuk mengarahkan afirmasi anggaran secara tepat sasaran.
+                </div>
+              </li>
+            </ul>
+            <a href="#peta" class="btn btn-outline">
+              Jelajahi Peta Spasial
+              <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PETA INTERAKTIF SECTION -->
+    <section class="section-padding" id="peta">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Analisis Spasial</span>
+          <h2 class="section-title">Peta Geografis Disparitas Indonesia</h2>
+          <p class="section-desc">
+            Jelajahi sebaran capaian pendidikan dan tingkat kemiskinan pada 34 provinsi. Klik pada wilayah untuk rincian data historis.
+          </p>
+        </div>
+
+        <div class="map-layout">
+          <!-- Main Map Card -->
+          <div class="card map-card">
+            <div class="map-controls-row">
+              <span style="font-size: 13px; font-weight: bold; color: var(--color-text-main);">Tampilkan Layer:</span>
+              <div class="pill-group" role="tablist">
+                <button class="pill-btn active" data-mode="kemiskinan" role="tab" id="tabKemiskinan">Kemiskinan (%)</button>
+                <button class="pill-btn" data-mode="rls" role="tab" id="tabRLS">RLS (Tahun)</button>
+                <button class="pill-btn" data-mode="cluster" role="tab" id="tabCluster">Tipologi Klaster</button>
+              </div>
+            </div>
+            <div id="mapChartContainer" class="map-container" role="region" aria-label="Peta interaktif 34 provinsi Indonesia"></div>
+            <div class="chart-footnote">Sumber Batas Spasial: Badan Pusat Statistik & Badan Informasi Geospasial (BIG)</div>
+          </div>
+
+          <!-- Detail Panel Samping -->
+          <aside class="card province-detail-card" aria-label="Rincian Provinsi Terpilih">
+            <div class="detail-header">
+              <span class="section-tag" style="margin-bottom: 8px;">Rincian Wilayah</span>
+              <h3 id="detailProvTitle">PILIH PROVINSI</h3>
+              <p id="detailProvCluster" style="font-size: 12px; color: var(--color-text-muted);">Klik provinsi pada peta untuk informasi lengkap</p>
+            </div>
+
+            <div class="detail-stats-grid">
+              <div class="detail-stat-box">
+                <div class="title">Rata-Rata Lama Sekolah</div>
+                <div class="val tabular-nums" id="detailProvRLS">-</div>
+              </div>
+              <div class="detail-stat-box">
+                <div class="title">Tingkat Kemiskinan</div>
+                <div class="val tabular-nums" id="detailProvKemiskinan">-</div>
+              </div>
+            </div>
+
+            <div style="background: var(--color-bg-page); padding: 16px; border-radius: 12px; border: 1px solid var(--color-border); margin-top: auto;">
+              <div style="font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); margin-bottom: 6px;">
+                Posisi Relatif Nasional:
+              </div>
+              <div id="detailProvDiff" style="font-size: 13px; font-weight: 600;">
+                Memuat data...
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SIMULATOR PREDIKSI SECTION -->
+    <section class="section-padding" id="simulator" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Simulator Interaktif</span>
+          <h2 class="section-title">Uji Prediksi Model Berbasis RLS</h2>
+          <p class="section-desc">
+            Geser nilai RLS untuk melihat proyeksi tingkat kemiskinan secara instan menggunakan fungsi model Scikit-Learn yang dijalankan langsung di peramban Anda.
+          </p>
+        </div>
+
+        <div class="simulator-layout">
+          <!-- Controls Card -->
+          <div class="card simulator-controls-card">
+            <h3 style="margin-bottom: 24px; font-size: 20px;">Atur Parameter Input</h3>
+            
+            <div class="slider-group">
+              <div class="slider-header">
+                <label for="rlsSlider">Capaian Rata-Rata Lama Sekolah (RLS):</label>
+                <div class="slider-val-box tabular-nums" id="rlsValueDisplay">8.5 th</div>
+              </div>
+              <input type="range" id="rlsSlider" min="5.0" max="13.0" step="0.1" value="8.5" aria-label="Nilai Rata-rata Lama Sekolah dalam tahun">
+              <div class="slider-ticks">
+                <span>5.0 th</span>
+                <span>Rata-rata: 8.5 th</span>
+                <span>13.0 th</span>
+              </div>
+            </div>
+
+            <div id="extrapolationWarning" class="extrapolation-warning" role="alert">
+              Peringatan ekstrapolasi.
+            </div>
+
+            <!-- Mode What-If -->
+            <div class="what-if-box">
+              <h3>
+                <i data-lucide="help-circle" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                Skenario Proyeksi Wilayah ("What-If")
+              </h3>
+              <div class="what-if-controls">
+                <div>
+                  <label for="whatIfProvinceSelect" style="font-size: 12px; color: var(--color-text-muted); display: block; margin-bottom: 6px;">Pilih Provinsi:</label>
+                  <select id="whatIfProvinceSelect" class="form-select" aria-label="Pilih Provinsi untuk Skenario"></select>
+                </div>
+                <div>
+                  <label for="whatIfDeltaSelect" style="font-size: 12px; color: var(--color-text-muted); display: block; margin-bottom: 6px;">Target Tambahan RLS:</label>
+                  <select id="whatIfDeltaSelect" class="form-select" aria-label="Pilih Tambahan RLS">
+                    <option value="0.5">+0.5 Tahun</option>
+                    <option value="1.0" selected>+1.0 Tahun</option>
+                    <option value="1.5">+1.5 Tahun</option>
+                    <option value="2.0">+2.0 Tahun</option>
+                    <option value="3.0">+3.0 Tahun</option>
+                  </select>
+                </div>
+              </div>
+              <div id="whatIfResultText"></div>
+            </div>
+          </div>
+
+          <!-- Result Card -->
+          <div class="card simulator-result-card">
+            <div>
+              <span class="section-tag" style="margin-bottom: 12px;">Hasil Proyeksi</span>
+              <h3 style="font-size: 18px;">Persentase Kemiskinan Terprediksi</h3>
+            </div>
+
+            <div class="result-main">
+              <div class="label">Estimasi Angka Model OLS</div>
+              <div class="prediction-number tabular-nums" id="predictionValue">10.94%</div>
+              <div>
+                <span class="prediction-badge mid" id="predictionBadge">Kategori: Moderat</span>
+              </div>
+            </div>
+
+            <div style="font-size: 12px; color: var(--color-text-muted); text-align: center; border-top: 1px solid var(--color-border); padding-top: 16px;">
+              Persamaan: <code>Kemiskinan = 31.9615 - 2.4734 × RLS</code><br>
+              Dijalankan lokal di browser via library <strong>m2cgen</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. PERBANDINGAN MODEL SECTION (Pricing Card Style from Reference) -->
+    <section class="section-padding" id="model">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Evaluasi Algoritma</span>
+          <h2 class="section-title">Perbandingan Model & Alasan Pemilihan</h2>
+          <p class="section-desc">
+            Evaluasi objektif 5-Fold Cross Validation. Mengapa model linear klasik dipilih dibanding algoritma ensemble yang lebih rumit?
+          </p>
+        </div>
+
+        <!-- Model Cards Grid (Pricing style) -->
+        <div class="models-grid" id="modelsGridContainer">
+          <!-- Populated dynamically by main.js from model_metrics.json -->
+        </div>
+
+        <!-- Penjelasan Ilmiah Rationale -->
+        <div class="card model-explanation-card">
+          <h3 style="font-size: 18px; margin-bottom: 8px; color: var(--color-primary-text);">
+            Mengapa Linear Regression Menjadi Pilihan Terbaik?
+          </h3>
+          <p style="font-size: 14px; margin-bottom: 12px; color: var(--color-text-main);">
+            1. <strong>Bebas Overfitting:</strong> Model pohon (<em>Random Forest</em>, <em>Gradient Boosting</em>, <em>XGBoost</em>) menunjukkan tanda overfitting yang kuat pada data kecil ini ($N = 306$). Pada validasi silang antarprovinsi (<em>GroupKFold</em>), model pohon menghasilkan $R^2$ negatif ($-0.37$ s.d. $-0.42$), yang berarti prediksinya lebih buruk daripada sekadar menebak rata-rata.
+          </p>
+          <p style="font-size: 14px; margin-bottom: 12px; color: var(--color-text-main);">
+            2. <strong>Bebas Distorsi Polinomial:</strong> Polinomial Derajat 3 memiliki $R^2$ matematis sedikit lebih tinggi, namun di batas atas (RLS $> 10.5$ th) kurvanya <em>berbalik naik</em> ke atas secara tidak alami. Linear Regression memberikan hubungan menurun yang logis dan konsisten.
+          </p>
+          <p style="font-size: 14px; color: var(--color-text-main);">
+            3. <strong>Transparansi Kebijakan:</strong> Koefisien $\beta_1 = -2.4734$ memberikan angka yang lugas dan dapat dipertanggungjawabkan kepada pemangku kebijakan publik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ ACCORDION SECTION (Soft-Blue Active State) -->
+    <section class="section-padding" id="faq" style="background-color: #FFFFFF;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tanya Jawab Kritis</span>
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+          <p class="section-desc">
+            Klarifikasi konsep data, metode statistik, dan batasan ilmiah penelitian.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Apa yang dimaksud dengan Rata-rata Lama Sekolah (RLS)?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Rata-rata Lama Sekolah (RLS) atau <em>Mean Years of Schooling</em> didefinisikan oleh BPS sebagai jumlah tahun yang dihabiskan oleh penduduk berusia 25 tahun ke atas dalam menempuh pendidikan formal. Misalnya, nilai RLS 9.0 tahun setara dengan rata-rata tamat jenjang Sekolah Menengah Pertama (SMP).
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Dari mana sumber dataset ini dan bagaimana integritasnya?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Seluruh data diperoleh dari publikasi resmi terbuka Badan Pusat Statistik (BPS) Republik Indonesia. Data kemiskinan diambil dari indikator Persentase Penduduk Miskin ($P_0$) Semester 1 (Maret), sedangkan data pendidikan diambil dari tabel RLS menurut jenis kelamin periode 2015–2023 di 34 provinsi.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Apakah memperpanjang masa sekolah PASTI langsung menurunkan kemiskinan?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                <strong>Tidak selalu secara langsung.</strong> Korelasi statistik tidak sama dengan hubungan sebab-akibat tunggal (<em>correlation does not imply causation</em>). Koefisien determinasi ($R^2 = 17.6\%$) menunjukkan bahwa sekitar <strong>82.4% variansi kemiskinan dipengaruhi oleh faktor lain</strong>, seperti ketersediaan lapangan kerja industri, pemerataan infrastruktur, upah minimum, dan subsidi jaring pengaman sosial.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Mengapa 4 provinsi pemekaran baru di Papua tidak dimasukkan?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Empat Daerah Otonom Baru (DOB)—Papua Selatan, Papua Tengah, Papua Pegunungan, dan Papua Barat Daya—baru disahkan pada akhir tahun 2022. Data statistik terpisah dari BPS untuk keempat provinsi ini baru tersedia mulai tahun 2024. Untuk menjaga konsistensi data panel seimbang (<em>balanced panel</em>) sepanjang periode 2015–2023, analisis dibatasi pada 34 provinsi induk.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Apa saja keterbatasan utama dari analisis ini?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Penelitian ini adalah model bivariat yang mengkaji hubungan dua variabel. Keterbatasan utama meliputi potensi <em>omitted variable bias</em> (misalnya tidak mengontrol PDRB atau tingkat pengangguran secara simultan) dan ukuran sampel tingkat provinsi ($N = 306$) yang rentan <em>overfitting</em> jika dimodelkan menggunakan algoritma non-linier kompleks seperti Random Forest atau Deep Learning.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. FOOTER CTA SECTION (Deep Ocean Blue from Reference) -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-cta-card">
+        <h2>Kajian Terbuka & Dapat Direproduksi Penuh</h2>
+        <p>
+          Seluruh dataset, notebook eksperimen, dan model JavaScript tersedia bebas untuk penelitian akademik lanjutan dan verifikasi metodologi kebijakan publik.
+        </p>
+        <div class="footer-btn-row">
+          <a href="#simulator" class="btn btn-primary">
+            <i data-lucide="sliders-horizontal" style="width: 16px; height: 16px;"></i>
+            Coba Simulator
+          </a>
+          <a href="#metodologi" class="btn btn-secondary">
+            <i data-lucide="database" style="width: 16px; height: 16px;"></i>
+            Pelajari Metodologi
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-meta-grid">
+        <div>
+          <div style="font-size: 16px; font-weight: 800; margin-bottom: 8px; color: #FFFFFF;">
+            EduSejahtera<span style="color: #2F80ED;">.</span>
+          </div>
+          <p style="margin-bottom: 12px; color: #B0C2D8; line-height: 1.6;">
+            Platform analitik sains data independen yang mengkaji hubungan pendidikan dan kesejahteraan sosial di 34 provinsi Indonesia menggunakan metode Machine Learning transparan.
+          </p>
+          <div style="color: #8A9BB3;">
+            Sumber Data Primer: Badan Pusat Statistik Republik Indonesia (2015–2023).
+          </div>
+        </div>
+
+        <div>
+          <div style="font-weight: bold; margin-bottom: 12px; color: #FFFFFF; text-transform: uppercase; letter-spacing: 0.05em;">
+            Tautan Cepat
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="#metodologi">Metodologi & Data</a></li>
+            <li><a href="#temuan">Diagram Pencaran OLS</a></li>
+            <li><a href="#peta">Peta Spasial Choropleth</a></li>
+            <li><a href="#simulator">Simulator Proyeksi</a></li>
+            <li><a href="#model">Komparasi 7 Algoritma</a></li>
+            <li><a href="#faq">Tanya Jawab (FAQ)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 32px; padding-top: 24px; text-align: center; font-size: 12px; color: #8A9BB3;">
+        © 2026 EduSejahtera — Proyek Sains Data Terbuka. Dibangun dengan standar keunggulan visual, integritas statistik, dan transparansi ilmiah.
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/scripts/main.js"></script>
+</body>
+</html>
