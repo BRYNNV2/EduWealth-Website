@@ -30,7 +30,9 @@ import {
   Twitter,
   Instagram,
   Linkedin,
-  Globe
+  Globe,
+  Calculator,
+  ArrowLeft
 } from 'lucide';
 
 export function initIcons() {
@@ -66,7 +68,9 @@ export function initIcons() {
       Twitter,
       Instagram,
       Linkedin,
-      Globe
+      Globe,
+      Calculator,
+      ArrowLeft
     }
   });
 }

@@ -27,7 +27,10 @@ async function loadData() {
     populateModelComparison(modelMetrics, summaryData);
     populateProvinceDetail(provinsiData[0]); // default provinsi pertama (Aceh)
     
-    initSimulator(provinsiData);
+    // Inisialisasi simulator jika elemen slider tersedia di halaman
+    if (document.getElementById('rlsSlider')) {
+      initSimulator(provinsiData);
+    }
     initMapControls();
     initFAQ();
     initMobileNav();

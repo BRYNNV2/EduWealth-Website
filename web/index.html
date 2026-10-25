@@ -16,8 +16,8 @@
   <!-- 1. NAVBAR (Capsule Glassmorphism) -->
   <header class="site-header" id="navbar">
     <div class="navbar">
-      <a href="#" class="brand-logo" aria-label="EduSejahtera Beranda">
-        EduSejahtera<span class="dot">.</span>
+      <a href="#" class="brand-logo" aria-label="EduWealth Beranda">
+        EduWealth<span class="dot">.</span>
       </a>
 
       <nav aria-label="Navigasi Utama">
@@ -25,14 +25,14 @@
           <li><a href="#metodologi">Metodologi</a></li>
           <li><a href="#temuan">Temuan Data</a></li>
           <li><a href="#peta">Peta Spasial</a></li>
-          <li><a href="#simulator">Simulator</a></li>
+          <li><a href="simulator.html">Simulator</a></li>
           <li><a href="#model">Komparasi Model</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </nav>
 
       <div class="nav-cta">
-        <a href="#simulator" class="btn btn-primary" id="btnNavCobaSimulator">
+        <a href="simulator.html" class="btn btn-primary" id="btnNavCobaSimulator">
           <i data-lucide="sliders-horizontal" style="width: 15px; height: 15px;"></i>
           Coba Simulator
         </a>
@@ -104,7 +104,7 @@
 
               <!-- Action Buttons inside Phone -->
               <div class="phone-quick-actions">
-                <a href="#simulator" class="phone-action-btn primary">
+                <a href="simulator.html" class="phone-action-btn primary">
                   <i data-lucide="sliders-horizontal" style="width: 13px; height: 13px;"></i>
                   <span>Simulasi</span>
                 </a>
@@ -317,8 +317,8 @@
               </div>
               <span><strong id="heroStatProvinces">34</strong> Provinsi Teranalisis (2015–2023)</span>
             </div>
-            <a href="#simulator" class="btn btn-primary">
-              Coba Simulator Prediksi
+            <a href="simulator.html" class="btn btn-primary">
+              Buka Simulator Prediksi
               <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
             </a>
           </div>
@@ -447,83 +447,62 @@
       </div>
     </section>
 
-    <!-- 7. SIMULATOR PREDIKSI SECTION -->
+    <!-- 7. SIMULATOR TEASER SECTION (Pindah ke Halaman Khusus) -->
     <section class="section-padding" id="simulator" style="background-color: #FFFFFF;">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Simulator Interaktif</span>
-          <h2 class="section-title">Uji Prediksi Model Berbasis RLS</h2>
-          <p class="section-desc">
-            Geser nilai RLS untuk melihat proyeksi tingkat kemiskinan secara instan menggunakan fungsi model Scikit-Learn yang dijalankan langsung di peramban Anda.
-          </p>
-        </div>
-
-        <div class="simulator-layout">
-          <!-- Controls Card -->
-          <div class="card simulator-controls-card">
-            <h3 style="margin-bottom: 24px; font-size: 20px;">Atur Parameter Input</h3>
-            
-            <div class="slider-group">
-              <div class="slider-header">
-                <label for="rlsSlider">Capaian Rata-Rata Lama Sekolah (RLS):</label>
-                <div class="slider-val-box tabular-nums" id="rlsValueDisplay">8.5 th</div>
+        <div class="simulator-teaser-card">
+          <div class="teaser-content">
+            <span class="section-tag">
+              <i data-lucide="sliders-horizontal" style="width: 14px; height: 14px;"></i>
+              Halaman Kerja Khusus
+            </span>
+            <h2 class="teaser-title">Simulator & Kalkulator Kebijakan RLS Interaktif</h2>
+            <p class="teaser-desc">
+              Untuk memberikan pengalaman eksperimen analitik yang lebih mendalam dan tanpa distraksi, alat simulasi kini tersedia di <strong>halaman kerja tersendiri</strong>. Anda dapat menguji kenaikan RLS, memilih preset wajib belajar, menganalisis proyeksi <em>what-if</em> untuk 34 provinsi, dan mengecek batas keyakinan statistik 95%.
+            </p>
+            <div class="teaser-features">
+              <div class="teaser-feat-item">
+                <i data-lucide="calculator"></i>
+                <span>Model OLS Murni: Kemiskinan = 31.9615 - 2.4734 × RLS</span>
               </div>
-              <input type="range" id="rlsSlider" min="5.0" max="13.0" step="0.1" value="8.5" aria-label="Nilai Rata-rata Lama Sekolah dalam tahun">
-              <div class="slider-ticks">
-                <span>5.0 th</span>
-                <span>Rata-rata: 8.5 th</span>
-                <span>13.0 th</span>
+              <div class="teaser-feat-item">
+                <i data-lucide="map-pin"></i>
+                <span>Simulasi Intervensi Skenario 34 Provinsi Indonesia</span>
+              </div>
+              <div class="teaser-feat-item">
+                <i data-lucide="shield-check"></i>
+                <span>Deteksi Otomatis Batas Ekstrapolasi Empiris (5.93 – 11.46 th)</span>
               </div>
             </div>
-
-            <div id="extrapolationWarning" class="extrapolation-warning" role="alert">
-              Peringatan ekstrapolasi.
-            </div>
-
-            <!-- Mode What-If -->
-            <div class="what-if-box">
-              <h3>
-                <i data-lucide="help-circle" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
-                Skenario Proyeksi Wilayah ("What-If")
-              </h3>
-              <div class="what-if-controls">
-                <div>
-                  <label for="whatIfProvinceSelect" style="font-size: 12px; color: var(--color-text-muted); display: block; margin-bottom: 6px;">Pilih Provinsi:</label>
-                  <select id="whatIfProvinceSelect" class="form-select" aria-label="Pilih Provinsi untuk Skenario"></select>
-                </div>
-                <div>
-                  <label for="whatIfDeltaSelect" style="font-size: 12px; color: var(--color-text-muted); display: block; margin-bottom: 6px;">Target Tambahan RLS:</label>
-                  <select id="whatIfDeltaSelect" class="form-select" aria-label="Pilih Tambahan RLS">
-                    <option value="0.5">+0.5 Tahun</option>
-                    <option value="1.0" selected>+1.0 Tahun</option>
-                    <option value="1.5">+1.5 Tahun</option>
-                    <option value="2.0">+2.0 Tahun</option>
-                    <option value="3.0">+3.0 Tahun</option>
-                  </select>
-                </div>
-              </div>
-              <div id="whatIfResultText"></div>
+            <div class="teaser-cta-group">
+              <a href="simulator.html" class="btn btn-primary btn-lg" id="btnGoToSimulatorPage" style="padding: 14px 28px; font-size: 15px;">
+                Buka Halaman Simulator Khusus
+                <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+              </a>
+              <span class="teaser-note">Dijalankan 100% lokal di browser via m2cgen • Cepat tanpa latency server</span>
             </div>
           </div>
 
-          <!-- Result Card -->
-          <div class="card simulator-result-card">
-            <div>
-              <span class="section-tag" style="margin-bottom: 12px;">Hasil Proyeksi</span>
-              <h3 style="font-size: 18px;">Persentase Kemiskinan Terprediksi</h3>
-            </div>
-
-            <div class="result-main">
-              <div class="label">Estimasi Angka Model OLS</div>
-              <div class="prediction-number tabular-nums" id="predictionValue">10.94%</div>
-              <div>
-                <span class="prediction-badge mid" id="predictionBadge">Kategori: Moderat</span>
+          <div class="teaser-preview-visual">
+            <div class="preview-mini-calc">
+              <div class="mini-calc-header">
+                <span class="calc-badge">Preview Model OLS</span>
+                <span class="calc-dot-live" title="Model Siap"></span>
               </div>
-            </div>
-
-            <div style="font-size: 12px; color: var(--color-text-muted); text-align: center; border-top: 1px solid var(--color-border); padding-top: 16px;">
-              Persamaan: <code>Kemiskinan = 31.9615 - 2.4734 × RLS</code><br>
-              Dijalankan lokal di browser via library <strong>m2cgen</strong>.
+              <div class="mini-calc-body">
+                <div class="mini-calc-label">Contoh Target Nasional (+1.0 Th):</div>
+                <div class="mini-calc-val">RLS: 9.54 Tahun</div>
+                <div class="mini-calc-result-box">
+                  <div class="lbl">Proyeksi Kemiskinan Baru:</div>
+                  <div class="val">8.36%</div>
+                  <span class="badge green" style="display: inline-block; font-size: 12px; padding: 4px 10px;">
+                    Dampak: -2.47% poin
+                  </span>
+                </div>
+              </div>
+              <a href="simulator.html" class="mini-calc-btn">
+                Mulai Eksperimen Lengkap →
+              </a>
             </div>
           </div>
         </div>
