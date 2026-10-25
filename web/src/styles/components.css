@@ -1451,6 +1451,58 @@ select.form-select {
   border: 1px solid var(--color-border);
 }
 
+/* ==========================================================================
+   7C. HISTOGRAM DISTRIBUSI & EKSPLORASI ANALITIK
+   ========================================================================== */
+.histogram-section {
+  margin-bottom: var(--space-48);
+}
+
+.histogram-card {
+  padding: var(--space-32);
+}
+
+.chart-container-hist {
+  width: 100%;
+  height: 380px;
+  position: relative;
+}
+
+.dist-stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-16);
+  margin-top: var(--space-24);
+}
+
+.dist-stat-box {
+  background: var(--color-bg-page);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-inner);
+  padding: 14px 18px;
+}
+
+.dist-stat-box .title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.dist-stat-box .val {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin-bottom: 2px;
+}
+
+.dist-stat-box .sub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
 /* Standalone Simulator Hero Stats Bar */
 .hero-stats-bar {
   display: grid;

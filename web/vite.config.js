@@ -10,6 +10,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        eksplorasi: resolve(__dirname, 'eksplorasi.html'),
         simulator: resolve(__dirname, 'simulator.html')
       }
     }
