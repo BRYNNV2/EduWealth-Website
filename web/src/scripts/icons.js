@@ -32,7 +32,11 @@ import {
   Linkedin,
   Globe,
   Calculator,
-  ArrowLeft
+  ArrowLeft,
+  Bell,
+  GraduationCap,
+  Signal,
+  Wifi
 } from 'lucide';
 
 export function initIcons() {
@@ -70,7 +74,11 @@ export function initIcons() {
       Linkedin,
       Globe,
       Calculator,
-      ArrowLeft
+      ArrowLeft,
+      Bell,
+      GraduationCap,
+      Signal,
+      Wifi
     }
   });
 }

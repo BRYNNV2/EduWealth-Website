@@ -83,28 +83,54 @@
             <div class="review-subtitle">34 Provinsi Seimbang (2015–2023)</div>
           </div>
 
-          <!-- Central Smartphone Device -->
+          <!-- Central Smartphone Device (Precision Flagship Frame) -->
           <div class="smartphone-frame">
-            <div class="phone-notch">
-              <span class="notch-cam"></span>
-            </div>
+            <!-- Hardware Buttons -->
+            <div class="phone-hw-btn action"></div>
+            <div class="phone-hw-btn vol-up"></div>
+            <div class="phone-hw-btn vol-down"></div>
+            <div class="phone-hw-btn power"></div>
+
             <div class="phone-screen">
+              <!-- Top iOS Status Bar with Dynamic Island -->
+              <div class="phone-status-bar">
+                <span class="status-time">09:41</span>
+                <div class="dynamic-island">
+                  <span class="island-camera"></span>
+                  <span class="island-sensor"></span>
+                </div>
+                <div class="status-icons">
+                  <i data-lucide="signal" style="width: 12px; height: 12px;"></i>
+                  <i data-lucide="wifi" style="width: 12px; height: 12px;"></i>
+                  <div class="status-battery">
+                    <div class="status-battery-fill"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- App Header -->
               <div class="phone-app-header">
                 <div class="phone-user-chip">
                   <div class="user-avatar-circle">
-                    <i data-lucide="shield-check" style="width: 16px; height: 16px; color: var(--color-primary);"></i>
+                    <i data-lucide="shield-check" style="width: 15px; height: 15px; color: var(--color-primary);"></i>
                   </div>
                   <div>
                     <div class="user-name">EduWealth Panel</div>
                     <div class="user-role">Agregat BPS Nasional</div>
                   </div>
                 </div>
-                <i data-lucide="sliders-horizontal" style="width: 16px; height: 16px; color: var(--color-text-muted);"></i>
+                <div class="phone-header-icon-box">
+                  <i data-lucide="bell" style="width: 15px; height: 15px; color: var(--color-text-muted);"></i>
+                  <span class="phone-notify-dot"></span>
+                </div>
               </div>
 
               <!-- Main Stat Display inside Phone -->
               <div class="phone-balance-card">
-                <div class="phone-balance-label">Rata-Rata Penduduk Miskin</div>
+                <div class="phone-balance-header">
+                  <span class="phone-balance-label">Rata-Rata Penduduk Miskin</span>
+                  <span class="phone-badge-pill">BPS 2023</span>
+                </div>
                 <div class="phone-balance-amount tabular-nums">10.83%</div>
                 <div class="phone-balance-delta">
                   <i data-lucide="trending-down" style="width: 13px; height: 13px;"></i>
@@ -116,7 +142,7 @@
               <div class="phone-quick-actions">
                 <a href="eksplorasi.html" class="phone-action-btn primary">
                   <i data-lucide="sliders-horizontal" style="width: 13px; height: 13px;"></i>
-                  <span>Eksplorasi</span>
+                  <span>Simulator RLS</span>
                 </a>
                 <a href="#peta" class="phone-action-btn secondary">
                   <i data-lucide="map-pin" style="width: 13px; height: 13px;"></i>
@@ -127,7 +153,7 @@
               <!-- Benchmark Provinces List inside Phone -->
               <div class="phone-recent-title">
                 <span>Provinsi Benchmark</span>
-                <span class="view-all">2023</span>
+                <span class="view-all">34 Provinsi</span>
               </div>
               <div class="phone-item-list">
                 <div class="phone-item-row">
@@ -135,7 +161,7 @@
                     <div class="item-icon green"><i data-lucide="award" style="width: 13px; height: 13px;"></i></div>
                     <div>
                       <div class="item-name">Bali</div>
-                      <div class="item-sub">RLS 9.30 th</div>
+                      <div class="item-sub">RLS 9.30 th • Terendah</div>
                     </div>
                   </div>
                   <div class="item-stat low">4.10% Miskin</div>
@@ -146,7 +172,7 @@
                     <div class="item-icon blue"><i data-lucide="landmark" style="width: 13px; height: 13px;"></i></div>
                     <div>
                       <div class="item-name">DKI Jakarta</div>
-                      <div class="item-sub">RLS 11.10 th</div>
+                      <div class="item-sub">RLS 11.10 th • Ibu Kota</div>
                     </div>
                   </div>
                   <div class="item-stat low">4.60% Miskin</div>
@@ -154,15 +180,29 @@
 
                 <div class="phone-item-row">
                   <div class="item-name-group">
+                    <div class="item-icon amber"><i data-lucide="graduation-cap" style="width: 13px; height: 13px;"></i></div>
+                    <div>
+                      <div class="item-name">D.I. Yogyakarta</div>
+                      <div class="item-sub">RLS 9.80 th • Pendidikan</div>
+                    </div>
+                  </div>
+                  <div class="item-stat moderate">11.04% Miskin</div>
+                </div>
+
+                <div class="phone-item-row">
+                  <div class="item-name-group">
                     <div class="item-icon red"><i data-lucide="alert-circle" style="width: 13px; height: 13px;"></i></div>
                     <div>
                       <div class="item-name">Papua</div>
-                      <div class="item-sub">RLS 7.15 th</div>
+                      <div class="item-sub">RLS 7.15 th • Afirmatif</div>
                     </div>
                   </div>
                   <div class="item-stat high">26.03% Miskin</div>
                 </div>
               </div>
+
+              <!-- iOS Home Indicator Bar -->
+              <div class="phone-home-indicator"></div>
             </div>
           </div>
 
