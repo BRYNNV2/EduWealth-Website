@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="./src/styles/tokens.css">
+  <link rel="stylesheet" href="./src/styles/base.css">
+  <link rel="stylesheet" href="./src/styles/components.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A6ED8' stroke-width='2'><path d='M22 10v6M2 10l10-5 10 5-10 5z'/><path d='M6 12v5c3 3 9 3 12 0v-5'/></svg>">
 </head>
 <body>
@@ -50,7 +53,7 @@
         <div class="hero-content">
           <div class="hero-pill-badge">
             <i data-lucide="database" style="width: 14px; height: 14px;"></i>
-            Data Panel BPS RI (2015–2023) • N = 306
+            Data Panel BPS RI (2015–2022) • N = 272
           </div>
           <h1 class="hero-title">Pendidikan, Jalan Keluar dari Kemiskinan?</h1>
           <p class="hero-subtitle">
@@ -80,7 +83,7 @@
               <i data-lucide="star"></i>
             </div>
             <div class="review-title">100% Data BPS Valid</div>
-            <div class="review-subtitle">34 Provinsi Seimbang (2015–2023)</div>
+            <div class="review-subtitle">34 Provinsi × 8 Tahun (2015–2022)</div>
           </div>
 
           <!-- Central Smartphone Device (Precision Flagship Frame) -->
@@ -135,6 +138,15 @@
                 <div class="phone-balance-delta">
                   <i data-lucide="trending-down" style="width: 13px; height: 13px;"></i>
                   <span>RLS Nasional: 8.54 th (-2.47%/th)</span>
+                </div>
+                <div class="phone-rls-progress">
+                  <div class="phone-rls-progress-top">
+                    <span>Capaian Wajib Belajar 12 Th</span>
+                    <span class="tabular-nums">71.2%</span>
+                  </div>
+                  <div class="phone-rls-bar-track">
+                    <div class="phone-rls-bar-fill" style="width: 71.2%;"></div>
+                  </div>
                 </div>
               </div>
 
@@ -298,7 +310,7 @@
             </div>
             <h3 class="folder-title">Ekstraksi & Kurasi Data</h3>
             <p class="folder-desc">
-              Mengekstraksi persentase kemiskinan Semester 1 (Maret) dan capaian RLS 34 provinsi periode 2015–2023 dari BPS RI. Memastikan data panel seimbang tanpa nilai hilang.
+              Mengekstraksi persentase kemiskinan Semester 1 (Maret) dan capaian RLS 34 provinsi periode 2015–2022 dari BPS RI (272 observasi panel seimbang tanpa nilai hilang).
             </p>
           </article>
 
@@ -315,12 +327,12 @@
                   <span>Random Forest / XGB</span>
                   <strong>Overfitting ⚠️</strong>
                 </div>
-                <div class="model-comp-sub">5-Fold CV & GroupKFold Wilayah</div>
+                <div class="model-comp-sub">GroupShuffleSplit (80% Train : 20% Test)</div>
               </div>
             </div>
-            <h3 class="folder-title">Benchmarking 7 Model ML</h3>
+            <h3 class="folder-title">Pembagian &amp; Benchmarking ML</h3>
             <p class="folder-desc">
-              Menguji Linear, Polinomial Derajat 2–3, Random Forest, Gradient Boosting, XGBoost, dan SVR secara objektif dengan metrik R², MAE, dan RMSE.
+              Membagi data per kelompok provinsi dengan <code>GroupShuffleSplit</code> lalu menguji Linear, Polinomial, Random Forest, Gradient Boosting, XGBoost, dan SVR.
             </p>
           </article>
 
@@ -345,6 +357,98 @@
             </p>
           </article>
         </div>
+
+        <!-- 1. PEMBAGIAN DATA MENGGUNAKAN GROUPSHUFFLESPLIT (Sesuai Laporan & Google Colab) -->
+        <div class="card split-method-card" id="pembagian-data">
+          <div class="split-method-grid">
+            <!-- Sisi Kiri: Penjelasan & Parameter GroupShuffleSplit -->
+            <div class="split-method-info">
+              <div class="split-badge-row">
+                <span class="section-tag" style="margin-bottom: 0;">
+                  <i data-lucide="database" style="width: 13px; height: 13px;"></i>
+                  Tahap Pra-Pemodelan (Google Colab)
+                </span>
+                <code class="split-param-pill">test_size=0.20</code>
+                <code class="split-param-pill">random_state=42</code>
+              </div>
+
+              <h3 class="split-method-title">
+                1. Pembagian Data Menggunakan <code>GroupShuffleSplit</code>
+              </h3>
+
+              <p class="split-method-desc">
+                Pembagian data dilakukan menggunakan metode <strong>GroupShuffleSplit</strong> dengan parameter <code>test_size=0.20</code> dan <code>random_state=42</code>. Metode ini membagi data berdasarkan kelompok provinsi, sehingga data dari provinsi yang sama tidak tersebar ke data latih dan data testing secara bersamaan.
+              </p>
+
+              <!-- Visualisasi Proporsi Bar 80% : 20% -->
+              <div class="split-visual-bar-box">
+                <div class="split-visual-labels">
+                  <span class="train-lbl">
+                    <span class="dot-ind train"></span>
+                    <strong>Data Latih (80%)</strong> — 27 Provinsi (216 Obs)
+                  </span>
+                  <span class="test-lbl">
+                    <span class="dot-ind test"></span>
+                    <strong>Data Testing (20%)</strong> — 7 Provinsi (56 Obs)
+                  </span>
+                </div>
+                <div class="split-progress-track" role="img" aria-label="Proporsi pembagian data 80% data latih dan 20% data testing">
+                  <div class="split-progress-train" style="width: 80%;">80% Training</div>
+                  <div class="split-progress-test" style="width: 20%;">20% Testing</div>
+                </div>
+              </div>
+
+              <div class="split-total-banner">
+                <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: var(--color-primary); flex-shrink: 0;"></i>
+                <span>
+                  Total dataset terdiri dari <strong>272 observasi</strong>, yaitu <strong>34 provinsi × 8 tahun (2015–2022)</strong>.
+                </span>
+              </div>
+            </div>
+
+            <!-- Sisi Kanan: Tabel Rincian Pembagian Data -->
+            <div class="split-table-wrapper">
+              <div class="split-table-header-bar">
+                <span>Tabel Rincian Pembagian Dataset</span>
+                <span class="badge-ok">Bebas Data Leakage</span>
+              </div>
+              <table class="split-data-table">
+                <thead>
+                  <tr>
+                    <th>Keterangan</th>
+                    <th class="num-col train-col">Data latih (training)</th>
+                    <th class="num-col test-col">Data testing (testing)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Jumlah observasi</strong></td>
+                    <td class="num-col tabular-nums train-val">216</td>
+                    <td class="num-col tabular-nums test-val">56</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Jumlah provinsi</strong></td>
+                    <td class="num-col tabular-nums train-val">27</td>
+                    <td class="num-col tabular-nums test-val">7</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Persentase data</strong></td>
+                    <td class="num-col tabular-nums"><span class="split-pct-badge train">80%</span></td>
+                    <td class="num-col tabular-nums"><span class="split-pct-badge test">20%</span></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td><strong>Total Keseluruhan</strong></td>
+                    <td colspan="2" class="num-col tabular-nums" style="text-align: center; font-weight: 700; color: var(--color-text-main);">
+                      272 Observasi (34 Provinsi × 8 Tahun, 2015–2022)
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -365,7 +469,7 @@
                 <span class="avatar-dot amber"></span>
                 <span class="avatar-dot green"></span>
               </div>
-              <span><strong id="heroStatProvinces">34</strong> Provinsi Teranalisis (2015–2023)</span>
+              <span><strong id="heroStatProvinces">34</strong> Provinsi × 8 Tahun Teranalisis (2015–2022)</span>
             </div>
             <a href="eksplorasi.html" class="btn btn-primary">
               Buka Eksplorasi Data &amp; Simulator
@@ -381,7 +485,7 @@
               </div>
             </div>
             <div id="scatterChartContainer" class="chart-container" role="region" aria-label="Diagram pencaran RLS terhadap Kemiskinan"></div>
-            <div class="chart-footnote">Sumber Data: Badan Pusat Statistik RI (Agregat Provinsi 2015–2023)</div>
+            <div class="chart-footnote">Sumber Data: Badan Pusat Statistik RI (Agregat Provinsi 2015–2022, N = 272)</div>
           </div>
         </div>
 
@@ -508,7 +612,7 @@
             </span>
             <h2 class="teaser-title">Eksplorasi Distribusi &amp; Simulator Kebijakan RLS</h2>
             <p class="teaser-desc">
-              Halaman kerja kini diperkaya menjadi pusat analitik terpadu. Selain menguji model OLS dan skenario <em>what-if</em> intervensi 34 provinsi, Anda dapat mengeksplorasi <strong>Grafik Histogram Distribusi Kemiskinan Semester 1</strong> (BPS 2015–2023) beserta ukuran pemusatan (Mean, Median, Skewness).
+              Halaman kerja kini diperkaya menjadi pusat analitik terpadu. Selain menguji model OLS dan skenario <em>what-if</em> intervensi 34 provinsi, Anda dapat mengeksplorasi <strong>Grafik Histogram Distribusi Kemiskinan Semester 1</strong> (BPS 2015–2022, <em>N</em> = 272) beserta ukuran pemusatan (Mean, Median, Skewness).
             </p>
             <div class="teaser-features">
               <div class="teaser-feat-item">
@@ -563,16 +667,68 @@
     <section class="section-padding" id="model">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">Evaluasi Algoritma</span>
-          <h2 class="section-title">Perbandingan Model & Alasan Pemilihan</h2>
+          <span class="section-tag">Evaluasi 16 Skenario Percobaan</span>
+          <h2 class="section-title">Perbandingan Model &amp; Hasil 16 Kali Percobaan</h2>
           <p class="section-desc">
-            Evaluasi objektif 5-Fold Cross Validation. Mengapa model linear klasik dipilih dibanding algoritma ensemble yang lebih rumit?
+            Pengujian komprehensif <strong>16 skenario percobaan</strong> menggunakan <code>GroupShuffleSplit</code> (<code>test_size=0.20</code>, <code>random_state=42</code>) yang membandingkan <strong>Linear Regression</strong> dan <strong>Random Forest Regression</strong> pada 2 periode kemiskinan (<strong>Maret</strong> &amp; <strong>September</strong>) serta 4 variasi fitur RLS (<strong>RLS Perempuan</strong>, <strong>RLS Rata-rata</strong>, <strong>RLS Laki-laki</strong>, dan <strong>RLS Laki-laki + Perempuan</strong>).
           </p>
         </div>
 
         <!-- Model Cards Grid (Pricing style) -->
         <div class="models-grid" id="modelsGridContainer">
           <!-- Populated dynamically by main.js from model_metrics.json -->
+        </div>
+
+        <!-- Tabel Lengkap 16 Kali Percobaan -->
+        <div class="card experiments-table-card" id="percobaan-16" style="margin-bottom: 32px; padding: 28px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+            <div>
+              <span class="section-tag" style="margin-bottom: 8px;">
+                <i data-lucide="table" style="width: 13px; height: 13px;"></i>
+                Output Eksperimen Komputasional
+              </span>
+              <h3 style="font-size: 20px; color: var(--color-text-main); margin: 0; font-weight: 800;">
+                Tabel Hasil 16 Kali Percobaan Model Regresi (GroupShuffleSplit)
+              </h3>
+              <p style="font-size: 13px; color: var(--color-text-muted); margin: 4px 0 8px;">
+                Evaluasi pada 216 observasi data latih (27 provinsi) dan 56 observasi data testing (7 provinsi) periode 2015–2022.
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <code class="split-param-pill" style="font-size: 11px;">GroupShuffleSplit(n_splits=1, test_size=0.20, random_state=42)</code>
+                <code class="split-param-pill" style="font-size: 11px;">RandomForestRegressor(n_estimators=300, max_depth=None, min_samples_split=2, min_samples_leaf=1, random_state=42, n_jobs=-1)</code>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-text-muted);">Filter Periode:</span>
+              <div class="pill-group" role="tablist">
+                <button type="button" class="pill-btn exp-filter-btn active" data-periode="all">Semua (16 Percobaan)</button>
+                <button type="button" class="pill-btn exp-filter-btn" data-periode="Maret">Maret / Sem 1 (8)</button>
+                <button type="button" class="pill-btn exp-filter-btn" data-periode="September">September / Sem 2 (8)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="provinces-table-wrapper">
+            <table class="provinces-table experiments-16-table">
+              <thead>
+                <tr>
+                  <th style="width: 48px; text-align: center;">No</th>
+                  <th>Periode</th>
+                  <th>Model Algoritma</th>
+                  <th>Kombinasi Fitur (X)</th>
+                  <th style="text-align: right;">Train R²</th>
+                  <th style="text-align: right;">Test R²</th>
+                  <th style="text-align: right;">MAE</th>
+                  <th style="text-align: right;">MSE</th>
+                  <th style="text-align: right;">RMSE</th>
+                  <th>Keterangan Evaluasi</th>
+                </tr>
+              </thead>
+              <tbody id="experimentsTableBody">
+                <!-- Diisi otomatis oleh main.js -->
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!-- Penjelasan Ilmiah Rationale -->
@@ -583,10 +739,10 @@
             </div>
             <div>
               <h3 style="font-size: 18px; margin: 0; color: var(--color-primary-text); font-weight: 700;">
-                Mengapa Linear Regression Menjadi Pilihan Terbaik?
+                Mengapa Linear Regression Menjadi Pilihan Terbaik dari 16 Percobaan?
               </h3>
               <p style="font-size: 13px; color: var(--color-text-muted); margin: 2px 0 0;">
-                Rasional ilmiah berdasarkan uji validasi silang empiris dan prinsip parsimoni statistik (Occam's Razor)
+                Rasional ilmiah berdasarkan uji <code>GroupShuffleSplit</code> pada 16 skenario percobaan
               </p>
             </div>
           </div>
@@ -596,12 +752,12 @@
             <div style="background: var(--color-bg-page); border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
                 <span style="font-size: 14px; font-weight: 700; color: var(--color-text-main);">
-                  1. Bebas Masalah Overfitting Pohon Keputusan
+                  1. Linear Regression Unggul Konsisten dibanding Random Forest di Seluruh Kombinasi Fitur
                 </span>
-                <span class="badge red" style="font-size: 11px;">R² Negatif pada Validasi Silang</span>
+                <span class="badge green" style="font-size: 11px;">Peringkat 1 &amp; 2 pada Maret &amp; September</span>
               </div>
               <p style="font-size: 13px; line-height: 1.6; color: #3B4858; margin: 0;">
-                Model ensemble berbasis pohon (<em>Random Forest</em>, <em>Gradient Boosting</em>, <em>XGBoost</em>) mengalami <em>overfitting</em> berat pada sampel panel terbatas (<em>N</em> = 306 observasi). Pada pengujian validasi silang antarprovinsi (<em>GroupKFold</em>), model pohon menghasilkan nilai koefisien determinasi <em>R</em>² negatif (<strong style="color: #C5221F;">-0.37 s.d. -0.42</strong>), yang menandakan bahwa prediksi model pohon justru lebih buruk daripada sekadar menebak nilai rata-rata sampel.
+                Dari 16 kali percobaan, <strong>Linear Regression</strong> dengan fitur <strong>RLS Perempuan</strong> dan <strong>RLS Rata-rata</strong> menempati peringkat teratas baik pada periode <strong>Maret</strong> (<code>Test R² = -0.1560</code>, <code>MAE = 4.3519</code>, <code>RMSE = 6.0426</code>) maupun <strong>September</strong> (<code>Test R² = -0.1803</code>, <code>MAE = 4.2513</code>, <code>RMSE = 5.9449</code>). Sebaliknya, <strong>Random Forest</strong> mengalami <em>overfitting</em> berat dengan <code>Train R²</code> mencapai <strong>0.76 s.d. 0.92</strong> namun <code>Test R²</code> anjlok hingga <strong style="color: #C5221F;">-0.52 s.d. -1.35</strong> pada provinsi uji yang belum pernah dilihat.
               </p>
             </div>
 
@@ -609,12 +765,12 @@
             <div style="background: var(--color-bg-page); border: 1px solid var(--color-border); border-radius: 12px; padding: 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; flex-wrap: wrap; gap: 8px;">
                 <span style="font-size: 14px; font-weight: 700; color: var(--color-text-main);">
-                  2. Menghindari Distorsi Kurva Polinomial
+                  2. Kontribusi Signifikan Fitur RLS Perempuan &amp; RLS Rata-rata
                 </span>
-                <span class="badge amber" style="font-size: 11px;">Anomali Batas Atas</span>
+                <span class="badge amber" style="font-size: 11px;">Galat Prediksi Terendah</span>
               </div>
               <p style="font-size: 13px; line-height: 1.6; color: #3B4858; margin: 0;">
-                Meskipun Polinomial Derajat 3 menghasilkan <em>R</em>² matematis sedikit lebih tinggi pada data latih, kurva polinomial tersebut <em>berbalik naik</em> ke atas secara tidak alami pada batas atas empiris (capaian RLS &gt; 10.5 tahun). Sebaliknya, model <strong>Linear Regression (OLS)</strong> mempertahankan pola hubungan monoton menurun yang logis, konsisten, dan sesuai teori ekonomi pembangunan.
+                Pengujian terpisah membuktikan bahwa <strong>RLS Perempuan</strong> dan <strong>RLS Rata-rata</strong> menghasilkan kemampuan generalisasi antarprovinsi yang jauh lebih kuat dibandingkan hanya menggunakan <strong>RLS Laki-laki</strong> atau menggabungkan <strong>RLS Laki-laki + Perempuan</strong> secara simultan (yang memicu multikolinearitas dan menurunkan akurasi uji).
               </p>
             </div>
 
@@ -642,7 +798,7 @@
           <span class="section-tag">Tanya Jawab Kritis</span>
           <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
           <p class="section-desc">
-            Klarifikasi konsep data, metode statistik, dan batasan ilmiah penelitian.
+            Klarifikasi konsep data, metode pembagian <code>GroupShuffleSplit</code>, dan batasan ilmiah penelitian.
           </p>
         </div>
 
@@ -663,12 +819,12 @@
           <!-- FAQ 2 -->
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              <span>Dari mana sumber dataset ini dan bagaimana integritasnya?</span>
+              <span>Dari mana sumber dataset ini dan bagaimana metode pembagian datanya?</span>
               <i data-lucide="chevron-down" class="faq-icon"></i>
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Seluruh data diperoleh dari publikasi resmi terbuka Badan Pusat Statistik (BPS) Republik Indonesia. Data kemiskinan diambil dari indikator Persentase Penduduk Miskin ($P_0$) Semester 1 (Maret), sedangkan data pendidikan diambil dari tabel RLS menurut jenis kelamin periode 2015–2023 di 34 provinsi.
+                Seluruh data diperoleh dari publikasi resmi Badan Pusat Statistik (BPS) RI untuk 34 provinsi selama 8 tahun (2015–2022), sehingga total dataset terdiri dari <strong>272 observasi</strong>. Pembagian data dilakukan menggunakan <strong>GroupShuffleSplit</strong> (<code>test_size=0.20</code>, <code>random_state=42</code>) yang menghasilkan <strong>216 observasi data latih (27 provinsi, 80%)</strong> dan <strong>56 observasi data testing (7 provinsi, 20%)</strong> agar data dari provinsi yang sama tidak bocor di antara data latih dan uji.
               </div>
             </div>
           </div>
@@ -681,7 +837,7 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                <strong>Tidak selalu secara langsung.</strong> Korelasi statistik tidak sama dengan hubungan sebab-akibat tunggal (<em>correlation does not imply causation</em>). Koefisien determinasi ($R^2 = 17.6\%$) menunjukkan bahwa sekitar <strong>82.4% variansi kemiskinan dipengaruhi oleh faktor lain</strong>, seperti ketersediaan lapangan kerja industri, pemerataan infrastruktur, upah minimum, dan subsidi jaring pengaman sosial.
+                <strong>Tidak selalu secara langsung.</strong> Korelasi statistik tidak sama dengan hubungan sebab-akibat tunggal (<em>correlation does not imply causation</em>). Koefisien determinasi (<em>R</em>² = 17.6%) menunjukkan bahwa sekitar <strong>82.4% variansi kemiskinan dipengaruhi oleh faktor lain</strong>, seperti ketersediaan lapangan kerja industri, pemerataan infrastruktur, upah minimum, dan subsidi jaring pengaman sosial.
               </div>
             </div>
           </div>
@@ -694,7 +850,7 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Empat Daerah Otonom Baru (DOB)—Papua Selatan, Papua Tengah, Papua Pegunungan, dan Papua Barat Daya—baru disahkan pada akhir tahun 2022. Data statistik terpisah dari BPS untuk keempat provinsi ini baru tersedia mulai tahun 2024. Untuk menjaga konsistensi data panel seimbang (<em>balanced panel</em>) sepanjang periode 2015–2023, analisis dibatasi pada 34 provinsi induk.
+                Empat Daerah Otonom Baru (DOB)—Papua Selatan, Papua Tengah, Papua Pegunungan, dan Papua Barat Daya—baru disahkan pada akhir tahun 2022. Untuk menjaga konsistensi data panel seimbang (<em>balanced panel</em>) sebanyak 272 observasi (34 provinsi × 8 tahun sepanjang periode 2015–2022), analisis difokuskan pada 34 provinsi induk.
               </div>
             </div>
           </div>
@@ -707,7 +863,7 @@
             </button>
             <div class="faq-answer">
               <div class="faq-answer-inner">
-                Penelitian ini adalah model bivariat yang mengkaji hubungan dua variabel. Keterbatasan utama meliputi potensi <em>omitted variable bias</em> (misalnya tidak mengontrol PDRB atau tingkat pengangguran secara simultan) dan ukuran sampel tingkat provinsi ($N = 306$) yang rentan <em>overfitting</em> jika dimodelkan menggunakan algoritma non-linier kompleks seperti Random Forest atau Deep Learning.
+                Penelitian ini adalah model bivariat yang mengkaji hubungan dua variabel. Keterbatasan utama meliputi potensi <em>omitted variable bias</em> (misalnya tidak mengontrol PDRB atau tingkat pengangguran secara simultan) dan ukuran sampel tingkat provinsi (<em>N</em> = 272 observasi) yang rentan <em>overfitting</em> jika dimodelkan menggunakan algoritma non-linier kompleks seperti Random Forest atau Deep Learning.
               </div>
             </div>
           </div>

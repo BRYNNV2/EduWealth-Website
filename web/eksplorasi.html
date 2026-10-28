@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
+  <link rel="stylesheet" href="./src/styles/tokens.css">
+  <link rel="stylesheet" href="./src/styles/base.css">
+  <link rel="stylesheet" href="./src/styles/components.css">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231A6ED8' stroke-width='2'><path d='M22 10v6M2 10l10-5 10 5-10 5z'/><path d='M6 12v5c3 3 9 3 12 0v-5'/></svg>">
 </head>
 <body>
@@ -45,19 +48,186 @@
 
   <main>
     <!-- 2. HERO SECTION -->
-    <section class="section-padding" style="padding-top: 140px; background: linear-gradient(180deg, #EDF5FF 0%, #FFFFFF 100%);">
+    <section class="section-padding" style="padding-top: 116px; background: linear-gradient(180deg, #EDF5FF 0%, #FFFFFF 100%);">
       <div class="container">
-        <div class="section-header" style="max-width: 860px; margin: 0 auto 36px; text-align: center;">
-          <span class="section-tag">
-            <i data-lucide="bar-chart-2" style="width: 14px; height: 14px;"></i>
-            Laboratorium Sains Data • Distribusi &amp; Simulasi Interaktif
-          </span>
-          <h1 class="section-title" style="font-size: clamp(2.2rem, 4vw, 3rem); margin-top: 12px;">
-            Eksplorasi Sains Data &amp; Simulator Kebijakan
-          </h1>
-          <p class="section-desc" style="font-size: 16px; margin: 0 auto;">
-            Pusat analitik komprehensif: pelajari bentuk distribusi statistik persentase penduduk miskin Semester 1 (BPS 2015–2023), uji skenario kebijakan penambahan RLS, dan simulasikan intervensi terarah untuk 34 provinsi.
-          </p>
+        <div class="eksplorasi-hero-banner">
+          <div class="eksplorasi-hero-left">
+            <span class="section-tag" style="margin-bottom: 10px;">
+              <i data-lucide="bar-chart-2" style="width: 14px; height: 14px;"></i>
+              Laboratorium Sains Data • Distribusi &amp; Simulasi Interaktif
+            </span>
+            <h1 class="section-title" style="font-size: clamp(2rem, 3.2vw, 2.75rem); margin: 0 0 12px 0; text-align: left;">
+              Eksplorasi Sains Data &amp; Simulator Kebijakan
+            </h1>
+            <p class="section-desc" style="font-size: 15px; margin: 0; text-align: left; max-width: 100%;">
+              Pusat analitik komprehensif: pelajari pembagian data <code>GroupShuffleSplit</code>, hasil evaluasi <strong>16 kali percobaan model</strong>, bentuk distribusi statistik persentase penduduk miskin Semester 1 (BPS 2015–2022, <em>N</em> = 272), dan simulasikan intervensi kebijakan untuk 34 provinsi.
+            </p>
+          </div>
+
+          <div class="eksplorasi-hero-kpis">
+            <div class="eksplorasi-kpi-card">
+              <span class="kpi-lbl">Total Dataset Panel</span>
+              <strong class="kpi-val tabular-nums">272 Observasi</strong>
+              <span class="kpi-sub">34 Provinsi × 8 Tahun (2015–2022)</span>
+            </div>
+            <div class="eksplorasi-kpi-card">
+              <span class="kpi-lbl">GroupShuffleSplit</span>
+              <strong class="kpi-val tabular-nums">216 : 56 Obs</strong>
+              <span class="kpi-sub">80% Latih (27 Prov) • 20% Uji (7 Prov)</span>
+            </div>
+            <div class="eksplorasi-kpi-card">
+              <span class="kpi-lbl">Eksperimen Model</span>
+              <strong class="kpi-val tabular-nums">16 Percobaan</strong>
+              <span class="kpi-sub">Linear Regression vs Random Forest</span>
+            </div>
+            <div class="eksplorasi-kpi-card">
+              <span class="kpi-lbl">Model Terbaik</span>
+              <strong class="kpi-val">Linear Regression</strong>
+              <span class="kpi-sub">Fitur RLS Perempuan &amp; Rata-rata</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2B. PEMBAGIAN DATA MENGGUNAKAN GROUPSHUFFLESPLIT -->
+        <div class="card split-method-card" id="pembagian-data" style="margin-bottom: 36px;">
+          <div class="split-method-grid">
+            <div class="split-method-info">
+              <div class="split-badge-row">
+                <span class="section-tag" style="margin-bottom: 0;">
+                  <i data-lucide="database" style="width: 13px; height: 13px;"></i>
+                  Metode Pembagian Data (Google Colab)
+                </span>
+                <code class="split-param-pill">test_size=0.20</code>
+                <code class="split-param-pill">random_state=42</code>
+              </div>
+
+              <h2 class="split-method-title" style="font-size: 20px;">
+                1. Pembagian Data Menggunakan <code>GroupShuffleSplit</code>
+              </h2>
+
+              <p class="split-method-desc">
+                Pembagian data dilakukan menggunakan metode <strong>GroupShuffleSplit</strong> dengan parameter <code>test_size=0.20</code> dan <code>random_state=42</code>. Metode ini membagi data berdasarkan kelompok provinsi, sehingga data dari provinsi yang sama tidak tersebar ke data latih dan data testing secara bersamaan.
+              </p>
+
+              <div class="split-visual-bar-box">
+                <div class="split-visual-labels">
+                  <span class="train-lbl">
+                    <span class="dot-ind train"></span>
+                    <strong>Data Latih (80%)</strong> — 27 Provinsi (216 Obs)
+                  </span>
+                  <span class="test-lbl">
+                    <span class="dot-ind test"></span>
+                    <strong>Data Testing (20%)</strong> — 7 Provinsi (56 Obs)
+                  </span>
+                </div>
+                <div class="split-progress-track" role="img" aria-label="Proporsi pembagian data 80% data latih dan 20% data testing">
+                  <div class="split-progress-train" style="width: 80%;">80% Training</div>
+                  <div class="split-progress-test" style="width: 20%;">20% Testing</div>
+                </div>
+              </div>
+
+              <div class="split-total-banner">
+                <i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: var(--color-primary); flex-shrink: 0;"></i>
+                <span>
+                  Total dataset terdiri dari <strong>272 observasi</strong>, yaitu <strong>34 provinsi × 8 tahun (2015–2022)</strong>.
+                </span>
+              </div>
+            </div>
+
+            <div class="split-table-wrapper">
+              <div class="split-table-header-bar">
+                <span>Tabel Rincian Pembagian Dataset</span>
+                <span class="badge-ok">Bebas Data Leakage</span>
+              </div>
+              <table class="split-data-table">
+                <thead>
+                  <tr>
+                    <th>Keterangan</th>
+                    <th class="num-col train-col">Data latih (training)</th>
+                    <th class="num-col test-col">Data testing (testing)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Jumlah observasi</strong></td>
+                    <td class="num-col tabular-nums train-val">216</td>
+                    <td class="num-col tabular-nums test-val">56</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Jumlah provinsi</strong></td>
+                    <td class="num-col tabular-nums train-val">27</td>
+                    <td class="num-col tabular-nums test-val">7</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Persentase data</strong></td>
+                    <td class="num-col tabular-nums"><span class="split-pct-badge train">80%</span></td>
+                    <td class="num-col tabular-nums"><span class="split-pct-badge test">20%</span></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td><strong>Total Keseluruhan</strong></td>
+                    <td colspan="2" class="num-col tabular-nums" style="text-align: center; font-weight: 700; color: var(--color-text-main);">
+                      272 Observasi (34 Provinsi × 8 Tahun, 2015–2022)
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2C. TABEL HASIL 16 KALI PERCOBAAN (LINEAR REGRESSION VS RANDOM FOREST) -->
+        <div class="card experiments-table-card" id="percobaan-16" style="margin-bottom: 48px; padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+            <div>
+              <span class="section-tag" style="margin-bottom: 8px;">
+                <i data-lucide="cpu" style="width: 13px; height: 13px;"></i>
+                Komparasi 16 Skenario Eksperimen
+              </span>
+              <h2 style="font-size: 20px; color: var(--color-text-main); margin: 0;">
+                Hasil 16 Kali Percobaan: Linear Regression vs Random Forest
+              </h2>
+              <p style="font-size: 13px; color: var(--color-text-muted); margin: 4px 0 8px;">
+                Evaluasi seluruh kombinasi periode kemiskinan (<strong>Maret</strong> &amp; <strong>September</strong>) dan fitur <strong>RLS</strong> pada pembagian <code>GroupShuffleSplit</code> (216 Data Latih : 56 Data Testing).
+              </p>
+              <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                <code class="split-param-pill" style="font-size: 11px;">GroupShuffleSplit(n_splits=1, test_size=0.20, random_state=42)</code>
+                <code class="split-param-pill" style="font-size: 11px;">RandomForestRegressor(n_estimators=300, max_depth=None, min_samples_split=2, min_samples_leaf=1, random_state=42, n_jobs=-1)</code>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-text-muted);">Filter Periode:</span>
+              <div class="pill-group" role="tablist">
+                <button type="button" class="pill-btn exp-filter-btn active" data-periode="all">Semua (16 Percobaan)</button>
+                <button type="button" class="pill-btn exp-filter-btn" data-periode="Maret">Maret / Sem 1 (8)</button>
+                <button type="button" class="pill-btn exp-filter-btn" data-periode="September">September / Sem 2 (8)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="provinces-table-wrapper">
+            <table class="provinces-table experiments-16-table">
+              <thead>
+                <tr>
+                  <th style="width: 48px; text-align: center;">No</th>
+                  <th>Periode</th>
+                  <th>Model Algoritma</th>
+                  <th>Kombinasi Fitur (X)</th>
+                  <th style="text-align: right;">Train R²</th>
+                  <th style="text-align: right;">Test R²</th>
+                  <th style="text-align: right;">MAE</th>
+                  <th style="text-align: right;">MSE</th>
+                  <th style="text-align: right;">RMSE</th>
+                  <th>Keterangan Evaluasi</th>
+                </tr>
+              </thead>
+              <tbody id="experimentsTableBody">
+                <!-- Diisi otomatis oleh eksplorasi-page.js -->
+              </tbody>
+            </table>
+          </div>
         </div>
 
         <!-- 3. GRAFIK HISTOGRAM DISTRIBUSI PENDUDUK MISKIN SEMESTER 1 -->
@@ -72,7 +242,7 @@
                 Histogram Distribusi Persentase Penduduk Miskin Semester 1
               </h2>
               <p style="font-size: 13px; color: var(--color-text-muted); margin: 4px 0 0;">
-                Sebaran frekuensi data panel resmi BPS periode Semester 1 / Maret (2015–2023) pada 34 provinsi.
+                Sebaran frekuensi data panel resmi BPS periode Semester 1 / Maret (2015–2022, N = 272 observasi) pada 34 provinsi.
               </p>
             </div>
 
@@ -80,8 +250,8 @@
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
               <span style="font-size: 12px; font-weight: 700; color: var(--color-text-muted);">Pilih Periode:</span>
               <div class="pill-group" role="tablist">
-                <button type="button" class="pill-btn hist-filter-btn active" data-year="all">Semua Tahun (N=306)</button>
-                <button type="button" class="pill-btn hist-filter-btn" data-year="2023">2023 (Terbaru)</button>
+                <button type="button" class="pill-btn hist-filter-btn active" data-year="all">Semua Tahun (N=272)</button>
+                <button type="button" class="pill-btn hist-filter-btn" data-year="2022">2022 (Terbaru)</button>
                 <button type="button" class="pill-btn hist-filter-btn" data-year="2020">2020 (Pandemi)</button>
                 <button type="button" class="pill-btn hist-filter-btn" data-year="2015">2015 (Baseline)</button>
               </div>
@@ -92,7 +262,7 @@
           <div id="histogramChartContainer" class="chart-container-hist" role="region" aria-label="Grafik Histogram Distribusi Persentase Penduduk Miskin Semester 1"></div>
           
           <div class="chart-footnote" style="margin-top: 12px;">
-            Garis putus-putus biru = <strong>Rata-rata (Mean)</strong> • Garis titik-titik oranye = <strong>Median</strong> • Sumber: Badan Pusat Statistik RI (Semester 1 / Maret 2015–2023).
+            Garis putus-putus biru = <strong>Rata-rata (Mean)</strong> • Garis titik-titik oranye = <strong>Median</strong> • Sumber: Badan Pusat Statistik RI (Semester 1 / Maret 2015–2022, N = 272).
           </div>
 
           <!-- 4 Ringkasan Statistik Distribusi -->

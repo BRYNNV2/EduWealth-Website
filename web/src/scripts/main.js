@@ -74,38 +74,99 @@ function populateHeroStats(summary) {
 
 function populateModelComparison(metrics, summary) {
   const container = document.getElementById('modelsGridContainer');
-  if (!container) return;
+  if (container) {
+    // Tampilkan 4 kartu sorotan utama dari 16 percobaan (Peringkat 1 & 2 Maret, Peringkat 1 September, dan sampel Random Forest)
+    const featuredIndices = [0, 1, 8, 2];
+    const cardsData = featuredIndices.map(i => metrics[i]).filter(Boolean);
 
-  container.innerHTML = metrics.map(m => {
-    const isLinear = m.Model.includes('Linear');
-    return `
-      <div class="card model-card ${isLinear ? 'featured' : ''}">
-        ${isLinear ? '<div class="model-badge-top">Model Terpilih</div>' : ''}
-        <h3 class="model-name">${m.Model}</h3>
-        <ul class="model-metrics-list">
-          <li class="metric-item">
-            <span class="name">Test R² (Mean)</span>
-            <span class="value">${m['Test R² (Mean)'].toFixed(4)}</span>
-          </li>
-          <li class="metric-item">
-            <span class="name">Test MAE</span>
-            <span class="value">${m['MAE (Test)'].toFixed(3)}%</span>
-          </li>
-          <li class="metric-item">
-            <span class="name">Test RMSE</span>
-            <span class="value">${m['RMSE (Test)'].toFixed(3)}%</span>
-          </li>
-          <li class="metric-item">
-            <span class="name">Train R²</span>
-            <span class="value">${m['Train R²'].toFixed(4)}</span>
-          </li>
-        </ul>
-        <div style="font-size: 12px; color: ${isLinear ? '#0E52A0' : '#3B4858'}; font-weight: 600;">
-          ${isLinear ? '✓ Stabil & Transparan (Bebas Overfitting)' : (m['Train R²'] > 0.40 ? '⚠️ Terindikasi Overfitting Pohon' : 'Alternatif Kurva')}
+    container.innerHTML = cardsData.map((m, idx) => {
+      const isBest = idx === 0;
+      const isLinear = m.Model.includes('Linear');
+      return `
+        <div class="card model-card ${isBest ? 'featured' : ''}">
+          ${isBest ? '<div class="model-badge-top">Terbaik (Percobaan #1)</div>' : ''}
+          <div style="font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; color: ${m.Periode === 'Maret' ? '#1A6ED8' : '#B45309'}; margin-bottom: 4px;">
+            Percobaan #${m.No} • Periode ${m.Periode}
+          </div>
+          <h3 class="model-name" style="margin-bottom: 4px;">${m.Model}</h3>
+          <div style="font-size: 12px; color: #53647D; font-weight: 600; margin-bottom: 14px;">
+            Fitur: <strong>${m.Fitur}</strong>
+          </div>
+          <ul class="model-metrics-list">
+            <li class="metric-item">
+              <span class="name">Test R²</span>
+              <span class="value tabular-nums">${m['Test R²'].toFixed(4)}</span>
+            </li>
+            <li class="metric-item">
+              <span class="name">Test MAE</span>
+              <span class="value tabular-nums">${m.MAE.toFixed(4)}</span>
+            </li>
+            <li class="metric-item">
+              <span class="name">Test RMSE</span>
+              <span class="value tabular-nums">${m.RMSE.toFixed(4)}</span>
+            </li>
+            <li class="metric-item">
+              <span class="name">Train R²</span>
+              <span class="value tabular-nums">${m['Train R²'].toFixed(4)}</span>
+            </li>
+          </ul>
+          <div style="font-size: 12px; color: ${isLinear ? '#0E52A0' : '#C5221F'}; font-weight: 600;">
+            ${isLinear ? '✓ ' + m.Status : '⚠️ ' + m.Status}
+          </div>
         </div>
-      </div>
-    `;
-  }).join('');
+      `;
+    }).join('');
+  }
+
+  // Isi Tabel Lengkap 16 Kali Percobaan
+  const tbody = document.getElementById('experimentsTableBody');
+  const filterBtns = document.querySelectorAll('.exp-filter-btn');
+  if (!tbody) return;
+
+  function renderExperimentRows(filterPeriode) {
+    const list = filterPeriode === 'all'
+      ? metrics
+      : metrics.filter(m => m.Periode === filterPeriode);
+
+    tbody.innerHTML = list.map(m => {
+      const isLinear = m.Model.includes('Linear');
+      const isTopRow = m.No === 1 || m.No === 9;
+      return `
+        <tr style="${isTopRow ? 'background: #F2F7FF;' : ''}">
+          <td class="tabular-nums" style="text-align: center; font-weight: 800; color: #0B1B33;">${m.No}</td>
+          <td>
+            <span class="badge ${m.Periode === 'Maret' ? 'green' : 'amber'}" style="font-size: 11px; padding: 3px 10px;">
+              ${m.Periode}
+            </span>
+          </td>
+          <td>
+            <strong style="color: ${isLinear ? '#0E52A0' : '#3B4858'};">${m.Model}</strong>
+          </td>
+          <td><strong>${m.Fitur}</strong></td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 600;">${m['Train R²'].toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 700; color: ${m['Test R²'] > -0.5 ? '#0E52A0' : '#C5221F'};">${m['Test R²'].toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right;">${m.MAE.toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right;">${m.MSE.toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 600;">${m.RMSE.toFixed(4)}</td>
+          <td>
+            <span class="badge ${isTopRow ? 'green' : (isLinear ? 'amber' : 'red')}" style="font-size: 11px; padding: 2px 8px;">
+              ${m.Status}
+            </span>
+          </td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  renderExperimentRows('all');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderExperimentRows(btn.dataset.periode);
+    });
+  });
 }
 
 function populateProvinceDetail(prov) {
@@ -130,7 +191,7 @@ function populateProvinceDetail(prov) {
 }
 
 function initMapControls() {
-  const buttons = document.querySelectorAll('.pill-btn');
+  const buttons = document.querySelectorAll('.pill-btn[data-mode]');
   buttons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       buttons.forEach(b => b.classList.remove('active'));

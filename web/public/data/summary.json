@@ -1,8 +1,19 @@
 {
   "topik": "Analisis Hubungan Rata-rata Lama Sekolah terhadap Persentase Penduduk Miskin Antarprovinsi di Indonesia",
-  "periode": "2015-2023",
+  "periode": "2015-2022",
   "jumlah_provinsi": 34,
-  "total_observasi": 306,
+  "total_observasi": 272,
+  "pembagian_data": {
+    "metode": "GroupShuffleSplit",
+    "test_size": 0.20,
+    "random_state": 42,
+    "train_observasi": 216,
+    "test_observasi": 56,
+    "train_provinsi": 27,
+    "test_provinsi": 7,
+    "train_persentase": "80%",
+    "test_persentase": "20%"
+  },
   "statistik_nasional": {
     "rls_mean": 8.544,
     "rls_median": 8.555,

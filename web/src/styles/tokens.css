@@ -61,7 +61,7 @@
   --radius-folder: 28px;
   --radius-inner: 16px;
   --radius-pill: 999px;
-  --max-width: 1200px;
+  --max-width: min(95vw, 1600px);
 
   /* Folder-tab Container Colors */
   --color-folder-bg: #E8F2FD;

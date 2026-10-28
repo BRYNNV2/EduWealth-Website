@@ -95,7 +95,7 @@ a:hover {
 /* Section Header Utilitas */
 .section-header {
   text-align: center;
-  max-width: 760px;
+  max-width: 980px;
   margin: 0 auto var(--space-48) auto;
 }
 

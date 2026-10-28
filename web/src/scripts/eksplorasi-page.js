@@ -16,17 +16,23 @@ async function getECharts() {
 let histogramChart = null;
 let provincesList = [];
 let summaryData = null;
+let modelMetrics = [];
 let currentYearFilter = 'all';
 
 async function loadEksplorasiData() {
   try {
-    const [sumResp, provResp] = await Promise.all([
+    const [sumResp, provResp, metResp] = await Promise.all([
       fetch('./data/summary.json'),
-      fetch('./data/provinsi.json')
+      fetch('./data/provinsi.json'),
+      fetch('./data/model_metrics.json')
     ]);
 
     summaryData = await sumResp.json();
     provincesList = await provResp.json();
+    modelMetrics = await metResp.json();
+
+    // 0. Isi Tabel 16 Kali Percobaan
+    populateExperimentsTable(modelMetrics);
 
     // 1. Inisialisasi Grafik Histogram
     await initHistogramChart();
@@ -49,6 +55,57 @@ async function loadEksplorasiData() {
   } catch (err) {
     console.error('Gagal memuat data eksplorasi:', err);
   }
+}
+
+function populateExperimentsTable(metrics) {
+  const tbody = document.getElementById('experimentsTableBody');
+  const filterBtns = document.querySelectorAll('.exp-filter-btn');
+  if (!tbody || !Array.isArray(metrics)) return;
+
+  function renderRows(filterPeriode) {
+    const list = filterPeriode === 'all'
+      ? metrics
+      : metrics.filter(m => m.Periode === filterPeriode);
+
+    tbody.innerHTML = list.map(m => {
+      const isLinear = m.Model.includes('Linear');
+      const isTopRow = m.No === 1 || m.No === 9;
+      return `
+        <tr style="${isTopRow ? 'background: #F2F7FF;' : ''}">
+          <td class="tabular-nums" style="text-align: center; font-weight: 800; color: #0B1B33;">${m.No}</td>
+          <td>
+            <span class="badge ${m.Periode === 'Maret' ? 'green' : 'amber'}" style="font-size: 11px; padding: 3px 10px;">
+              ${m.Periode}
+            </span>
+          </td>
+          <td>
+            <strong style="color: ${isLinear ? '#0E52A0' : '#3B4858'};">${m.Model}</strong>
+          </td>
+          <td><strong>${m.Fitur}</strong></td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 600;">${m['Train R²'].toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 700; color: ${m['Test R²'] > -0.5 ? '#0E52A0' : '#C5221F'};">${m['Test R²'].toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right;">${m.MAE.toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right;">${m.MSE.toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 600;">${m.RMSE.toFixed(4)}</td>
+          <td>
+            <span class="badge ${isTopRow ? 'green' : (isLinear ? 'amber' : 'red')}" style="font-size: 11px; padding: 2px 8px;">
+              ${m.Status}
+            </span>
+          </td>
+        </tr>
+      `;
+    }).join('');
+  }
+
+  renderRows('all');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderRows(btn.dataset.periode);
+    });
+  });
 }
 
 /**
@@ -80,10 +137,10 @@ async function initHistogramChart() {
 function updateHistogramData() {
   if (!histogramChart) return;
 
-  // Kumpulkan records kemiskinan Semester 1
+  // Kumpulkan records kemiskinan Semester 1 (2015–2022, N = 272 observasi)
   let records = [];
   if (currentYearFilter === 'all') {
-    records = provincesList.flatMap(p => p.history.map(h => ({
+    records = provincesList.flatMap(p => p.history.filter(h => h.tahun >= 2015 && h.tahun <= 2022).map(h => ({
       nama: p.nama,
       tahun: h.tahun,
       kemiskinan: h.kemiskinan
@@ -366,7 +423,7 @@ function initSimulatorControls() {
           </div>
           <p style="font-size: 13px; line-height: 1.6; color: #3B4858; margin: 0;">
             Jika RLS <strong>${p.nama}</strong> berhasil ditingkatkan dari <strong>${currentRls} tahun</strong> menjadi <strong>${targetRls.toFixed(1)} tahun</strong> (+${delta} th), model mengestimasikan tingkat kemiskinan berpotensi bergeser ke <strong>${newPred.toFixed(2)}%</strong> 
-            (<span style="color: ${diff < 0 ? '#136B36' : '#C5221F'}; font-weight: 700;">${diff < 0 ? '' : '+'}${diff.toFixed(2)}% poin</span> dibanding kondisi Maret 2023).
+            (<span style="color: ${diff < 0 ? '#136B36' : '#C5221F'}; font-weight: 700;">${diff < 0 ? '' : '+'}${diff.toFixed(2)}% poin</span> dibanding kondisi baseline terbaru).
           </p>
           <div style="margin-top: 8px; font-size: 12px; color: #6E7C87;">
             <em>*Asumsi ceteris paribus: kondisi makroekonomi, subsidi sosial, dan inflasi daerah diasumsikan konstan.</em>

@@ -76,7 +76,7 @@ async function renderScatterPlot() {
 
   const option = {
     title: {
-      text: 'Sebaran RLS vs Persentase Kemiskinan (Rata-rata 2015–2023)',
+      text: 'Sebaran RLS vs Persentase Kemiskinan (Rata-rata 2015–2022)',
       subtext: 'Model OLS: Kemiskinan = 31.96 - 2.47 × RLS (R² = 17.6%, r = -0.42)',
       left: 'center',
       textStyle: {
