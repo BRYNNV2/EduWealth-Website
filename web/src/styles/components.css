@@ -98,7 +98,11 @@
    ========================================================================== */
 .hero-section {
   position: relative;
-  background: url('/hero-sky.jpg') no-repeat center top / cover;
+  background-color: #1A6ED8;
+  background-image: url('/hero-sky.jpg'), linear-gradient(180deg, #1A6ED8 0%, #569AF0 65%, #F5F9FF 100%);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   padding-top: 98px;
   padding-bottom: 72px;
   overflow: hidden;

@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eksplorasi Data & Simulator Kebijakan — EduWealth</title>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        for (var i = 0; i < regs.length; i++) regs[i].unregister();
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        for (var i = 0; i < names.length; i++) caches.delete(names[i]);
+      });
+    }
+  </script>
   <meta name="description" content="Laboratorium sains data: pelajari distribusi statistik persentase penduduk miskin Semester 1 BPS (2015–2023), uji skenario kebijakan pada 34 provinsi, dan lakukan eksperimen model OLS.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,24 +31,24 @@
   <!-- 1. NAVBAR -->
   <header class="site-header" id="navbar">
     <div class="navbar">
-      <a href="index.html" class="brand-logo" aria-label="EduWealth Beranda">
+      <a href="/" class="brand-logo" aria-label="EduWealth Beranda">
         EduWealth<span class="dot">.</span>
       </a>
 
       <nav aria-label="Navigasi Halaman Eksplorasi">
         <ul class="nav-links">
-          <li><a href="index.html">Beranda</a></li>
+          <li><a href="/">Beranda</a></li>
           <li><a href="#pembagian-data">Pembagian Data</a></li>
           <li><a href="#percobaan-16">16 Percobaan</a></li>
           <li><a href="#distribusi">Distribusi Data</a></li>
           <li><a href="#matriks">Matriks 34 Provinsi</a></li>
-          <li><a href="index.html#metodologi">Metodologi</a></li>
-          <li><a href="index.html#model">Model</a></li>
+          <li><a href="/#metodologi">Metodologi</a></li>
+          <li><a href="/#model">Model</a></li>
         </ul>
       </nav>
 
       <div class="nav-cta">
-        <a href="index.html" class="btn btn-outline" id="btnBackToHome" style="padding: 8px 16px; font-size: 13px;">
+        <a href="/" class="btn btn-outline" id="btnBackToHome" style="padding: 8px 16px; font-size: 13px;">
           <i data-lucide="arrow-left" style="width: 15px; height: 15px;"></i>
           Kembali ke Beranda
         </a>
@@ -473,10 +485,63 @@
               </table>
             </div>
 
+            <!-- 2 Jawaban Korelasi Terbaik & Hubungan Paling Kuat -->
+            <div style="margin-top: 16px; margin-bottom: 12px;">
+              <div style="font-size: 13.5px; font-weight: 800; color: var(--color-text-main); margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <i data-lucide="award" style="width: 16px; height: 16px; color: #0D652D;"></i>
+                <span>2 Pasangan Korelasi Terbaik &amp; Paling Kuat Antara RLS dengan Data Kemiskinan:</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px;">
+                <!-- Jawaban 1 -->
+                <div style="background: #F4FBF7; border: 1.5px solid #86EFAC; border-radius: 12px; padding: 16px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap;">
+                    <span class="badge green" style="font-size: 11px;">1. Terbaik Semester 1 (Maret) — Peringkat 1</span>
+                    <code class="feat-var-code">Baris No. 4</code>
+                  </div>
+                  <div style="font-size: 15px; font-weight: 800; color: #0B1B33; margin-bottom: 6px;">
+                    RLS Perempuan vs Jumlah Penduduk Miskin Sem 1
+                  </div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+                    <span style="font-size: 12px; background: #FFFFFF; border: 1px solid #BBF7D0; border-radius: 6px; padding: 4px 8px; font-weight: 700; color: #0D652D;">
+                      Pearson (r) = -0.4635 (p = 0.0)
+                    </span>
+                    <span style="font-size: 12px; background: #FFFFFF; border: 1px solid #BBF7D0; border-radius: 6px; padding: 4px 8px; font-weight: 700; color: #0E52A0;">
+                      Spearman (rho) = -0.3495 (p = 0.0)
+                    </span>
+                  </div>
+                  <p style="font-size: 12.5px; line-height: 1.55; color: #3B4858; margin: 0;">
+                    Memiliki <strong>nilai korelasi negatif paling kuat secara keseluruhan</strong> (baik pada uji parametrik Pearson maupun non-parametrik Spearman) dengan kategori <strong>hubungan negatif berkekuatan sedang</strong> dan signifikan secara statistik.
+                  </p>
+                </div>
+
+                <!-- Jawaban 2 -->
+                <div style="background: #F4F9FF; border: 1.5px solid #93C5FD; border-radius: 12px; padding: 16px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 8px; flex-wrap: wrap;">
+                    <span class="badge green" style="font-size: 11px;">2. Terbaik Semester 2 (September) — Peringkat 2</span>
+                    <code class="feat-var-code">Baris No. 5</code>
+                  </div>
+                  <div style="font-size: 15px; font-weight: 800; color: #0B1B33; margin-bottom: 6px;">
+                    RLS Perempuan vs Jumlah Penduduk Miskin Sem 2
+                  </div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px;">
+                    <span style="font-size: 12px; background: #FFFFFF; border: 1px solid #BFDBFE; border-radius: 6px; padding: 4px 8px; font-weight: 700; color: #0D652D;">
+                      Pearson (r) = -0.4630 (p = 0.0)
+                    </span>
+                    <span style="font-size: 12px; background: #FFFFFF; border: 1px solid #BFDBFE; border-radius: 6px; padding: 4px 8px; font-weight: 700; color: #0E52A0;">
+                      Spearman (rho) = -0.3444 (p = 0.0)
+                    </span>
+                  </div>
+                  <p style="font-size: 12.5px; line-height: 1.55; color: #3B4858; margin: 0;">
+                    Menempati posisi <strong>korelasi terkuat kedua secara keseluruhan</strong> dan terkuat untuk periode Semester 2 (September), konsisten menunjukkan bahwa semakin tinggi RLS Perempuan maka persentase kemiskinan semakin rendah.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div class="split-summary-note" style="margin-top: 8px;">
               <i data-lucide="info" style="width: 16px; height: 16px; color: var(--color-primary); flex-shrink: 0;"></i>
               <span>
-                <strong>Temuan Utama Korelasi:</strong> Seluruh variabel RLS memiliki arah korelasi <strong>negatif dan signifikan secara statistik</strong> (<code>p-value = 0.0</code> / <code>p &lt; 0.001</code>) terhadap persentase penduduk miskin. <strong>RLS Perempuan</strong> memiliki korelasi linier (Pearson) dan monotonik (Spearman) paling kuat baik pada Semester 1 (<code>r = -0.4635</code>, <code>rho = -0.3495</code>) maupun Semester 2 (<code>r = -0.4630</code>, <code>rho = -0.3444</code>), disusul oleh <strong>RLS Rata-Rata</strong> (<code>r = -0.4275</code>) dengan kekuatan sedang, sedangkan <strong>RLS Laki-Laki</strong> berada pada kategori kekuatan lemah (<code>r = -0.3517</code> s.d. <code>-0.3522</code>).
+                <strong>Catatan Kategori Kekuatan Variabel:</strong> Jika dilihat berdasarkan jenis variabel RLS yang mencapai kategori <strong>"Hubungan negatif dengan kekuatan sedang"</strong> (<code>|r| &gt; 0.40</code>), terdapat <strong>2 variabel utama</strong> yaitu: <strong>(1) RLS Perempuan</strong> (<code>r = -0.4635</code> &amp; <code>-0.4630</code>) sebagai yang terkuat, dan <strong>(2) RLS Rata-Rata</strong> (<code>r = -0.4275</code> pada Sem 1 &amp; Sem 2). Sebaliknya, <strong>RLS Laki-Laki</strong> hanya memiliki korelasi berkekuatan lemah (<code>r = -0.3517</code> &amp; <code>-0.3522</code>).
               </span>
             </div>
           </div>
@@ -899,7 +964,7 @@
       <div class="footer-main-grid">
         <!-- Kolom 1: Brand & Sosial -->
         <div class="footer-brand-col">
-          <a href="index.html" class="footer-brand-title">
+          <a href="/" class="footer-brand-title">
             EduWealth<span class="dot">.</span>
           </a>
           <p class="footer-brand-desc">
@@ -928,11 +993,11 @@
         <div class="footer-nav-col">
           <h3 class="footer-col-heading">Riset &amp; Model</h3>
           <ul class="footer-links-list">
-            <li><a href="index.html#metodologi">Tentang Riset</a></li>
-            <li><a href="index.html#metodologi">Pembersihan Data</a></li>
-            <li><a href="index.html#model">Pipeline Scikit-Learn</a></li>
-            <li><a href="index.html#model">Evaluasi 5-Fold CV</a></li>
-            <li><a href="index.html#temuan">Klasterisasi K-Means</a></li>
+            <li><a href="/#metodologi">Tentang Riset</a></li>
+            <li><a href="/#metodologi">Pembersihan Data</a></li>
+            <li><a href="/#model">Pipeline Scikit-Learn</a></li>
+            <li><a href="/#model">Evaluasi 5-Fold CV</a></li>
+            <li><a href="/#temuan">Klasterisasi K-Means</a></li>
           </ul>
         </div>
 
@@ -953,10 +1018,10 @@
           <h3 class="footer-col-heading">Eksplorasi</h3>
           <ul class="footer-links-list">
             <li><a href="#distribusi">Histogram Kemiskinan</a></li>
-            <li><a href="#simulator">Simulator Prediksi</a></li>
+            <li><a href="#percobaan-16">16 Percobaan Model</a></li>
             <li><a href="#matriks">Matriks 34 Provinsi</a></li>
-            <li><a href="index.html#temuan">Diagram Pencaran OLS</a></li>
-            <li><a href="index.html#peta">Peta Spasial 34 Prov</a></li>
+            <li><a href="/#temuan">Diagram Pencaran OLS</a></li>
+            <li><a href="/#peta">Peta Spasial 34 Prov</a></li>
           </ul>
         </div>
 

@@ -1,7 +1,3 @@
-import '../styles/tokens.css';
-import '../styles/base.css';
-import '../styles/components.css';
-
 import { initIcons } from './icons.js';
 import { initCharts, setMapMode } from './charts.js';
 import { initSimulator } from './simulator.js';
@@ -249,5 +245,9 @@ function initMobileNav() {
   }
 }
 
-// Jalankan aplikasi saat DOM siap
-document.addEventListener('DOMContentLoaded', loadData);
+// Jalankan aplikasi saat DOM siap (aman terhadap navigasi antar-halaman & cache module)
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadData);
+} else {
+  loadData();
+}

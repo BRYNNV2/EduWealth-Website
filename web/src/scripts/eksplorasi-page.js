@@ -1,7 +1,3 @@
-import '../styles/tokens.css';
-import '../styles/base.css';
-import '../styles/components.css';
-
 import { initIcons } from './icons.js';
 import { predict } from '../model.js';
 
@@ -499,4 +495,8 @@ function initMobileNav() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', loadEksplorasiData);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadEksplorasiData);
+} else {
+  loadEksplorasiData();
+}
