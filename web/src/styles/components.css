@@ -1185,6 +1185,231 @@
   font-size: 12px;
 }
 
+/* 2. Daftar Provinsi Data Testing & Data Latih */
+.split-provinces-section {
+  margin-top: var(--space-24);
+  padding-top: var(--space-24);
+  border-top: 1px dashed var(--color-border);
+}
+
+.split-provinces-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.split-provinces-title {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+.split-provinces-title code {
+  font-family: monospace;
+  background: var(--color-primary-light);
+  color: var(--color-primary-text);
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.split-provinces-sub {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.split-provinces-sub code {
+  font-family: monospace;
+  background: #EDF4FC;
+  color: #1A5BB8;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.split-provinces-grid {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: var(--space-20);
+  align-items: start;
+}
+
+.split-prov-box {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-inner);
+  padding: 16px 20px;
+}
+
+.split-prov-box.test-box {
+  border-top: 3px solid var(--color-warning-orange);
+  background: #FFFDF9;
+}
+
+.split-prov-box.train-box {
+  border-top: 3px solid var(--color-primary);
+}
+
+.split-prov-box-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-text-main);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.split-prov-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px 12px;
+}
+
+.split-prov-list.test-list {
+  grid-template-columns: 1fr;
+}
+
+.split-prov-list.train-list {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.split-prov-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-text-body);
+  background: var(--color-bg-page);
+  border: 1px solid var(--color-border);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.split-prov-list.test-list li {
+  background: #FEF7EC;
+  border-color: #FDE3B9;
+  color: #7A4500;
+}
+
+.split-prov-list li .num {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 11px;
+  color: var(--color-text-muted);
+  min-width: 18px;
+}
+
+.split-prov-list.test-list li .num {
+  color: #B45309;
+}
+
+/* 3. Empat Kombinasi Fitur (F1 - F4) */
+.feature-combo-section {
+  margin-top: var(--space-24);
+  padding-top: var(--space-24);
+  border-top: 1px dashed var(--color-border);
+}
+
+.feat-code-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: #0B1B33;
+  color: #64B5F6;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.feat-code-badge.best {
+  background: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.feat-var-code {
+  font-family: monospace;
+  background: #EDF4FC;
+  color: #1A5BB8;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 4. Algoritma dan Target Prediksi */
+.algo-target-section {
+  margin-top: var(--space-24);
+  padding-top: var(--space-24);
+  border-top: 1px dashed var(--color-border);
+}
+
+.algo-target-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.algo-target-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.algo-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.algo-icon-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.algo-card-label {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.algo-card-main {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--color-text-main);
+  line-height: 1.4;
+}
+
+.algo-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
 /* ==========================================================================
    5. BENTO ZIG-ZAG SECTION (Empirical Findings & Spatial Anomaly)
    ========================================================================== */
@@ -1519,6 +1744,7 @@ input[type="range"] {
   border-radius: var(--radius-pill);
   outline: none;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -2561,8 +2787,14 @@ select.form-select {
   
   .methodology-grid,
   .split-method-grid,
+  .split-provinces-grid,
   .eksplorasi-hero-banner {
     grid-template-columns: 1fr;
+  }
+
+  .split-prov-list.train-list,
+  .algo-target-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .nav-links {

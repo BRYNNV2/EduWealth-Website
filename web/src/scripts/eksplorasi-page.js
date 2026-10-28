@@ -70,23 +70,28 @@ function populateExperimentsTable(metrics) {
     tbody.innerHTML = list.map(m => {
       const isLinear = m.Model.includes('Linear');
       const isTopRow = m.No === 1 || m.No === 9;
+      const targetCode = m.Periode === 'Maret' ? 'P0_Jumlah_Sem1_Maret' : 'P0_Jumlah_Sem2_September';
       return `
         <tr style="${isTopRow ? 'background: #F2F7FF;' : ''}">
           <td class="tabular-nums" style="text-align: center; font-weight: 800; color: #0B1B33;">${m.No}</td>
           <td>
-            <span class="badge ${m.Periode === 'Maret' ? 'green' : 'amber'}" style="font-size: 11px; padding: 3px 10px;">
-              ${m.Periode}
-            </span>
+            <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+              <span class="badge ${m.Periode === 'Maret' ? 'green' : 'amber'}" style="font-size: 11px; padding: 3px 10px;">
+                ${m.Periode}
+              </span>
+              <code class="feat-var-code" style="font-size: 11px; padding: 2px 6px;">${targetCode}</code>
+            </div>
           </td>
           <td>
-            <strong style="color: ${isLinear ? '#0E52A0' : '#3B4858'};">${m.Model}</strong>
+            <strong style="color: ${isLinear ? '#0E52A0' : '#3B4858'};">${isLinear ? 'Linear Regression' : 'Random Forest Regression'}</strong>
           </td>
-          <td><strong>${m.Fitur}</strong></td>
-          <td class="tabular-nums" style="text-align: right; font-weight: 600;">${m['Train R²'].toFixed(4)}</td>
-          <td class="tabular-nums" style="text-align: right; font-weight: 700; color: ${m['Test R²'] > -0.5 ? '#0E52A0' : '#C5221F'};">${m['Test R²'].toFixed(4)}</td>
-          <td class="tabular-nums" style="text-align: right;">${m.MAE.toFixed(4)}</td>
-          <td class="tabular-nums" style="text-align: right;">${m.MSE.toFixed(4)}</td>
+          <td>
+            <span class="feat-code-badge ${m.Kode_Fitur === 'F2' ? 'best' : ''}" style="font-size: 11px; padding: 2px 7px; margin-right: 6px;">${m.Kode_Fitur || ''}</span>
+            <strong>${m.Fitur}</strong>
+          </td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 600;">${m.MAE.toFixed(4)}</td>
           <td class="tabular-nums" style="text-align: right; font-weight: 600;">${m.RMSE.toFixed(4)}</td>
+          <td class="tabular-nums" style="text-align: right; font-weight: 700; color: ${m['Test R²'] > -0.5 ? '#0E52A0' : '#C5221F'};">${m['Test R²'].toFixed(4)}</td>
           <td>
             <span class="badge ${isTopRow ? 'green' : (isLinear ? 'amber' : 'red')}" style="font-size: 11px; padding: 2px 8px;">
               ${m.Status}

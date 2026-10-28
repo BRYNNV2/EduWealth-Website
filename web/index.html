@@ -448,6 +448,310 @@
               </table>
             </div>
           </div>
+
+          <!-- 2. Daftar Provinsi Data Testing (7) & Data Latih (27) -->
+          <div class="split-provinces-section">
+            <div class="split-provinces-header">
+              <h4 class="split-provinces-title">
+                2. Daftar Provinsi Hasil Pembagian <code>GroupShuffleSplit</code>
+              </h4>
+              <span class="split-provinces-sub">
+                Diekstrak langsung dari output <code>GroupShuffleSplit(n_splits=1, test_size=0.20, random_state=42)</code> pada Python
+              </span>
+            </div>
+
+            <div class="split-provinces-grid">
+              <!-- Kolom Kiri: 7 Provinsi Data Testing -->
+              <div class="split-prov-box test-box">
+                <div class="split-prov-box-head">
+                  <span class="dot-ind test"></span>
+                  <strong>Provinsi Data Testing (7 Provinsi • 56 Observasi)</strong>
+                  <span class="split-pct-badge test" style="margin-left: auto;">20% Data Uji</span>
+                </div>
+                <ol class="split-prov-list test-list">
+                  <li><span class="num">1.</span> Jawa Barat</li>
+                  <li><span class="num">2.</span> Kalimantan Utara</li>
+                  <li><span class="num">3.</span> Maluku</li>
+                  <li><span class="num">4.</span> Nusa Tenggara Barat</li>
+                  <li><span class="num">5.</span> Papua Barat</li>
+                  <li><span class="num">6.</span> Sulawesi Barat</li>
+                  <li><span class="num">7.</span> Sulawesi Selatan</li>
+                </ol>
+              </div>
+
+              <!-- Kolom Kanan: 27 Provinsi Data Latih -->
+              <div class="split-prov-box train-box">
+                <div class="split-prov-box-head">
+                  <span class="dot-ind train"></span>
+                  <strong>Provinsi Data Latih (27 Provinsi • 216 Observasi)</strong>
+                  <span class="split-pct-badge train" style="margin-left: auto;">80% Data Latih</span>
+                </div>
+                <ol class="split-prov-list train-list">
+                  <li><span class="num">1.</span> Aceh</li>
+                  <li><span class="num">2.</span> Bali</li>
+                  <li><span class="num">3.</span> Banten</li>
+                  <li><span class="num">4.</span> Bengkulu</li>
+                  <li><span class="num">5.</span> DI Yogyakarta</li>
+                  <li><span class="num">6.</span> DKI Jakarta</li>
+                  <li><span class="num">7.</span> Gorontalo</li>
+                  <li><span class="num">8.</span> Jambi</li>
+                  <li><span class="num">9.</span> Jawa Tengah</li>
+                  <li><span class="num">10.</span> Jawa Timur</li>
+                  <li><span class="num">11.</span> Kalimantan Barat</li>
+                  <li><span class="num">12.</span> Kalimantan Selatan</li>
+                  <li><span class="num">13.</span> Kalimantan Tengah</li>
+                  <li><span class="num">14.</span> Kalimantan Timur</li>
+                  <li><span class="num">15.</span> Kepulauan Bangka Belitung</li>
+                  <li><span class="num">16.</span> Kepulauan Riau</li>
+                  <li><span class="num">17.</span> Lampung</li>
+                  <li><span class="num">18.</span> Maluku Utara</li>
+                  <li><span class="num">19.</span> Nusa Tenggara Timur</li>
+                  <li><span class="num">20.</span> Papua</li>
+                  <li><span class="num">21.</span> Riau</li>
+                  <li><span class="num">22.</span> Sulawesi Tengah</li>
+                  <li><span class="num">23.</span> Sulawesi Tenggara</li>
+                  <li><span class="num">24.</span> Sulawesi Utara</li>
+                  <li><span class="num">25.</span> Sumatera Barat</li>
+                  <li><span class="num">26.</span> Sumatera Selatan</li>
+                  <li><span class="num">27.</span> Sumatera Utara</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Empat Kombinasi Fitur (F1 - F4) -->
+          <div class="feature-combo-section" id="kombinasi-fitur">
+            <div class="split-provinces-header">
+              <h4 class="split-provinces-title">
+                3. Empat Kombinasi Fitur (<code>F1 – F4</code>)
+              </h4>
+              <span class="split-provinces-sub">
+                Variasi variabel independen (X) yang diuji terhadap tingkat kemiskinan (Maret &amp; September) pada 16 percobaan
+              </span>
+            </div>
+
+            <div class="split-table-wrapper">
+              <table class="split-data-table feature-combo-table">
+                <thead>
+                  <tr>
+                    <th style="width: 110px; text-align: center;">Kode</th>
+                    <th>Fitur yang digunakan</th>
+                    <th style="width: 260px;">Nama Kolom Variabel (Python)</th>
+                    <th style="width: 170px; text-align: center;">Tipe Input</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="text-align: center;"><span class="feat-code-badge">F1</span></td>
+                    <td><strong>RLS laki-laki</strong></td>
+                    <td><code class="feat-var-code">RLS_Laki_Laki</code></td>
+                    <td style="text-align: center;"><span class="badge amber" style="font-size: 11px;">Univariat (1 Fitur)</span></td>
+                  </tr>
+                  <tr style="background: #F4F8FF;">
+                    <td style="text-align: center;"><span class="feat-code-badge best">F2</span></td>
+                    <td><strong>RLS perempuan</strong> <span class="badge green" style="font-size: 10px; margin-left: 6px;">Fitur Terbaik</span></td>
+                    <td><code class="feat-var-code">RLS_Perempuan</code></td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 11px;">Univariat (1 Fitur)</span></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;"><span class="feat-code-badge">F3</span></td>
+                    <td><strong>RLS rata-rata</strong></td>
+                    <td><code class="feat-var-code">RLS_Rata_Rata</code></td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 11px;">Univariat (1 Fitur)</span></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;"><span class="feat-code-badge">F4</span></td>
+                    <td><strong>RLS laki-laki dan RLS perempuan</strong></td>
+                    <td><code class="feat-var-code">RLS_Laki_Laki, RLS_Perempuan</code></td>
+                    <td style="text-align: center;"><span class="badge amber" style="font-size: 11px;">Multivariat (2 Fitur)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 4. Algoritma dan Target Prediksi -->
+          <div class="algo-target-section" id="algoritma-target">
+            <div class="split-provinces-header">
+              <h4 class="split-provinces-title">
+                4. Algoritma dan Target Prediksi
+              </h4>
+              <span class="split-provinces-sub">
+                2 Algoritma × 2 Target Kemiskinan × 4 Kombinasi Fitur (<code>F1 – F4</code>) = <strong>16 Kali Percobaan</strong>
+              </span>
+            </div>
+
+            <div class="algo-target-grid">
+              <div class="algo-target-card">
+                <div class="algo-card-top">
+                  <span class="algo-icon-box"><i data-lucide="cpu" style="width: 16px; height: 16px;"></i></span>
+                  <span class="algo-card-label">Algoritma Pemodelan</span>
+                </div>
+                <div class="algo-card-main">Linear Regression &amp; Random Forest Regression</div>
+                <div class="algo-card-tags">
+                  <code class="feat-var-code">LinearRegression()</code>
+                  <code class="feat-var-code">RandomForestRegressor(n_estimators=300)</code>
+                </div>
+              </div>
+
+              <div class="algo-target-card">
+                <div class="algo-card-top">
+                  <span class="algo-icon-box"><i data-lucide="target" style="width: 16px; height: 16px;"></i></span>
+                  <span class="algo-card-label">Target 1 (Semester 1)</span>
+                </div>
+                <div class="algo-card-main">Persentase penduduk miskin Maret</div>
+                <div class="algo-card-tags">
+                  <code class="feat-var-code">P0_Jumlah_Sem1_Maret</code>
+                </div>
+              </div>
+
+              <div class="algo-target-card">
+                <div class="algo-card-top">
+                  <span class="algo-icon-box"><i data-lucide="target" style="width: 16px; height: 16px;"></i></span>
+                  <span class="algo-card-label">Target 2 (Semester 2)</span>
+                </div>
+                <div class="algo-card-main">Persentase penduduk miskin September</div>
+                <div class="algo-card-tags">
+                  <code class="feat-var-code">P0_Jumlah_Sem2_September</code>
+                </div>
+              </div>
+
+              <div class="algo-target-card">
+                <div class="algo-card-top">
+                  <span class="algo-icon-box"><i data-lucide="check-circle-2" style="width: 16px; height: 16px;"></i></span>
+                  <span class="algo-card-label">Metrik Evaluasi Model</span>
+                </div>
+                <div class="algo-card-main">MAE, RMSE, dan R² pada Data Testing</div>
+                <div class="algo-card-tags">
+                  <code class="feat-var-code">MAE</code>
+                  <code class="feat-var-code">RMSE</code>
+                  <code class="feat-var-code">R² (Testing = 56 Obs)</code>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Hasil Analisis Korelasi Pearson dan Spearman -->
+          <div class="algo-target-section" id="analisis-korelasi" style="margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--color-border);">
+            <div class="split-provinces-header" style="margin-bottom: 14px;">
+              <div>
+                <h4 class="split-provinces-title" style="margin-bottom: 4px;">
+                  5. Hasil Analisis Korelasi Pearson dan Spearman
+                </h4>
+                <span class="split-provinces-sub">
+                  Periode Penelitian: <strong>2015–2022</strong> • Jumlah observasi yang digunakan: <strong>272</strong> (34 Provinsi × 8 Tahun)
+                </span>
+              </div>
+              <span class="badge green" style="font-size: 11px;">Seluruh Pasangan Signifikan (p-value = 0.0 / &lt; 0.0001)</span>
+            </div>
+
+            <div class="provinces-table-wrapper" style="margin-bottom: 14px;">
+              <table class="provinces-table" style="font-size: 12.5px;">
+                <thead>
+                  <tr>
+                    <th style="width: 42px; text-align: center;">No.</th>
+                    <th>Pasangan Variabel</th>
+                    <th style="text-align: center;">Jumlah Data</th>
+                    <th style="text-align: right;">Pearson (r)</th>
+                    <th style="text-align: right;">p-value Pearson</th>
+                    <th style="text-align: center;">Sig. Pearson</th>
+                    <th>Interpretasi Pearson</th>
+                    <th style="text-align: right;">Spearman (rho)</th>
+                    <th style="text-align: right;">p-value Spearman</th>
+                    <th style="text-align: center;">Sig. Spearman</th>
+                    <th>Interpretasi Spearman</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tabular-nums" style="text-align: center; font-weight: 700;">0</td>
+                    <td><strong>RLS Rata-Rata vs Jumlah Penduduk Miskin Sem 1</strong></td>
+                    <td class="tabular-nums" style="text-align: center;">272</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0E52A0;">-0.4275</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan sedang</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0E52A0;">-0.3470</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                  </tr>
+                  <tr>
+                    <td class="tabular-nums" style="text-align: center; font-weight: 700;">1</td>
+                    <td><strong>RLS Rata-Rata vs Jumlah Penduduk Miskin Sem 2</strong></td>
+                    <td class="tabular-nums" style="text-align: center;">272</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0E52A0;">-0.4275</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan sedang</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0E52A0;">-0.3414</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                  </tr>
+                  <tr>
+                    <td class="tabular-nums" style="text-align: center; font-weight: 700;">2</td>
+                    <td><span>RLS Laki-Laki vs Jumlah Penduduk Miskin Sem 1</span></td>
+                    <td class="tabular-nums" style="text-align: center;">272</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 600;">-0.3517</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 600;">-0.3237</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                  </tr>
+                  <tr>
+                    <td class="tabular-nums" style="text-align: center; font-weight: 700;">3</td>
+                    <td><span>RLS Laki-Laki vs Jumlah Penduduk Miskin Sem 2</span></td>
+                    <td class="tabular-nums" style="text-align: center;">272</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 600;">-0.3522</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 600;">-0.3186</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                  </tr>
+                  <tr class="exp-row-best">
+                    <td class="tabular-nums" style="text-align: center; font-weight: 700;">4</td>
+                    <td><strong>RLS Perempuan vs Jumlah Penduduk Miskin Sem 1</strong> <span class="badge green" style="font-size: 10px; margin-left: 4px;">Terkuat Sem 1</span></td>
+                    <td class="tabular-nums" style="text-align: center;">272</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 800; color: #0D652D;">-0.4635</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td><strong>Hubungan negatif dengan kekuatan sedang</strong></td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 800; color: #0D652D;">-0.3495</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                  </tr>
+                  <tr class="exp-row-best">
+                    <td class="tabular-nums" style="text-align: center; font-weight: 700;">5</td>
+                    <td><strong>RLS Perempuan vs Jumlah Penduduk Miskin Sem 2</strong> <span class="badge green" style="font-size: 10px; margin-left: 4px;">Terkuat Sem 2</span></td>
+                    <td class="tabular-nums" style="text-align: center;">272</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 800; color: #0D652D;">-0.4630</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td><strong>Hubungan negatif dengan kekuatan sedang</strong></td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 800; color: #0D652D;">-0.3444</td>
+                    <td class="tabular-nums" style="text-align: right;">0.0</td>
+                    <td style="text-align: center;"><span class="badge green" style="font-size: 10.5px;">Signifikan</span></td>
+                    <td>Hubungan negatif dengan kekuatan lemah</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="split-summary-note" style="margin-top: 8px;">
+              <i data-lucide="info" style="width: 16px; height: 16px; color: var(--color-primary); flex-shrink: 0;"></i>
+              <span>
+                <strong>Temuan Utama Korelasi:</strong> Seluruh variabel RLS memiliki arah korelasi <strong>negatif dan signifikan secara statistik</strong> (<code>p-value = 0.0</code> / <code>p &lt; 0.001</code>) terhadap persentase penduduk miskin. <strong>RLS Perempuan</strong> memiliki korelasi linier (Pearson) dan monotonik (Spearman) paling kuat baik pada Semester 1 (<code>r = -0.4635</code>, <code>rho = -0.3495</code>) maupun Semester 2 (<code>r = -0.4630</code>, <code>rho = -0.3444</code>), disusul oleh <strong>RLS Rata-Rata</strong> (<code>r = -0.4275</code>) dengan kekuatan sedang, sedangkan <strong>RLS Laki-Laki</strong> berada pada kategori kekuatan lemah (<code>r = -0.3517</code> s.d. <code>-0.3522</code>).
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -712,15 +1016,13 @@
             <table class="provinces-table experiments-16-table">
               <thead>
                 <tr>
-                  <th style="width: 48px; text-align: center;">No</th>
-                  <th>Periode</th>
-                  <th>Model Algoritma</th>
-                  <th>Kombinasi Fitur (X)</th>
-                  <th style="text-align: right;">Train R²</th>
-                  <th style="text-align: right;">Test R²</th>
-                  <th style="text-align: right;">MAE</th>
-                  <th style="text-align: right;">MSE</th>
-                  <th style="text-align: right;">RMSE</th>
+                  <th style="width: 48px; text-align: center;">No.</th>
+                  <th>Target Kemiskinan</th>
+                  <th>Algoritma</th>
+                  <th>Fitur (F1 – F4)</th>
+                  <th style="text-align: right;">MAE (Test)</th>
+                  <th style="text-align: right;">RMSE (Test)</th>
+                  <th style="text-align: right;">R² (Test)</th>
                   <th>Keterangan Evaluasi</th>
                 </tr>
               </thead>
@@ -728,6 +1030,127 @@
                 <!-- Diisi otomatis oleh main.js -->
               </tbody>
             </table>
+          </div>
+
+          <!-- Ringkasan Model Terbaik Berdasarkan Target Bulan & Algoritma -->
+          <div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--color-border);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
+              <div>
+                <span class="section-tag" style="margin-bottom: 6px;">
+                  <i data-lucide="trophy" style="width: 13px; height: 13px;"></i>
+                  Ringkasan Eksperimen Utama
+                </span>
+                <h4 style="font-size: 17px; font-weight: 800; color: var(--color-text-main); margin: 0;">
+                  Tabel Model Terbaik dari Eksperimen Utama pada Data Testing (Berdasarkan Bulan &amp; Algoritma)
+                </h4>
+                <p style="font-size: 13px; color: var(--color-text-muted); margin: 4px 0 0;">
+                  Perbandingan konfigurasi fitur terbaik untuk masing-masing kombinasi target bulan (<strong>Maret</strong> &amp; <strong>September</strong>) dan algoritma (<strong>Linear Regression</strong> &amp; <strong>Random Forest</strong>) dari dataset panel.
+                </p>
+              </div>
+              <span class="badge green" style="font-size: 11px;">Fitur F2 (RLS Perempuan) Dominan di Semua Kategori</span>
+            </div>
+
+            <div class="provinces-table-wrapper" style="margin-bottom: 16px;">
+              <table class="provinces-table">
+                <thead>
+                  <tr>
+                    <th>Target</th>
+                    <th>Algoritma</th>
+                    <th>Fitur Terbaik</th>
+                    <th style="text-align: right;">MAE</th>
+                    <th style="text-align: right;">RMSE</th>
+                    <th style="text-align: right;">R²</th>
+                    <th>Kesimpulan Perbandingan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="exp-row-best">
+                    <td><span class="exp-period-badge maret">Maret</span></td>
+                    <td><strong>Linear Regression</strong></td>
+                    <td>
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <code class="feature-code-pill">F2</code>
+                        <strong>RLS Perempuan</strong>
+                      </div>
+                    </td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0D652D;">4.3519</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0D652D;">6.0426</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0E52A0;">-0.1560</td>
+                    <td><span class="badge green">Terbaik Bulan Maret (R² Tertinggi: -0.1560)</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="exp-period-badge maret">Maret</span></td>
+                    <td><span>Random Forest</span></td>
+                    <td>
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <code class="feature-code-pill">F2</code>
+                        <span>RLS Perempuan</span>
+                      </div>
+                    </td>
+                    <td class="tabular-nums" style="text-align: right;">4.9980</td>
+                    <td class="tabular-nums" style="text-align: right;">6.9279</td>
+                    <td class="tabular-nums" style="text-align: right; color: #C5221F; font-weight: 600;">-0.5195</td>
+                    <td><span class="badge amber">Terbaik untuk RF Maret (Masih Overfitting vs LR)</span></td>
+                  </tr>
+                  <tr class="exp-row-best">
+                    <td><span class="exp-period-badge september">September</span></td>
+                    <td><strong>Linear Regression</strong></td>
+                    <td>
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <code class="feature-code-pill">F2</code>
+                        <strong>RLS Perempuan</strong>
+                      </div>
+                    </td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0D652D;">4.2513</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0D652D;">5.9449</td>
+                    <td class="tabular-nums" style="text-align: right; font-weight: 700; color: #0E52A0;">-0.1803</td>
+                    <td><span class="badge green">Terbaik Bulan September (MAE &amp; RMSE Terendah)</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="exp-period-badge september">September</span></td>
+                    <td><span>Random Forest</span></td>
+                    <td>
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <code class="feature-code-pill">F2</code>
+                        <span>RLS Perempuan</span>
+                      </div>
+                    </td>
+                    <td class="tabular-nums" style="text-align: right;">5.0369</td>
+                    <td class="tabular-nums" style="text-align: right;">6.9157</td>
+                    <td class="tabular-nums" style="text-align: right; color: #C5221F; font-weight: 600;">-0.5973</td>
+                    <td><span class="badge amber">Terbaik untuk RF September (Masih Overfitting vs LR)</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Kesimpulan Analisis Berdasarkan Bulan & Algoritma -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+              <div style="background: #F4F9FF; border: 1px solid #C4DCF7; border-radius: 10px; padding: 14px 16px;">
+                <div style="font-size: 13px; font-weight: 800; color: #0E52A0; margin-bottom: 6px;">
+                  1. Kesimpulan Berdasarkan Algoritma
+                </div>
+                <p style="font-size: 12.5px; line-height: 1.55; color: #3B4858; margin: 0;">
+                  <strong>Linear Regression</strong> secara mutlak lebih unggul dibanding <strong>Random Forest</strong> pada kedua periode bulan. Pada Maret, Linear Regression menekan MAE lebih rendah <strong>0.6461 poin</strong> (<code>4.3519</code> vs <code>4.9980</code>) dan RMSE lebih rendah <strong>0.8853 poin</strong> (<code>6.0426</code> vs <code>6.9279</code>). Pada September, Linear Regression menekan MAE lebih rendah <strong>0.7856 poin</strong> (<code>4.2513</code> vs <code>5.0369</code>).
+                </p>
+              </div>
+              <div style="background: #F4FBF7; border: 1px solid #B7E4C7; border-radius: 10px; padding: 14px 16px;">
+                <div style="font-size: 13px; font-weight: 800; color: #0D652D; margin-bottom: 6px;">
+                  2. Kesimpulan Berdasarkan Target Bulan (Maret vs September)
+                </div>
+                <p style="font-size: 12.5px; line-height: 1.55; color: #3B4858; margin: 0;">
+                  Berdasarkan tingkat kesalahan absolut dan kuadratik (<strong>MAE &amp; RMSE</strong>), prediksi pada bulan <strong>September</strong> menghasilkan galat paling kecil secara keseluruhan (<code>MAE = 4.2513</code>, <code>RMSE = 5.9449</code>). Namun berdasarkan proporsi variansi (<strong>R²</strong>), bulan <strong>Maret</strong> sedikit lebih unggul dengan <code>R² = -0.1560</code> dibanding September (<code>R² = -0.1803</code>).
+                </p>
+              </div>
+              <div style="background: #FFFDF5; border: 1px solid #FDE68A; border-radius: 10px; padding: 14px 16px;">
+                <div style="font-size: 13px; font-weight: 800; color: #B06000; margin-bottom: 6px;">
+                  3. Kesimpulan Berdasarkan Kombinasi Fitur
+                </div>
+                <p style="font-size: 12.5px; line-height: 1.55; color: #3B4858; margin: 0;">
+                  Fitur tunggal <strong>F2 (RLS Perempuan)</strong> secara konsisten menjadi prediktor terbaik di keempat skenario (baik untuk Maret maupun September, serta baik pada Linear Regression maupun Random Forest), membuktikan peran krusial capaian pendidikan perempuan terhadap penurunan kemiskinan daerah.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

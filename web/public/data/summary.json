@@ -12,7 +12,45 @@
     "train_provinsi": 27,
     "test_provinsi": 7,
     "train_persentase": "80%",
-    "test_persentase": "20%"
+    "test_persentase": "20%",
+    "daftar_provinsi_testing": [
+      "Jawa Barat",
+      "Kalimantan Utara",
+      "Maluku",
+      "Nusa Tenggara Barat",
+      "Papua Barat",
+      "Sulawesi Barat",
+      "Sulawesi Selatan"
+    ],
+    "daftar_provinsi_latih": [
+      "Aceh",
+      "Bali",
+      "Banten",
+      "Bengkulu",
+      "DI Yogyakarta",
+      "DKI Jakarta",
+      "Gorontalo",
+      "Jambi",
+      "Jawa Tengah",
+      "Jawa Timur",
+      "Kalimantan Barat",
+      "Kalimantan Selatan",
+      "Kalimantan Tengah",
+      "Kalimantan Timur",
+      "Kepulauan Bangka Belitung",
+      "Kepulauan Riau",
+      "Lampung",
+      "Maluku Utara",
+      "Nusa Tenggara Timur",
+      "Papua",
+      "Riau",
+      "Sulawesi Tengah",
+      "Sulawesi Tenggara",
+      "Sulawesi Utara",
+      "Sumatera Barat",
+      "Sumatera Selatan",
+      "Sumatera Utara"
+    ]
   },
   "statistik_nasional": {
     "rls_mean": 8.544,
@@ -28,15 +66,95 @@
   },
   "korelasi": {
     "pearson": {
-      "koefisien": -0.42,
-      "p_value": 1.6673448464663204e-14,
+      "koefisien": -0.4275,
+      "p_value": 1.628e-13,
       "interpretasi": "Negatif Sedang (Signifikan)"
     },
     "spearman": {
-      "koefisien": -0.3454,
-      "p_value": 5.349156296648165e-10,
+      "koefisien": -0.3470,
+      "p_value": 4.11e-09,
       "interpretasi": "Monotonik Negatif (Signifikan)"
-    }
+    },
+    "tabel_korelasi": [
+      {
+        "no": 0,
+        "pasangan": "RLS Rata-Rata vs Jumlah Penduduk Miskin Sem 1",
+        "n": 272,
+        "pearson_r": -0.4275,
+        "pearson_p": 0.0,
+        "pearson_sig": "Signifikan",
+        "pearson_interp": "Hubungan negatif dengan kekuatan sedang",
+        "spearman_rho": -0.3470,
+        "spearman_p": 0.0,
+        "spearman_sig": "Signifikan",
+        "spearman_interp": "Hubungan negatif dengan kekuatan lemah"
+      },
+      {
+        "no": 1,
+        "pasangan": "RLS Rata-Rata vs Jumlah Penduduk Miskin Sem 2",
+        "n": 272,
+        "pearson_r": -0.4275,
+        "pearson_p": 0.0,
+        "pearson_sig": "Signifikan",
+        "pearson_interp": "Hubungan negatif dengan kekuatan sedang",
+        "spearman_rho": -0.3414,
+        "spearman_p": 0.0,
+        "spearman_sig": "Signifikan",
+        "spearman_interp": "Hubungan negatif dengan kekuatan lemah"
+      },
+      {
+        "no": 2,
+        "pasangan": "RLS Laki-Laki vs Jumlah Penduduk Miskin Sem 1",
+        "n": 272,
+        "pearson_r": -0.3517,
+        "pearson_p": 0.0,
+        "pearson_sig": "Signifikan",
+        "pearson_interp": "Hubungan negatif dengan kekuatan lemah",
+        "spearman_rho": -0.3237,
+        "spearman_p": 0.0,
+        "spearman_sig": "Signifikan",
+        "spearman_interp": "Hubungan negatif dengan kekuatan lemah"
+      },
+      {
+        "no": 3,
+        "pasangan": "RLS Laki-Laki vs Jumlah Penduduk Miskin Sem 2",
+        "n": 272,
+        "pearson_r": -0.3522,
+        "pearson_p": 0.0,
+        "pearson_sig": "Signifikan",
+        "pearson_interp": "Hubungan negatif dengan kekuatan lemah",
+        "spearman_rho": -0.3186,
+        "spearman_p": 0.0,
+        "spearman_sig": "Signifikan",
+        "spearman_interp": "Hubungan negatif dengan kekuatan lemah"
+      },
+      {
+        "no": 4,
+        "pasangan": "RLS Perempuan vs Jumlah Penduduk Miskin Sem 1",
+        "n": 272,
+        "pearson_r": -0.4635,
+        "pearson_p": 0.0,
+        "pearson_sig": "Signifikan",
+        "pearson_interp": "Hubungan negatif dengan kekuatan sedang",
+        "spearman_rho": -0.3495,
+        "spearman_p": 0.0,
+        "spearman_sig": "Signifikan",
+        "spearman_interp": "Hubungan negatif dengan kekuatan lemah"
+      },
+      {
+        "no": 5,
+        "pasangan": "RLS Perempuan vs Jumlah Penduduk Miskin Sem 2",
+        "n": 272,
+        "pearson_r": -0.4630,
+        "pearson_p": 0.0,
+        "pearson_sig": "Signifikan",
+        "pearson_interp": "Hubungan negatif dengan kekuatan sedang",
+        "spearman_rho": -0.3444,
+        "spearman_p": 0.0,
+        "spearman_sig": "Signifikan",
+        "spearman_interp": "Hubungan negatif dengan kekuatan lemah"
+      }
+    ]
   },
   "model_terpilih": {
     "nama": "Linear Regression (Baseline OLS)",
