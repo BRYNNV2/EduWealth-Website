@@ -38,12 +38,7 @@
       <nav aria-label="Navigasi Halaman Eksplorasi">
         <ul class="nav-links">
           <li><a href="/">Beranda</a></li>
-          <li><a href="#pembagian-data">Pembagian Data</a></li>
-          <li><a href="#percobaan-16">16 Percobaan</a></li>
-          <li><a href="#distribusi">Distribusi Data</a></li>
-          <li><a href="#matriks">Matriks 34 Provinsi</a></li>
-          <li><a href="/#metodologi">Metodologi</a></li>
-          <li><a href="/#model">Model</a></li>
+          <li><a href="eksplorasi.html" class="active">Eksplorasi Data</a></li>
         </ul>
       </nav>
 
@@ -719,72 +714,6 @@
           </div>
         </div>
 
-        <!-- 3. GRAFIK HISTOGRAM DISTRIBUSI PENDUDUK MISKIN SEMESTER 1 -->
-        <div class="card histogram-card histogram-section" id="distribusi">
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
-            <div>
-              <span class="section-tag" style="margin-bottom: 8px;">
-                <i data-lucide="bar-chart-2" style="width: 13px; height: 13px;"></i>
-                Distribusi Data Empiris
-              </span>
-              <h2 style="font-size: 20px; color: var(--color-text-main); margin: 0;">
-                Histogram Distribusi Persentase Penduduk Miskin Semester 1
-              </h2>
-              <p style="font-size: 13px; color: var(--color-text-muted); margin: 4px 0 0;">
-                Sebaran frekuensi data panel resmi BPS periode Semester 1 / Maret (2015–2022, N = 272 observasi) pada 34 provinsi.
-              </p>
-            </div>
-
-            <!-- Filter Periode Tahun -->
-            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-              <span style="font-size: 12px; font-weight: 700; color: var(--color-text-muted);">Pilih Periode:</span>
-              <div class="pill-group" role="tablist">
-                <button type="button" class="pill-btn hist-filter-btn active" data-year="all">Semua Tahun (N=272)</button>
-                <button type="button" class="pill-btn hist-filter-btn" data-year="2022">2022 (Terbaru)</button>
-                <button type="button" class="pill-btn hist-filter-btn" data-year="2020">2020 (Pandemi)</button>
-                <button type="button" class="pill-btn hist-filter-btn" data-year="2015">2015 (Baseline)</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Container ECharts -->
-          <div id="histogramChartContainer" class="chart-container-hist" role="region" aria-label="Grafik Histogram Distribusi Persentase Penduduk Miskin Semester 1"></div>
-          
-          <div class="chart-footnote" style="margin-top: 12px;">
-            Garis putus-putus biru = <strong>Rata-rata (Mean)</strong> • Garis titik-titik oranye = <strong>Median</strong> • Sumber: Badan Pusat Statistik RI (Semester 1 / Maret 2015–2022, N = 272).
-          </div>
-
-          <!-- 4 Ringkasan Statistik Distribusi -->
-          <div class="dist-stat-cards">
-            <div class="dist-stat-box">
-              <div class="title">Rata-Rata (Mean)</div>
-              <div class="val tabular-nums" id="histStatMean">10.83%</div>
-              <div class="sub">Nilai ekspektasi agregat nasional</div>
-            </div>
-            <div class="dist-stat-box">
-              <div class="title">Median (Titik Tengah)</div>
-              <div class="val tabular-nums" id="histStatMedian">9.04%</div>
-              <div class="sub">50% data berada di bawah angka ini</div>
-            </div>
-            <div class="dist-stat-box">
-              <div class="title">Bentuk Sebaran (Skewness)</div>
-              <div class="val" id="histStatSkew" style="font-size: 15px; color: #B45309;">+1.28 (Menceng Kanan)</div>
-              <div class="sub">Ekor panjang ke arah kemiskinan tinggi</div>
-            </div>
-            <div class="dist-stat-box">
-              <div class="title">Rentang Ekstrem (Disparitas)</div>
-              <div class="val tabular-nums" id="histStatRange" style="font-size: 15px;">3.47% s.d. 28.54%</div>
-              <div class="sub">Disparitas antarprovinsi &gt; 8 kali lipat</div>
-            </div>
-          </div>
-
-          <!-- Insight Naratif Distribusi -->
-          <div style="background: var(--color-bg-page); border: 1px solid var(--color-border); border-radius: var(--radius-inner); padding: 16px 20px; margin-top: 20px; font-size: 13px; line-height: 1.6; color: #3B4858;">
-            <strong style="color: #0B1B33;">Temuan Ilmiah Distribusi Semester 1:</strong>
-            Distribusi persentase penduduk miskin menunjukkan bentuk <em>right-skewed</em> (menceng ke kanan) yang kuat. Modus data berada pada rentang rendah (<strong>5.98% – 8.48%</strong> sebanyak 84 observasi), sedangkan wilayah timur seperti Papua dan Maluku membentuk ekor panjang ekstrem di atas 20%. Karakteristik asimetris inilah yang menjadi alasan mengapa kebijakan pengentasan kemiskinan di Indonesia tidak bisa disamaratakan (<em>one size fits all</em>).
-          </div>
-        </div>
-
         <!-- 4. METRIC ANCHOR STRIP -->
         <div class="hero-stats-bar" style="margin-bottom: 40px;" id="simulator">
           <div class="stat-pill">
@@ -924,33 +853,28 @@
             </svg>
           </div>
 
-          <!-- Right: Subscription Content -->
-          <div class="banner-text-box">
-            <h2 class="banner-headline">
-              Berlangganan Ringkasan Riset &amp; Pembaruan Data
+          <!-- Right: Research Summary Content -->
+          <div class="banner-content-box">
+            <h2 class="banner-title">
+              Ringkasan Riset &amp; Dokumentasi Data Sains Terbuka
             </h2>
-            <p class="banner-subtext">
-              Dapatkan akses langsung ke ringkasan eksekutif, rilis data panel BPS tahunan, dan pembaruan model Machine Learning langsung ke surel Anda.
+            <p class="banner-subtitle">
+              Seluruh hasil analisis korelasi Pearson &amp; Spearman, pembagian provinsi dengan <code>GroupShuffleSplit</code>, dan eksperimen 16 model regresi dihitung langsung dari data panel resmi BPS RI (2015–2022).
             </p>
 
-            <form class="banner-form" onsubmit="event.preventDefault(); alert('Terima kasih! Surel Anda telah terdaftar.');">
-              <div class="banner-form-group">
-                <i data-lucide="mail" class="banner-input-icon"></i>
-                <input 
-                  type="email" 
-                  class="banner-email-input" 
-                  placeholder="Masukkan alamat email Anda..." 
-                  required 
-                  aria-label="Alamat email untuk newsletter"
-                />
-                <button type="submit" class="banner-submit-btn">
-                  Berlangganan
-                </button>
-              </div>
-            </form>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
+              <a href="/" class="banner-submit-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px;">
+                <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i>
+                <span>Kembali ke Beranda</span>
+              </a>
+              <a href="https://github.com/BRYNNV2/EduWealth-Website" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF; border: 1px solid rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.14); padding: 11px 20px; border-radius: 999px; font-size: 14px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                <span>Lihat Repositori GitHub</span>
+              </a>
+            </div>
 
-            <div class="banner-microcopy">
-              Anda dapat berhenti berlangganan kapan saja. Baca <a href="#">kebijakan privasi</a> kami.
+            <div class="banner-disclaimer">
+              Sumber Data Resmi: Badan Pusat Statistik (BPS) RI • Periode Panel 2015–2022 (34 Provinsi, N = 272 Observasi).
             </div>
           </div>
         </div>
