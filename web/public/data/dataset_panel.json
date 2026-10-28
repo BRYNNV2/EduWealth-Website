@@ -1,0 +1,2722 @@
+[
+  {
+    "No": 1,
+    "Provinsi": "ACEH",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 17.08,
+    "P0_Jumlah_Sem2_September": 17.11,
+    "RLS_Laki_Laki": 9.16,
+    "RLS_Perempuan": 8.4,
+    "RLS_Rata_Rata": 8.78
+  },
+  {
+    "No": 2,
+    "Provinsi": "BALI",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 4.74,
+    "P0_Jumlah_Sem2_September": 5.25,
+    "RLS_Laki_Laki": 9.18,
+    "RLS_Perempuan": 7.33,
+    "RLS_Rata_Rata": 8.255
+  },
+  {
+    "No": 3,
+    "Provinsi": "BANTEN",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 5.9,
+    "P0_Jumlah_Sem2_September": 5.75,
+    "RLS_Laki_Laki": 8.86,
+    "RLS_Perempuan": 7.66,
+    "RLS_Rata_Rata": 8.26
+  },
+  {
+    "No": 4,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 17.88,
+    "P0_Jumlah_Sem2_September": 17.16,
+    "RLS_Laki_Laki": 8.7,
+    "RLS_Perempuan": 7.89,
+    "RLS_Rata_Rata": 8.295
+  },
+  {
+    "No": 5,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 14.91,
+    "P0_Jumlah_Sem2_September": 13.16,
+    "RLS_Laki_Laki": 9.64,
+    "RLS_Perempuan": 8.4,
+    "RLS_Rata_Rata": 9.02
+  },
+  {
+    "No": 6,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 3.93,
+    "P0_Jumlah_Sem2_September": 3.61,
+    "RLS_Laki_Laki": 11.21,
+    "RLS_Perempuan": 10.2,
+    "RLS_Rata_Rata": 10.705
+  },
+  {
+    "No": 7,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 18.32,
+    "P0_Jumlah_Sem2_September": 18.16,
+    "RLS_Laki_Laki": 6.76,
+    "RLS_Perempuan": 7.34,
+    "RLS_Rata_Rata": 7.05
+  },
+  {
+    "No": 8,
+    "Provinsi": "JAMBI",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 8.86,
+    "P0_Jumlah_Sem2_September": 9.12,
+    "RLS_Laki_Laki": 8.46,
+    "RLS_Perempuan": 7.44,
+    "RLS_Rata_Rata": 7.95
+  },
+  {
+    "No": 9,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 9.53,
+    "P0_Jumlah_Sem2_September": 9.57,
+    "RLS_Laki_Laki": 8.36,
+    "RLS_Perempuan": 7.35,
+    "RLS_Rata_Rata": 7.855
+  },
+  {
+    "No": 10,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 13.58,
+    "P0_Jumlah_Sem2_September": 13.32,
+    "RLS_Laki_Laki": 7.59,
+    "RLS_Perempuan": 6.5,
+    "RLS_Rata_Rata": 7.045
+  },
+  {
+    "No": 11,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 12.34,
+    "P0_Jumlah_Sem2_September": 12.28,
+    "RLS_Laki_Laki": 7.75,
+    "RLS_Perempuan": 6.57,
+    "RLS_Rata_Rata": 7.16
+  },
+  {
+    "No": 12,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 8.03,
+    "P0_Jumlah_Sem2_September": 8.44,
+    "RLS_Laki_Laki": 7.42,
+    "RLS_Perempuan": 6.43,
+    "RLS_Rata_Rata": 6.925
+  },
+  {
+    "No": 13,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 4.99,
+    "P0_Jumlah_Sem2_September": 4.72,
+    "RLS_Laki_Laki": 8.29,
+    "RLS_Perempuan": 7.23,
+    "RLS_Rata_Rata": 7.76
+  },
+  {
+    "No": 14,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 5.94,
+    "P0_Jumlah_Sem2_September": 5.91,
+    "RLS_Laki_Laki": 8.43,
+    "RLS_Perempuan": 7.59,
+    "RLS_Rata_Rata": 8.01
+  },
+  {
+    "No": 15,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 6.23,
+    "P0_Jumlah_Sem2_September": 6.1,
+    "RLS_Laki_Laki": 9.57,
+    "RLS_Perempuan": 8.68,
+    "RLS_Rata_Rata": 9.125
+  },
+  {
+    "No": 16,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 6.24,
+    "P0_Jumlah_Sem2_September": 6.32,
+    "RLS_Laki_Laki": 9.12,
+    "RLS_Perempuan": 8.25,
+    "RLS_Rata_Rata": 8.685
+  },
+  {
+    "No": 17,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 5.4,
+    "P0_Jumlah_Sem2_September": 4.83,
+    "RLS_Laki_Laki": 7.99,
+    "RLS_Perempuan": 7.14,
+    "RLS_Rata_Rata": 7.565
+  },
+  {
+    "No": 18,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 6.24,
+    "P0_Jumlah_Sem2_September": 5.78,
+    "RLS_Laki_Laki": 9.86,
+    "RLS_Perempuan": 9.36,
+    "RLS_Rata_Rata": 9.61
+  },
+  {
+    "No": 19,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 14.35,
+    "P0_Jumlah_Sem2_September": 13.53,
+    "RLS_Laki_Laki": 7.92,
+    "RLS_Perempuan": 7.19,
+    "RLS_Rata_Rata": 7.555
+  },
+  {
+    "No": 20,
+    "Provinsi": "MALUKU",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 19.51,
+    "P0_Jumlah_Sem2_September": 19.36,
+    "RLS_Laki_Laki": 9.42,
+    "RLS_Perempuan": 8.91,
+    "RLS_Rata_Rata": 9.165
+  },
+  {
+    "No": 21,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 6.84,
+    "P0_Jumlah_Sem2_September": 6.22,
+    "RLS_Laki_Laki": 8.91,
+    "RLS_Perempuan": 7.8,
+    "RLS_Rata_Rata": 8.355
+  },
+  {
+    "No": 22,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 17.1,
+    "P0_Jumlah_Sem2_September": 16.54,
+    "RLS_Laki_Laki": 7.51,
+    "RLS_Perempuan": 6.02,
+    "RLS_Rata_Rata": 6.765
+  },
+  {
+    "No": 23,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 22.61,
+    "P0_Jumlah_Sem2_September": 22.58,
+    "RLS_Laki_Laki": 7.27,
+    "RLS_Perempuan": 6.61,
+    "RLS_Rata_Rata": 6.94
+  },
+  {
+    "No": 24,
+    "Provinsi": "PAPUA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 28.17,
+    "P0_Jumlah_Sem2_September": 28.4,
+    "RLS_Laki_Laki": 6.85,
+    "RLS_Perempuan": 5.02,
+    "RLS_Rata_Rata": 5.935
+  },
+  {
+    "No": 25,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 25.82,
+    "P0_Jumlah_Sem2_September": 25.73,
+    "RLS_Laki_Laki": 9.79,
+    "RLS_Perempuan": 6.71,
+    "RLS_Rata_Rata": 8.25
+  },
+  {
+    "No": 26,
+    "Provinsi": "RIAU",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 8.42,
+    "P0_Jumlah_Sem2_September": 8.82,
+    "RLS_Laki_Laki": 8.8,
+    "RLS_Perempuan": 8.17,
+    "RLS_Rata_Rata": 8.485
+  },
+  {
+    "No": 27,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 12.4,
+    "P0_Jumlah_Sem2_September": 11.9,
+    "RLS_Laki_Laki": 7.33,
+    "RLS_Perempuan": 6.71,
+    "RLS_Rata_Rata": 7.02
+  },
+  {
+    "No": 28,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 9.39,
+    "P0_Jumlah_Sem2_September": 10.12,
+    "RLS_Laki_Laki": 7.97,
+    "RLS_Perempuan": 7.34,
+    "RLS_Rata_Rata": 7.655
+  },
+  {
+    "No": 29,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 14.66,
+    "P0_Jumlah_Sem2_September": 14.07,
+    "RLS_Laki_Laki": 8.27,
+    "RLS_Perempuan": 7.66,
+    "RLS_Rata_Rata": 7.965
+  },
+  {
+    "No": 30,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 12.9,
+    "P0_Jumlah_Sem2_September": 13.74,
+    "RLS_Laki_Laki": 8.79,
+    "RLS_Perempuan": 7.7,
+    "RLS_Rata_Rata": 8.245
+  },
+  {
+    "No": 31,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 8.65,
+    "P0_Jumlah_Sem2_September": 8.98,
+    "RLS_Laki_Laki": 8.9,
+    "RLS_Perempuan": 8.86,
+    "RLS_Rata_Rata": 8.88
+  },
+  {
+    "No": 32,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 7.31,
+    "P0_Jumlah_Sem2_September": 6.71,
+    "RLS_Laki_Laki": 8.63,
+    "RLS_Perempuan": 8.32,
+    "RLS_Rata_Rata": 8.475
+  },
+  {
+    "No": 33,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 14.25,
+    "P0_Jumlah_Sem2_September": 13.77,
+    "RLS_Laki_Laki": 8.17,
+    "RLS_Perempuan": 7.37,
+    "RLS_Rata_Rata": 7.77
+  },
+  {
+    "No": 34,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2015,
+    "P0_Jumlah_Sem1_Maret": 10.53,
+    "P0_Jumlah_Sem2_September": 10.79,
+    "RLS_Laki_Laki": 9.42,
+    "RLS_Perempuan": 8.66,
+    "RLS_Rata_Rata": 9.04
+  },
+  {
+    "No": 35,
+    "Provinsi": "ACEH",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 16.73,
+    "P0_Jumlah_Sem2_September": 16.43,
+    "RLS_Laki_Laki": 9.19,
+    "RLS_Perempuan": 8.54,
+    "RLS_Rata_Rata": 8.865
+  },
+  {
+    "No": 36,
+    "Provinsi": "BALI",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 4.25,
+    "P0_Jumlah_Sem2_September": 4.15,
+    "RLS_Laki_Laki": 9.2,
+    "RLS_Perempuan": 7.53,
+    "RLS_Rata_Rata": 8.365
+  },
+  {
+    "No": 37,
+    "Provinsi": "BANTEN",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 5.42,
+    "P0_Jumlah_Sem2_September": 5.36,
+    "RLS_Laki_Laki": 8.9,
+    "RLS_Perempuan": 7.82,
+    "RLS_Rata_Rata": 8.36
+  },
+  {
+    "No": 38,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 17.32,
+    "P0_Jumlah_Sem2_September": 17.03,
+    "RLS_Laki_Laki": 8.72,
+    "RLS_Perempuan": 8.01,
+    "RLS_Rata_Rata": 8.365
+  },
+  {
+    "No": 39,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 13.34,
+    "P0_Jumlah_Sem2_September": 13.1,
+    "RLS_Laki_Laki": 9.67,
+    "RLS_Perempuan": 8.6,
+    "RLS_Rata_Rata": 9.135
+  },
+  {
+    "No": 40,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 3.75,
+    "P0_Jumlah_Sem2_September": 3.75,
+    "RLS_Laki_Laki": 11.34,
+    "RLS_Perempuan": 10.42,
+    "RLS_Rata_Rata": 10.88
+  },
+  {
+    "No": 41,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 17.72,
+    "P0_Jumlah_Sem2_September": 17.63,
+    "RLS_Laki_Laki": 6.82,
+    "RLS_Perempuan": 7.41,
+    "RLS_Rata_Rata": 7.115
+  },
+  {
+    "No": 42,
+    "Provinsi": "JAMBI",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 8.41,
+    "P0_Jumlah_Sem2_September": 8.37,
+    "RLS_Laki_Laki": 8.5,
+    "RLS_Perempuan": 7.63,
+    "RLS_Rata_Rata": 8.065
+  },
+  {
+    "No": 43,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 8.95,
+    "P0_Jumlah_Sem2_September": 8.77,
+    "RLS_Laki_Laki": 8.37,
+    "RLS_Perempuan": 7.52,
+    "RLS_Rata_Rata": 7.945
+  },
+  {
+    "No": 44,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 13.27,
+    "P0_Jumlah_Sem2_September": 13.19,
+    "RLS_Laki_Laki": 7.68,
+    "RLS_Perempuan": 6.65,
+    "RLS_Rata_Rata": 7.165
+  },
+  {
+    "No": 45,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 12.05,
+    "P0_Jumlah_Sem2_September": 11.85,
+    "RLS_Laki_Laki": 7.81,
+    "RLS_Perempuan": 6.69,
+    "RLS_Rata_Rata": 7.25
+  },
+  {
+    "No": 46,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 7.87,
+    "P0_Jumlah_Sem2_September": 8.0,
+    "RLS_Laki_Laki": 7.49,
+    "RLS_Perempuan": 6.44,
+    "RLS_Rata_Rata": 6.965
+  },
+  {
+    "No": 47,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 4.85,
+    "P0_Jumlah_Sem2_September": 4.52,
+    "RLS_Laki_Laki": 8.38,
+    "RLS_Perempuan": 7.4,
+    "RLS_Rata_Rata": 7.89
+  },
+  {
+    "No": 48,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 5.66,
+    "P0_Jumlah_Sem2_September": 5.36,
+    "RLS_Laki_Laki": 8.49,
+    "RLS_Perempuan": 7.73,
+    "RLS_Rata_Rata": 8.11
+  },
+  {
+    "No": 49,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 6.11,
+    "P0_Jumlah_Sem2_September": 6.0,
+    "RLS_Laki_Laki": 9.61,
+    "RLS_Perempuan": 8.82,
+    "RLS_Rata_Rata": 9.215
+  },
+  {
+    "No": 50,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 6.23,
+    "P0_Jumlah_Sem2_September": 6.99,
+    "RLS_Laki_Laki": 9.14,
+    "RLS_Perempuan": 8.43,
+    "RLS_Rata_Rata": 8.785
+  },
+  {
+    "No": 51,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 5.22,
+    "P0_Jumlah_Sem2_September": 5.04,
+    "RLS_Laki_Laki": 8.0,
+    "RLS_Perempuan": 7.31,
+    "RLS_Rata_Rata": 7.31
+  },
+  {
+    "No": 52,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 5.98,
+    "P0_Jumlah_Sem2_September": 5.84,
+    "RLS_Laki_Laki": 9.87,
+    "RLS_Perempuan": 9.46,
+    "RLS_Rata_Rata": 9.665
+  },
+  {
+    "No": 53,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 14.29,
+    "P0_Jumlah_Sem2_September": 13.86,
+    "RLS_Laki_Laki": 7.93,
+    "RLS_Perempuan": 7.33,
+    "RLS_Rata_Rata": 7.63
+  },
+  {
+    "No": 54,
+    "Provinsi": "MALUKU",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 19.18,
+    "P0_Jumlah_Sem2_September": 19.26,
+    "RLS_Laki_Laki": 9.47,
+    "RLS_Perempuan": 9.08,
+    "RLS_Rata_Rata": 9.275
+  },
+  {
+    "No": 55,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 6.33,
+    "P0_Jumlah_Sem2_September": 6.41,
+    "RLS_Laki_Laki": 8.99,
+    "RLS_Perempuan": 8.06,
+    "RLS_Rata_Rata": 8.525
+  },
+  {
+    "No": 56,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 16.48,
+    "P0_Jumlah_Sem2_September": 16.02,
+    "RLS_Laki_Laki": 7.54,
+    "RLS_Perempuan": 6.13,
+    "RLS_Rata_Rata": 6.835
+  },
+  {
+    "No": 57,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 22.19,
+    "P0_Jumlah_Sem2_September": 22.01,
+    "RLS_Laki_Laki": 7.32,
+    "RLS_Perempuan": 6.75,
+    "RLS_Rata_Rata": 7.035
+  },
+  {
+    "No": 58,
+    "Provinsi": "PAPUA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 28.54,
+    "P0_Jumlah_Sem2_September": 28.4,
+    "RLS_Laki_Laki": 6.9,
+    "RLS_Perempuan": 5.32,
+    "RLS_Rata_Rata": 6.11
+  },
+  {
+    "No": 59,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 25.43,
+    "P0_Jumlah_Sem2_September": 24.88,
+    "RLS_Laki_Laki": 9.81,
+    "RLS_Perempuan": 6.8,
+    "RLS_Rata_Rata": 8.305
+  },
+  {
+    "No": 60,
+    "Provinsi": "RIAU",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 7.98,
+    "P0_Jumlah_Sem2_September": 7.67,
+    "RLS_Laki_Laki": 8.81,
+    "RLS_Perempuan": 8.36,
+    "RLS_Rata_Rata": 8.585
+  },
+  {
+    "No": 61,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 11.74,
+    "P0_Jumlah_Sem2_September": 11.19,
+    "RLS_Laki_Laki": 7.4,
+    "RLS_Perempuan": 6.91,
+    "RLS_Rata_Rata": 7.155
+  },
+  {
+    "No": 62,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 9.4,
+    "P0_Jumlah_Sem2_September": 9.24,
+    "RLS_Laki_Laki": 8.08,
+    "RLS_Perempuan": 7.46,
+    "RLS_Rata_Rata": 7.77
+  },
+  {
+    "No": 63,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 14.45,
+    "P0_Jumlah_Sem2_September": 14.09,
+    "RLS_Laki_Laki": 8.38,
+    "RLS_Perempuan": 7.84,
+    "RLS_Rata_Rata": 8.11
+  },
+  {
+    "No": 64,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 12.88,
+    "P0_Jumlah_Sem2_September": 12.77,
+    "RLS_Laki_Laki": 8.83,
+    "RLS_Perempuan": 7.86,
+    "RLS_Rata_Rata": 8.345
+  },
+  {
+    "No": 65,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 8.34,
+    "P0_Jumlah_Sem2_September": 8.2,
+    "RLS_Laki_Laki": 8.93,
+    "RLS_Perempuan": 9.0,
+    "RLS_Rata_Rata": 8.93
+  },
+  {
+    "No": 66,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 7.09,
+    "P0_Jumlah_Sem2_September": 7.14,
+    "RLS_Laki_Laki": 8.72,
+    "RLS_Perempuan": 8.49,
+    "RLS_Rata_Rata": 8.605
+  },
+  {
+    "No": 67,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 13.54,
+    "P0_Jumlah_Sem2_September": 13.39,
+    "RLS_Laki_Laki": 8.18,
+    "RLS_Perempuan": 7.48,
+    "RLS_Rata_Rata": 7.83
+  },
+  {
+    "No": 68,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2016,
+    "P0_Jumlah_Sem1_Maret": 10.35,
+    "P0_Jumlah_Sem2_September": 10.27,
+    "RLS_Laki_Laki": 9.48,
+    "RLS_Perempuan": 8.78,
+    "RLS_Rata_Rata": 9.13
+  },
+  {
+    "No": 69,
+    "Provinsi": "ACEH",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 16.89,
+    "P0_Jumlah_Sem2_September": 15.92,
+    "RLS_Laki_Laki": 9.36,
+    "RLS_Perempuan": 8.62,
+    "RLS_Rata_Rata": 8.99
+  },
+  {
+    "No": 70,
+    "Provinsi": "BALI",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 4.25,
+    "P0_Jumlah_Sem2_September": 4.14,
+    "RLS_Laki_Laki": 9.35,
+    "RLS_Perempuan": 7.75,
+    "RLS_Rata_Rata": 8.55
+  },
+  {
+    "No": 71,
+    "Provinsi": "BANTEN",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 5.45,
+    "P0_Jumlah_Sem2_September": 5.59,
+    "RLS_Laki_Laki": 9.07,
+    "RLS_Perempuan": 7.98,
+    "RLS_Rata_Rata": 8.525
+  },
+  {
+    "No": 72,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 16.45,
+    "P0_Jumlah_Sem2_September": 15.59,
+    "RLS_Laki_Laki": 8.76,
+    "RLS_Perempuan": 8.16,
+    "RLS_Rata_Rata": 8.46
+  },
+  {
+    "No": 73,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 13.02,
+    "P0_Jumlah_Sem2_September": 12.36,
+    "RLS_Laki_Laki": 9.74,
+    "RLS_Perempuan": 8.73,
+    "RLS_Rata_Rata": 9.235
+  },
+  {
+    "No": 74,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 3.77,
+    "P0_Jumlah_Sem2_September": 3.78,
+    "RLS_Laki_Laki": 11.43,
+    "RLS_Perempuan": 10.61,
+    "RLS_Rata_Rata": 11.02
+  },
+  {
+    "No": 75,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 17.65,
+    "P0_Jumlah_Sem2_September": 17.14,
+    "RLS_Laki_Laki": 6.98,
+    "RLS_Perempuan": 7.56,
+    "RLS_Rata_Rata": 7.27
+  },
+  {
+    "No": 76,
+    "Provinsi": "JAMBI",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 8.19,
+    "P0_Jumlah_Sem2_September": 7.9,
+    "RLS_Laki_Laki": 8.59,
+    "RLS_Perempuan": 7.7,
+    "RLS_Rata_Rata": 8.145
+  },
+  {
+    "No": 77,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 8.71,
+    "P0_Jumlah_Sem2_September": 7.83,
+    "RLS_Laki_Laki": 8.59,
+    "RLS_Perempuan": 7.69,
+    "RLS_Rata_Rata": 8.14
+  },
+  {
+    "No": 78,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 13.01,
+    "P0_Jumlah_Sem2_September": 12.23,
+    "RLS_Laki_Laki": 7.79,
+    "RLS_Perempuan": 6.78,
+    "RLS_Rata_Rata": 7.285
+  },
+  {
+    "No": 79,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 11.77,
+    "P0_Jumlah_Sem2_September": 11.2,
+    "RLS_Laki_Laki": 7.93,
+    "RLS_Perempuan": 6.78,
+    "RLS_Rata_Rata": 7.355
+  },
+  {
+    "No": 80,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 7.88,
+    "P0_Jumlah_Sem2_September": 7.86,
+    "RLS_Laki_Laki": 7.59,
+    "RLS_Perempuan": 6.49,
+    "RLS_Rata_Rata": 7.04
+  },
+  {
+    "No": 81,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 4.73,
+    "P0_Jumlah_Sem2_September": 4.7,
+    "RLS_Laki_Laki": 8.45,
+    "RLS_Perempuan": 7.52,
+    "RLS_Rata_Rata": 7.985
+  },
+  {
+    "No": 82,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 5.37,
+    "P0_Jumlah_Sem2_September": 5.26,
+    "RLS_Laki_Laki": 8.62,
+    "RLS_Perempuan": 7.91,
+    "RLS_Rata_Rata": 8.265
+  },
+  {
+    "No": 83,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 6.19,
+    "P0_Jumlah_Sem2_September": 6.08,
+    "RLS_Laki_Laki": 9.75,
+    "RLS_Perempuan": 8.93,
+    "RLS_Rata_Rata": 9.34
+  },
+  {
+    "No": 84,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 7.22,
+    "P0_Jumlah_Sem2_September": 6.96,
+    "RLS_Laki_Laki": 9.27,
+    "RLS_Perempuan": 8.44,
+    "RLS_Rata_Rata": 8.855
+  },
+  {
+    "No": 85,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 5.2,
+    "P0_Jumlah_Sem2_September": 5.3,
+    "RLS_Laki_Laki": 8.1,
+    "RLS_Perempuan": 7.48,
+    "RLS_Rata_Rata": 7.79
+  },
+  {
+    "No": 86,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 6.06,
+    "P0_Jumlah_Sem2_September": 6.13,
+    "RLS_Laki_Laki": 10.0,
+    "RLS_Perempuan": 9.57,
+    "RLS_Rata_Rata": 9.57
+  },
+  {
+    "No": 87,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 13.69,
+    "P0_Jumlah_Sem2_September": 13.04,
+    "RLS_Laki_Laki": 8.08,
+    "RLS_Perempuan": 7.49,
+    "RLS_Rata_Rata": 7.785
+  },
+  {
+    "No": 88,
+    "Provinsi": "MALUKU",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 18.45,
+    "P0_Jumlah_Sem2_September": 18.29,
+    "RLS_Laki_Laki": 9.63,
+    "RLS_Perempuan": 9.17,
+    "RLS_Rata_Rata": 9.4
+  },
+  {
+    "No": 89,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 6.35,
+    "P0_Jumlah_Sem2_September": 6.44,
+    "RLS_Laki_Laki": 9.05,
+    "RLS_Perempuan": 8.17,
+    "RLS_Rata_Rata": 8.61
+  },
+  {
+    "No": 90,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 16.07,
+    "P0_Jumlah_Sem2_September": 15.05,
+    "RLS_Laki_Laki": 7.63,
+    "RLS_Perempuan": 6.27,
+    "RLS_Rata_Rata": 6.95
+  },
+  {
+    "No": 91,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 21.85,
+    "P0_Jumlah_Sem2_September": 21.38,
+    "RLS_Laki_Laki": 7.46,
+    "RLS_Perempuan": 6.87,
+    "RLS_Rata_Rata": 7.165
+  },
+  {
+    "No": 92,
+    "Provinsi": "PAPUA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 27.62,
+    "P0_Jumlah_Sem2_September": 27.76,
+    "RLS_Laki_Laki": 7.02,
+    "RLS_Perempuan": 5.44,
+    "RLS_Rata_Rata": 6.23
+  },
+  {
+    "No": 93,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 25.1,
+    "P0_Jumlah_Sem2_September": 23.12,
+    "RLS_Laki_Laki": 9.89,
+    "RLS_Perempuan": 6.9,
+    "RLS_Rata_Rata": 8.395
+  },
+  {
+    "No": 94,
+    "Provinsi": "RIAU",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 7.78,
+    "P0_Jumlah_Sem2_September": 7.41,
+    "RLS_Laki_Laki": 9.02,
+    "RLS_Perempuan": 8.49,
+    "RLS_Rata_Rata": 8.755
+  },
+  {
+    "No": 95,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 11.3,
+    "P0_Jumlah_Sem2_September": 11.18,
+    "RLS_Laki_Laki": 7.55,
+    "RLS_Perempuan": 7.08,
+    "RLS_Rata_Rata": 7.315
+  },
+  {
+    "No": 96,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 9.38,
+    "P0_Jumlah_Sem2_September": 9.48,
+    "RLS_Laki_Laki": 8.31,
+    "RLS_Perempuan": 7.63,
+    "RLS_Rata_Rata": 7.97
+  },
+  {
+    "No": 97,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 14.14,
+    "P0_Jumlah_Sem2_September": 14.22,
+    "RLS_Laki_Laki": 8.56,
+    "RLS_Perempuan": 8.0,
+    "RLS_Rata_Rata": 8.56
+  },
+  {
+    "No": 98,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 12.81,
+    "P0_Jumlah_Sem2_September": 11.97,
+    "RLS_Laki_Laki": 8.98,
+    "RLS_Perempuan": 7.95,
+    "RLS_Rata_Rata": 8.465
+  },
+  {
+    "No": 99,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 8.1,
+    "P0_Jumlah_Sem2_September": 7.9,
+    "RLS_Laki_Laki": 9.1,
+    "RLS_Perempuan": 9.19,
+    "RLS_Rata_Rata": 9.145
+  },
+  {
+    "No": 100,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 6.87,
+    "P0_Jumlah_Sem2_September": 6.75,
+    "RLS_Laki_Laki": 8.86,
+    "RLS_Perempuan": 8.6,
+    "RLS_Rata_Rata": 8.73
+  },
+  {
+    "No": 101,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 13.19,
+    "P0_Jumlah_Sem2_September": 13.1,
+    "RLS_Laki_Laki": 8.3,
+    "RLS_Perempuan": 7.67,
+    "RLS_Rata_Rata": 7.985
+  },
+  {
+    "No": 102,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2017,
+    "P0_Jumlah_Sem1_Maret": 10.22,
+    "P0_Jumlah_Sem2_September": 9.28,
+    "RLS_Laki_Laki": 9.55,
+    "RLS_Perempuan": 8.96,
+    "RLS_Rata_Rata": 9.255
+  },
+  {
+    "No": 103,
+    "Provinsi": "ACEH",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 15.97,
+    "P0_Jumlah_Sem2_September": 15.68,
+    "RLS_Laki_Laki": 9.49,
+    "RLS_Perempuan": 8.71,
+    "RLS_Rata_Rata": 9.1
+  },
+  {
+    "No": 104,
+    "Provinsi": "BALI",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 4.01,
+    "P0_Jumlah_Sem2_September": 3.91,
+    "RLS_Laki_Laki": 9.5,
+    "RLS_Perempuan": 7.82,
+    "RLS_Rata_Rata": 8.66
+  },
+  {
+    "No": 105,
+    "Provinsi": "BANTEN",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 5.24,
+    "P0_Jumlah_Sem2_September": 5.25,
+    "RLS_Laki_Laki": 9.18,
+    "RLS_Perempuan": 8.04,
+    "RLS_Rata_Rata": 8.61
+  },
+  {
+    "No": 106,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 15.43,
+    "P0_Jumlah_Sem2_September": 15.41,
+    "RLS_Laki_Laki": 8.93,
+    "RLS_Perempuan": 8.28,
+    "RLS_Rata_Rata": 8.605
+  },
+  {
+    "No": 107,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 12.13,
+    "P0_Jumlah_Sem2_September": 11.81,
+    "RLS_Laki_Laki": 9.87,
+    "RLS_Perempuan": 8.8,
+    "RLS_Rata_Rata": 9.335
+  },
+  {
+    "No": 108,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 3.57,
+    "P0_Jumlah_Sem2_September": 3.55,
+    "RLS_Laki_Laki": 11.46,
+    "RLS_Perempuan": 10.63,
+    "RLS_Rata_Rata": 11.045
+  },
+  {
+    "No": 109,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 16.81,
+    "P0_Jumlah_Sem2_September": 15.83,
+    "RLS_Laki_Laki": 7.14,
+    "RLS_Perempuan": 7.76,
+    "RLS_Rata_Rata": 7.45
+  },
+  {
+    "No": 110,
+    "Provinsi": "JAMBI",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 7.92,
+    "P0_Jumlah_Sem2_September": 7.85,
+    "RLS_Laki_Laki": 8.67,
+    "RLS_Perempuan": 7.77,
+    "RLS_Rata_Rata": 8.22
+  },
+  {
+    "No": 111,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 7.45,
+    "P0_Jumlah_Sem2_September": 7.25,
+    "RLS_Laki_Laki": 8.6,
+    "RLS_Perempuan": 7.71,
+    "RLS_Rata_Rata": 8.155
+  },
+  {
+    "No": 112,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 11.32,
+    "P0_Jumlah_Sem2_September": 11.19,
+    "RLS_Laki_Laki": 7.86,
+    "RLS_Perempuan": 6.87,
+    "RLS_Rata_Rata": 7.365
+  },
+  {
+    "No": 113,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 10.98,
+    "P0_Jumlah_Sem2_September": 10.85,
+    "RLS_Laki_Laki": 7.96,
+    "RLS_Perempuan": 6.85,
+    "RLS_Rata_Rata": 7.405
+  },
+  {
+    "No": 114,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 7.77,
+    "P0_Jumlah_Sem2_September": 7.37,
+    "RLS_Laki_Laki": 7.61,
+    "RLS_Perempuan": 6.62,
+    "RLS_Rata_Rata": 7.115
+  },
+  {
+    "No": 115,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 4.54,
+    "P0_Jumlah_Sem2_September": 4.65,
+    "RLS_Laki_Laki": 8.46,
+    "RLS_Perempuan": 7.53,
+    "RLS_Rata_Rata": 7.995
+  },
+  {
+    "No": 116,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 5.17,
+    "P0_Jumlah_Sem2_September": 5.1,
+    "RLS_Laki_Laki": 8.7,
+    "RLS_Perempuan": 8.0,
+    "RLS_Rata_Rata": 8.7
+  },
+  {
+    "No": 117,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 6.03,
+    "P0_Jumlah_Sem2_September": 6.06,
+    "RLS_Laki_Laki": 9.86,
+    "RLS_Perempuan": 9.06,
+    "RLS_Rata_Rata": 9.46
+  },
+  {
+    "No": 118,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 7.09,
+    "P0_Jumlah_Sem2_September": 6.86,
+    "RLS_Laki_Laki": 9.52,
+    "RLS_Perempuan": 8.69,
+    "RLS_Rata_Rata": 9.105
+  },
+  {
+    "No": 119,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 5.25,
+    "P0_Jumlah_Sem2_September": 4.77,
+    "RLS_Laki_Laki": 8.17,
+    "RLS_Perempuan": 7.51,
+    "RLS_Rata_Rata": 7.84
+  },
+  {
+    "No": 120,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 6.2,
+    "P0_Jumlah_Sem2_September": 5.83,
+    "RLS_Laki_Laki": 10.01,
+    "RLS_Perempuan": 9.6,
+    "RLS_Rata_Rata": 9.805
+  },
+  {
+    "No": 121,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 13.14,
+    "P0_Jumlah_Sem2_September": 13.01,
+    "RLS_Laki_Laki": 8.14,
+    "RLS_Perempuan": 7.5,
+    "RLS_Rata_Rata": 7.82
+  },
+  {
+    "No": 122,
+    "Provinsi": "MALUKU",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 18.12,
+    "P0_Jumlah_Sem2_September": 17.85,
+    "RLS_Laki_Laki": 9.75,
+    "RLS_Perempuan": 9.41,
+    "RLS_Rata_Rata": 9.58
+  },
+  {
+    "No": 123,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 6.64,
+    "P0_Jumlah_Sem2_September": 6.62,
+    "RLS_Laki_Laki": 9.15,
+    "RLS_Perempuan": 8.28,
+    "RLS_Rata_Rata": 8.715
+  },
+  {
+    "No": 124,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 14.75,
+    "P0_Jumlah_Sem2_September": 14.63,
+    "RLS_Laki_Laki": 7.81,
+    "RLS_Perempuan": 6.36,
+    "RLS_Rata_Rata": 7.085
+  },
+  {
+    "No": 125,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 21.35,
+    "P0_Jumlah_Sem2_September": 21.03,
+    "RLS_Laki_Laki": 7.62,
+    "RLS_Perempuan": 7.0,
+    "RLS_Rata_Rata": 7.62
+  },
+  {
+    "No": 126,
+    "Provinsi": "PAPUA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 27.74,
+    "P0_Jumlah_Sem2_September": 27.43,
+    "RLS_Laki_Laki": 7.26,
+    "RLS_Perempuan": 5.7,
+    "RLS_Rata_Rata": 6.48
+  },
+  {
+    "No": 127,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 23.01,
+    "P0_Jumlah_Sem2_September": 22.66,
+    "RLS_Laki_Laki": 10.09,
+    "RLS_Perempuan": 7.01,
+    "RLS_Rata_Rata": 8.55
+  },
+  {
+    "No": 128,
+    "Provinsi": "RIAU",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 7.39,
+    "P0_Jumlah_Sem2_September": 7.21,
+    "RLS_Laki_Laki": 9.12,
+    "RLS_Perempuan": 8.71,
+    "RLS_Rata_Rata": 8.915
+  },
+  {
+    "No": 129,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 11.25,
+    "P0_Jumlah_Sem2_September": 11.22,
+    "RLS_Laki_Laki": 7.66,
+    "RLS_Perempuan": 7.28,
+    "RLS_Rata_Rata": 7.47
+  },
+  {
+    "No": 130,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 9.06,
+    "P0_Jumlah_Sem2_September": 8.87,
+    "RLS_Laki_Laki": 8.32,
+    "RLS_Perempuan": 7.76,
+    "RLS_Rata_Rata": 8.04
+  },
+  {
+    "No": 131,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 14.01,
+    "P0_Jumlah_Sem2_September": 13.69,
+    "RLS_Laki_Laki": 8.76,
+    "RLS_Perempuan": 8.27,
+    "RLS_Rata_Rata": 8.515
+  },
+  {
+    "No": 132,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 11.63,
+    "P0_Jumlah_Sem2_September": 11.32,
+    "RLS_Laki_Laki": 9.13,
+    "RLS_Perempuan": 8.26,
+    "RLS_Rata_Rata": 8.695
+  },
+  {
+    "No": 133,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 7.8,
+    "P0_Jumlah_Sem2_September": 7.59,
+    "RLS_Laki_Laki": 9.24,
+    "RLS_Perempuan": 9.24,
+    "RLS_Rata_Rata": 9.24
+  },
+  {
+    "No": 134,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 6.65,
+    "P0_Jumlah_Sem2_September": 6.55,
+    "RLS_Laki_Laki": 8.87,
+    "RLS_Perempuan": 8.66,
+    "RLS_Rata_Rata": 8.765
+  },
+  {
+    "No": 135,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 12.8,
+    "P0_Jumlah_Sem2_September": 12.82,
+    "RLS_Laki_Laki": 8.32,
+    "RLS_Perempuan": 7.68,
+    "RLS_Rata_Rata": 8.0
+  },
+  {
+    "No": 136,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2018,
+    "P0_Jumlah_Sem1_Maret": 9.22,
+    "P0_Jumlah_Sem2_September": 8.94,
+    "RLS_Laki_Laki": 9.61,
+    "RLS_Perempuan": 9.08,
+    "RLS_Rata_Rata": 9.345
+  },
+  {
+    "No": 137,
+    "Provinsi": "ACEH",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 15.32,
+    "P0_Jumlah_Sem2_September": 15.01,
+    "RLS_Laki_Laki": 9.52,
+    "RLS_Perempuan": 8.85,
+    "RLS_Rata_Rata": 9.185
+  },
+  {
+    "No": 138,
+    "Provinsi": "BALI",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 3.79,
+    "P0_Jumlah_Sem2_September": 3.61,
+    "RLS_Laki_Laki": 9.66,
+    "RLS_Perempuan": 8.03,
+    "RLS_Rata_Rata": 8.845
+  },
+  {
+    "No": 139,
+    "Provinsi": "BANTEN",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 5.09,
+    "P0_Jumlah_Sem2_September": 4.94,
+    "RLS_Laki_Laki": 9.22,
+    "RLS_Perempuan": 8.24,
+    "RLS_Rata_Rata": 8.73
+  },
+  {
+    "No": 140,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 15.23,
+    "P0_Jumlah_Sem2_September": 14.91,
+    "RLS_Laki_Laki": 9.1,
+    "RLS_Perempuan": 8.34,
+    "RLS_Rata_Rata": 8.72
+  },
+  {
+    "No": 141,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 11.7,
+    "P0_Jumlah_Sem2_September": 11.44,
+    "RLS_Laki_Laki": 9.92,
+    "RLS_Perempuan": 8.87,
+    "RLS_Rata_Rata": 9.395
+  },
+  {
+    "No": 142,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 3.47,
+    "P0_Jumlah_Sem2_September": 3.42,
+    "RLS_Laki_Laki": 11.47,
+    "RLS_Perempuan": 10.65,
+    "RLS_Rata_Rata": 11.06
+  },
+  {
+    "No": 143,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 15.52,
+    "P0_Jumlah_Sem2_September": 15.31,
+    "RLS_Laki_Laki": 7.37,
+    "RLS_Perempuan": 8.0,
+    "RLS_Rata_Rata": 7.37
+  },
+  {
+    "No": 144,
+    "Provinsi": "JAMBI",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 7.6,
+    "P0_Jumlah_Sem2_September": 7.51,
+    "RLS_Laki_Laki": 8.87,
+    "RLS_Perempuan": 8.01,
+    "RLS_Rata_Rata": 8.44
+  },
+  {
+    "No": 145,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 6.91,
+    "P0_Jumlah_Sem2_September": 6.82,
+    "RLS_Laki_Laki": 8.83,
+    "RLS_Perempuan": 7.9,
+    "RLS_Rata_Rata": 8.365
+  },
+  {
+    "No": 146,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 10.8,
+    "P0_Jumlah_Sem2_September": 10.58,
+    "RLS_Laki_Laki": 8.06,
+    "RLS_Perempuan": 7.03,
+    "RLS_Rata_Rata": 7.545
+  },
+  {
+    "No": 147,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 10.37,
+    "P0_Jumlah_Sem2_September": 10.2,
+    "RLS_Laki_Laki": 8.18,
+    "RLS_Perempuan": 7.04,
+    "RLS_Rata_Rata": 7.61
+  },
+  {
+    "No": 148,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 7.49,
+    "P0_Jumlah_Sem2_September": 7.28,
+    "RLS_Laki_Laki": 7.81,
+    "RLS_Perempuan": 6.79,
+    "RLS_Rata_Rata": 7.3
+  },
+  {
+    "No": 149,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 4.55,
+    "P0_Jumlah_Sem2_September": 4.47,
+    "RLS_Laki_Laki": 8.68,
+    "RLS_Perempuan": 7.7,
+    "RLS_Rata_Rata": 8.19
+  },
+  {
+    "No": 150,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 4.98,
+    "P0_Jumlah_Sem2_September": 4.81,
+    "RLS_Laki_Laki": 8.83,
+    "RLS_Perempuan": 8.16,
+    "RLS_Rata_Rata": 8.495
+  },
+  {
+    "No": 151,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 5.94,
+    "P0_Jumlah_Sem2_September": 5.91,
+    "RLS_Laki_Laki": 10.11,
+    "RLS_Perempuan": 9.25,
+    "RLS_Rata_Rata": 9.68
+  },
+  {
+    "No": 152,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 6.63,
+    "P0_Jumlah_Sem2_September": 6.49,
+    "RLS_Laki_Laki": 9.59,
+    "RLS_Perempuan": 8.76,
+    "RLS_Rata_Rata": 9.175
+  },
+  {
+    "No": 153,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 4.62,
+    "P0_Jumlah_Sem2_September": 4.5,
+    "RLS_Laki_Laki": 8.38,
+    "RLS_Perempuan": 7.54,
+    "RLS_Rata_Rata": 7.96
+  },
+  {
+    "No": 154,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 5.9,
+    "P0_Jumlah_Sem2_September": 5.8,
+    "RLS_Laki_Laki": 10.19,
+    "RLS_Perempuan": 9.77,
+    "RLS_Rata_Rata": 9.98
+  },
+  {
+    "No": 155,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 12.62,
+    "P0_Jumlah_Sem2_September": 12.3,
+    "RLS_Laki_Laki": 8.3,
+    "RLS_Perempuan": 7.52,
+    "RLS_Rata_Rata": 7.91
+  },
+  {
+    "No": 156,
+    "Provinsi": "MALUKU",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 17.69,
+    "P0_Jumlah_Sem2_September": 17.65,
+    "RLS_Laki_Laki": 9.96,
+    "RLS_Perempuan": 9.66,
+    "RLS_Rata_Rata": 9.81
+  },
+  {
+    "No": 157,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 6.77,
+    "P0_Jumlah_Sem2_September": 6.91,
+    "RLS_Laki_Laki": 9.44,
+    "RLS_Perempuan": 8.55,
+    "RLS_Rata_Rata": 8.995
+  },
+  {
+    "No": 158,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 14.56,
+    "P0_Jumlah_Sem2_September": 13.88,
+    "RLS_Laki_Laki": 8.06,
+    "RLS_Perempuan": 6.58,
+    "RLS_Rata_Rata": 7.32
+  },
+  {
+    "No": 159,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 21.09,
+    "P0_Jumlah_Sem2_September": 20.62,
+    "RLS_Laki_Laki": 7.91,
+    "RLS_Perempuan": 7.23,
+    "RLS_Rata_Rata": 7.57
+  },
+  {
+    "No": 160,
+    "Provinsi": "PAPUA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 27.53,
+    "P0_Jumlah_Sem2_September": 26.55,
+    "RLS_Laki_Laki": 7.41,
+    "RLS_Perempuan": 5.79,
+    "RLS_Rata_Rata": 6.6
+  },
+  {
+    "No": 161,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 22.17,
+    "P0_Jumlah_Sem2_September": 21.51,
+    "RLS_Laki_Laki": 10.2,
+    "RLS_Perempuan": 7.19,
+    "RLS_Rata_Rata": 8.695
+  },
+  {
+    "No": 162,
+    "Provinsi": "RIAU",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 7.08,
+    "P0_Jumlah_Sem2_September": 6.9,
+    "RLS_Laki_Laki": 9.3,
+    "RLS_Perempuan": 8.75,
+    "RLS_Rata_Rata": 9.025
+  },
+  {
+    "No": 163,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 11.02,
+    "P0_Jumlah_Sem2_September": 10.95,
+    "RLS_Laki_Laki": 8.0,
+    "RLS_Perempuan": 7.5,
+    "RLS_Rata_Rata": 7.5
+  },
+  {
+    "No": 164,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 8.69,
+    "P0_Jumlah_Sem2_September": 8.56,
+    "RLS_Laki_Laki": 8.57,
+    "RLS_Perempuan": 7.95,
+    "RLS_Rata_Rata": 8.26
+  },
+  {
+    "No": 165,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 13.48,
+    "P0_Jumlah_Sem2_September": 13.18,
+    "RLS_Laki_Laki": 8.98,
+    "RLS_Perempuan": 8.5,
+    "RLS_Rata_Rata": 8.74
+  },
+  {
+    "No": 166,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 11.24,
+    "P0_Jumlah_Sem2_September": 11.04,
+    "RLS_Laki_Laki": 9.36,
+    "RLS_Perempuan": 8.47,
+    "RLS_Rata_Rata": 8.915
+  },
+  {
+    "No": 167,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 7.66,
+    "P0_Jumlah_Sem2_September": 7.51,
+    "RLS_Laki_Laki": 9.46,
+    "RLS_Perempuan": 9.39,
+    "RLS_Rata_Rata": 9.425
+  },
+  {
+    "No": 168,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 6.42,
+    "P0_Jumlah_Sem2_September": 6.29,
+    "RLS_Laki_Laki": 9.07,
+    "RLS_Perempuan": 8.77,
+    "RLS_Rata_Rata": 8.92
+  },
+  {
+    "No": 169,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 12.71,
+    "P0_Jumlah_Sem2_September": 12.56,
+    "RLS_Laki_Laki": 8.54,
+    "RLS_Perempuan": 7.82,
+    "RLS_Rata_Rata": 8.18
+  },
+  {
+    "No": 170,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2019,
+    "P0_Jumlah_Sem1_Maret": 8.83,
+    "P0_Jumlah_Sem2_September": 8.63,
+    "RLS_Laki_Laki": 9.76,
+    "RLS_Perempuan": 9.17,
+    "RLS_Rata_Rata": 9.465
+  },
+  {
+    "No": 171,
+    "Provinsi": "ACEH",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 14.99,
+    "P0_Jumlah_Sem2_September": 15.43,
+    "RLS_Laki_Laki": 9.54,
+    "RLS_Perempuan": 9.13,
+    "RLS_Rata_Rata": 9.335
+  },
+  {
+    "No": 172,
+    "Provinsi": "BALI",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 3.78,
+    "P0_Jumlah_Sem2_September": 4.45,
+    "RLS_Laki_Laki": 9.68,
+    "RLS_Perempuan": 8.21,
+    "RLS_Rata_Rata": 8.945
+  },
+  {
+    "No": 173,
+    "Provinsi": "BANTEN",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 5.92,
+    "P0_Jumlah_Sem2_September": 6.63,
+    "RLS_Laki_Laki": 9.33,
+    "RLS_Perempuan": 8.45,
+    "RLS_Rata_Rata": 8.89
+  },
+  {
+    "No": 174,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 15.03,
+    "P0_Jumlah_Sem2_September": 15.3,
+    "RLS_Laki_Laki": 9.18,
+    "RLS_Perempuan": 8.5,
+    "RLS_Rata_Rata": 8.84
+  },
+  {
+    "No": 175,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 12.28,
+    "P0_Jumlah_Sem2_September": 12.8,
+    "RLS_Laki_Laki": 9.96,
+    "RLS_Perempuan": 9.16,
+    "RLS_Rata_Rata": 9.56
+  },
+  {
+    "No": 176,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 4.53,
+    "P0_Jumlah_Sem2_September": 4.69,
+    "RLS_Laki_Laki": 11.5,
+    "RLS_Perempuan": 10.76,
+    "RLS_Rata_Rata": 11.13
+  },
+  {
+    "No": 177,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 15.22,
+    "P0_Jumlah_Sem2_September": 15.59,
+    "RLS_Laki_Laki": 7.53,
+    "RLS_Perempuan": 8.09,
+    "RLS_Rata_Rata": 7.81
+  },
+  {
+    "No": 178,
+    "Provinsi": "JAMBI",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 7.58,
+    "P0_Jumlah_Sem2_September": 7.97,
+    "RLS_Laki_Laki": 8.91,
+    "RLS_Perempuan": 8.17,
+    "RLS_Rata_Rata": 8.54
+  },
+  {
+    "No": 179,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 7.88,
+    "P0_Jumlah_Sem2_September": 8.43,
+    "RLS_Laki_Laki": 8.97,
+    "RLS_Perempuan": 8.11,
+    "RLS_Rata_Rata": 8.54
+  },
+  {
+    "No": 180,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 11.41,
+    "P0_Jumlah_Sem2_September": 11.84,
+    "RLS_Laki_Laki": 8.16,
+    "RLS_Perempuan": 7.24,
+    "RLS_Rata_Rata": 7.7
+  },
+  {
+    "No": 181,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 11.09,
+    "P0_Jumlah_Sem2_September": 11.46,
+    "RLS_Laki_Laki": 8.3,
+    "RLS_Perempuan": 7.3,
+    "RLS_Rata_Rata": 7.8
+  },
+  {
+    "No": 182,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 7.17,
+    "P0_Jumlah_Sem2_September": 7.24,
+    "RLS_Laki_Laki": 7.88,
+    "RLS_Perempuan": 6.84,
+    "RLS_Rata_Rata": 7.36
+  },
+  {
+    "No": 183,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 4.38,
+    "P0_Jumlah_Sem2_September": 4.83,
+    "RLS_Laki_Laki": 8.7,
+    "RLS_Perempuan": 7.88,
+    "RLS_Rata_Rata": 8.29
+  },
+  {
+    "No": 184,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 4.82,
+    "P0_Jumlah_Sem2_September": 5.26,
+    "RLS_Laki_Laki": 8.89,
+    "RLS_Perempuan": 8.25,
+    "RLS_Rata_Rata": 8.57
+  },
+  {
+    "No": 185,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 6.1,
+    "P0_Jumlah_Sem2_September": 6.64,
+    "RLS_Laki_Laki": 10.22,
+    "RLS_Perempuan": 9.27,
+    "RLS_Rata_Rata": 9.745
+  },
+  {
+    "No": 186,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 6.8,
+    "P0_Jumlah_Sem2_September": 7.41,
+    "RLS_Laki_Laki": 9.65,
+    "RLS_Perempuan": 8.82,
+    "RLS_Rata_Rata": 9.235
+  },
+  {
+    "No": 187,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 4.53,
+    "P0_Jumlah_Sem2_September": 4.89,
+    "RLS_Laki_Laki": 8.41,
+    "RLS_Perempuan": 7.67,
+    "RLS_Rata_Rata": 8.04
+  },
+  {
+    "No": 188,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 5.92,
+    "P0_Jumlah_Sem2_September": 6.13,
+    "RLS_Laki_Laki": 10.25,
+    "RLS_Perempuan": 9.98,
+    "RLS_Rata_Rata": 10.115
+  },
+  {
+    "No": 189,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 12.34,
+    "P0_Jumlah_Sem2_September": 12.76,
+    "RLS_Laki_Laki": 8.36,
+    "RLS_Perempuan": 7.73,
+    "RLS_Rata_Rata": 8.045
+  },
+  {
+    "No": 190,
+    "Provinsi": "MALUKU",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 17.44,
+    "P0_Jumlah_Sem2_September": 17.99,
+    "RLS_Laki_Laki": 10.07,
+    "RLS_Perempuan": 9.8,
+    "RLS_Rata_Rata": 9.935
+  },
+  {
+    "No": 191,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 6.78,
+    "P0_Jumlah_Sem2_September": 6.97,
+    "RLS_Laki_Laki": 9.47,
+    "RLS_Perempuan": 8.61,
+    "RLS_Rata_Rata": 9.04
+  },
+  {
+    "No": 192,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 13.97,
+    "P0_Jumlah_Sem2_September": 14.23,
+    "RLS_Laki_Laki": 8.08,
+    "RLS_Perempuan": 6.64,
+    "RLS_Rata_Rata": 7.36
+  },
+  {
+    "No": 193,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 20.9,
+    "P0_Jumlah_Sem2_September": 21.21,
+    "RLS_Laki_Laki": 8.01,
+    "RLS_Perempuan": 7.28,
+    "RLS_Rata_Rata": 7.645
+  },
+  {
+    "No": 194,
+    "Provinsi": "PAPUA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 26.64,
+    "P0_Jumlah_Sem2_September": 26.8,
+    "RLS_Laki_Laki": 7.43,
+    "RLS_Perempuan": 5.88,
+    "RLS_Rata_Rata": 6.655
+  },
+  {
+    "No": 195,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 21.37,
+    "P0_Jumlah_Sem2_September": 21.7,
+    "RLS_Laki_Laki": 10.34,
+    "RLS_Perempuan": 7.37,
+    "RLS_Rata_Rata": 8.855
+  },
+  {
+    "No": 196,
+    "Provinsi": "RIAU",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 6.82,
+    "P0_Jumlah_Sem2_September": 7.04,
+    "RLS_Laki_Laki": 9.4,
+    "RLS_Perempuan": 8.87,
+    "RLS_Rata_Rata": 9.135
+  },
+  {
+    "No": 197,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 10.87,
+    "P0_Jumlah_Sem2_September": 11.5,
+    "RLS_Laki_Laki": 8.19,
+    "RLS_Perempuan": 7.6,
+    "RLS_Rata_Rata": 7.895
+  },
+  {
+    "No": 198,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 8.72,
+    "P0_Jumlah_Sem2_September": 8.99,
+    "RLS_Laki_Laki": 8.63,
+    "RLS_Perempuan": 8.15,
+    "RLS_Rata_Rata": 8.39
+  },
+  {
+    "No": 199,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 12.92,
+    "P0_Jumlah_Sem2_September": 13.06,
+    "RLS_Laki_Laki": 9.07,
+    "RLS_Perempuan": 8.58,
+    "RLS_Rata_Rata": 8.825
+  },
+  {
+    "No": 200,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 11.0,
+    "P0_Jumlah_Sem2_September": 11.69,
+    "RLS_Laki_Laki": 9.46,
+    "RLS_Perempuan": 8.64,
+    "RLS_Rata_Rata": 9.05
+  },
+  {
+    "No": 201,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 7.62,
+    "P0_Jumlah_Sem2_September": 7.78,
+    "RLS_Laki_Laki": 9.51,
+    "RLS_Perempuan": 9.47,
+    "RLS_Rata_Rata": 9.49
+  },
+  {
+    "No": 202,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 6.28,
+    "P0_Jumlah_Sem2_September": 6.56,
+    "RLS_Laki_Laki": 9.1,
+    "RLS_Perempuan": 8.89,
+    "RLS_Rata_Rata": 8.995
+  },
+  {
+    "No": 203,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 12.66,
+    "P0_Jumlah_Sem2_September": 12.98,
+    "RLS_Laki_Laki": 8.57,
+    "RLS_Perempuan": 7.9,
+    "RLS_Rata_Rata": 8.235
+  },
+  {
+    "No": 204,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2020,
+    "P0_Jumlah_Sem1_Maret": 8.75,
+    "P0_Jumlah_Sem2_September": 9.14,
+    "RLS_Laki_Laki": 9.82,
+    "RLS_Perempuan": 9.28,
+    "RLS_Rata_Rata": 9.55
+  },
+  {
+    "No": 205,
+    "Provinsi": "ACEH",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 15.33,
+    "P0_Jumlah_Sem2_September": 15.53,
+    "RLS_Laki_Laki": 9.55,
+    "RLS_Perempuan": 9.22,
+    "RLS_Rata_Rata": 9.385
+  },
+  {
+    "No": 206,
+    "Provinsi": "BALI",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 4.53,
+    "P0_Jumlah_Sem2_September": 4.72,
+    "RLS_Laki_Laki": 9.76,
+    "RLS_Perempuan": 8.36,
+    "RLS_Rata_Rata": 9.06
+  },
+  {
+    "No": 207,
+    "Provinsi": "BANTEN",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 6.66,
+    "P0_Jumlah_Sem2_September": 6.5,
+    "RLS_Laki_Laki": 9.37,
+    "RLS_Perempuan": 8.46,
+    "RLS_Rata_Rata": 8.915
+  },
+  {
+    "No": 208,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 15.22,
+    "P0_Jumlah_Sem2_September": 14.43,
+    "RLS_Laki_Laki": 9.19,
+    "RLS_Perempuan": 8.59,
+    "RLS_Rata_Rata": 8.89
+  },
+  {
+    "No": 209,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 12.8,
+    "P0_Jumlah_Sem2_September": 11.91,
+    "RLS_Laki_Laki": 9.98,
+    "RLS_Perempuan": 9.31,
+    "RLS_Rata_Rata": 9.645
+  },
+  {
+    "No": 210,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 4.72,
+    "P0_Jumlah_Sem2_September": 4.67,
+    "RLS_Laki_Laki": 11.52,
+    "RLS_Perempuan": 10.83,
+    "RLS_Rata_Rata": 11.175
+  },
+  {
+    "No": 211,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 15.61,
+    "P0_Jumlah_Sem2_September": 15.41,
+    "RLS_Laki_Laki": 7.58,
+    "RLS_Perempuan": 8.22,
+    "RLS_Rata_Rata": 7.9
+  },
+  {
+    "No": 212,
+    "Provinsi": "JAMBI",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 8.09,
+    "P0_Jumlah_Sem2_September": 7.67,
+    "RLS_Laki_Laki": 8.95,
+    "RLS_Perempuan": 8.23,
+    "RLS_Rata_Rata": 8.59
+  },
+  {
+    "No": 213,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 8.4,
+    "P0_Jumlah_Sem2_September": 7.97,
+    "RLS_Laki_Laki": 8.98,
+    "RLS_Perempuan": 8.23,
+    "RLS_Rata_Rata": 8.605
+  },
+  {
+    "No": 214,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 11.79,
+    "P0_Jumlah_Sem2_September": 11.25,
+    "RLS_Laki_Laki": 8.17,
+    "RLS_Perempuan": 7.34,
+    "RLS_Rata_Rata": 7.755
+  },
+  {
+    "No": 215,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 11.4,
+    "P0_Jumlah_Sem2_September": 10.59,
+    "RLS_Laki_Laki": 8.33,
+    "RLS_Perempuan": 7.45,
+    "RLS_Rata_Rata": 7.89
+  },
+  {
+    "No": 216,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 7.15,
+    "P0_Jumlah_Sem2_September": 6.84,
+    "RLS_Laki_Laki": 7.94,
+    "RLS_Perempuan": 6.93,
+    "RLS_Rata_Rata": 7.435
+  },
+  {
+    "No": 217,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 4.83,
+    "P0_Jumlah_Sem2_September": 4.56,
+    "RLS_Laki_Laki": 8.77,
+    "RLS_Perempuan": 7.91,
+    "RLS_Rata_Rata": 8.34
+  },
+  {
+    "No": 218,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 5.16,
+    "P0_Jumlah_Sem2_September": 5.16,
+    "RLS_Laki_Laki": 8.96,
+    "RLS_Perempuan": 8.29,
+    "RLS_Rata_Rata": 8.625
+  },
+  {
+    "No": 219,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 6.54,
+    "P0_Jumlah_Sem2_September": 6.27,
+    "RLS_Laki_Laki": 10.23,
+    "RLS_Perempuan": 9.42,
+    "RLS_Rata_Rata": 9.825
+  },
+  {
+    "No": 220,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 7.36,
+    "P0_Jumlah_Sem2_September": 6.83,
+    "RLS_Laki_Laki": 9.76,
+    "RLS_Perempuan": 8.93,
+    "RLS_Rata_Rata": 9.345
+  },
+  {
+    "No": 221,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 4.9,
+    "P0_Jumlah_Sem2_September": 4.67,
+    "RLS_Laki_Laki": 8.42,
+    "RLS_Perempuan": 7.82,
+    "RLS_Rata_Rata": 8.12
+  },
+  {
+    "No": 222,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 6.12,
+    "P0_Jumlah_Sem2_September": 5.75,
+    "RLS_Laki_Laki": 10.3,
+    "RLS_Perempuan": 10.06,
+    "RLS_Rata_Rata": 10.18
+  },
+  {
+    "No": 223,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 12.62,
+    "P0_Jumlah_Sem2_September": 11.67,
+    "RLS_Laki_Laki": 8.39,
+    "RLS_Perempuan": 7.76,
+    "RLS_Rata_Rata": 8.075
+  },
+  {
+    "No": 224,
+    "Provinsi": "MALUKU",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 17.87,
+    "P0_Jumlah_Sem2_September": 16.3,
+    "RLS_Laki_Laki": 10.11,
+    "RLS_Perempuan": 9.95,
+    "RLS_Rata_Rata": 10.03
+  },
+  {
+    "No": 225,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 6.89,
+    "P0_Jumlah_Sem2_September": 6.38,
+    "RLS_Laki_Laki": 9.5,
+    "RLS_Perempuan": 8.67,
+    "RLS_Rata_Rata": 9.085
+  },
+  {
+    "No": 226,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 14.14,
+    "P0_Jumlah_Sem2_September": 13.83,
+    "RLS_Laki_Laki": 8.15,
+    "RLS_Perempuan": 6.66,
+    "RLS_Rata_Rata": 7.405
+  },
+  {
+    "No": 227,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 20.99,
+    "P0_Jumlah_Sem2_September": 20.44,
+    "RLS_Laki_Laki": 8.12,
+    "RLS_Perempuan": 7.29,
+    "RLS_Rata_Rata": 7.705
+  },
+  {
+    "No": 228,
+    "Provinsi": "PAPUA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 26.86,
+    "P0_Jumlah_Sem2_September": 27.38,
+    "RLS_Laki_Laki": 7.44,
+    "RLS_Perempuan": 6.0,
+    "RLS_Rata_Rata": 7.44
+  },
+  {
+    "No": 229,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 21.84,
+    "P0_Jumlah_Sem2_September": 21.82,
+    "RLS_Laki_Laki": 10.42,
+    "RLS_Perempuan": 7.53,
+    "RLS_Rata_Rata": 8.975
+  },
+  {
+    "No": 230,
+    "Provinsi": "RIAU",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 7.12,
+    "P0_Jumlah_Sem2_September": 7.0,
+    "RLS_Laki_Laki": 9.41,
+    "RLS_Perempuan": 9.01,
+    "RLS_Rata_Rata": 9.21
+  },
+  {
+    "No": 231,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 11.29,
+    "P0_Jumlah_Sem2_September": 11.85,
+    "RLS_Laki_Laki": 8.26,
+    "RLS_Perempuan": 7.66,
+    "RLS_Rata_Rata": 7.96
+  },
+  {
+    "No": 232,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 8.78,
+    "P0_Jumlah_Sem2_September": 8.53,
+    "RLS_Laki_Laki": 8.74,
+    "RLS_Perempuan": 8.2,
+    "RLS_Rata_Rata": 8.47
+  },
+  {
+    "No": 233,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 13.0,
+    "P0_Jumlah_Sem2_September": 12.18,
+    "RLS_Laki_Laki": 9.14,
+    "RLS_Perempuan": 8.62,
+    "RLS_Rata_Rata": 8.88
+  },
+  {
+    "No": 234,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 11.66,
+    "P0_Jumlah_Sem2_September": 11.74,
+    "RLS_Laki_Laki": 9.55,
+    "RLS_Perempuan": 8.72,
+    "RLS_Rata_Rata": 9.135
+  },
+  {
+    "No": 235,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 7.77,
+    "P0_Jumlah_Sem2_September": 7.36,
+    "RLS_Laki_Laki": 9.59,
+    "RLS_Perempuan": 9.64,
+    "RLS_Rata_Rata": 9.615
+  },
+  {
+    "No": 236,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 6.63,
+    "P0_Jumlah_Sem2_September": 6.04,
+    "RLS_Laki_Laki": 9.18,
+    "RLS_Perempuan": 8.96,
+    "RLS_Rata_Rata": 9.07
+  },
+  {
+    "No": 237,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 12.84,
+    "P0_Jumlah_Sem2_September": 12.79,
+    "RLS_Laki_Laki": 8.58,
+    "RLS_Perempuan": 8.01,
+    "RLS_Rata_Rata": 8.295
+  },
+  {
+    "No": 238,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2021,
+    "P0_Jumlah_Sem1_Maret": 9.01,
+    "P0_Jumlah_Sem2_September": 8.49,
+    "RLS_Laki_Laki": 9.84,
+    "RLS_Perempuan": 9.33,
+    "RLS_Rata_Rata": 9.585
+  },
+  {
+    "No": 239,
+    "Provinsi": "ACEH",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 14.64,
+    "P0_Jumlah_Sem2_September": 14.75,
+    "RLS_Laki_Laki": 9.66,
+    "RLS_Perempuan": 9.24,
+    "RLS_Rata_Rata": 9.45
+  },
+  {
+    "No": 240,
+    "Provinsi": "BALI",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 4.57,
+    "P0_Jumlah_Sem2_September": 4.53,
+    "RLS_Laki_Laki": 9.99,
+    "RLS_Perempuan": 8.71,
+    "RLS_Rata_Rata": 9.35
+  },
+  {
+    "No": 241,
+    "Provinsi": "BANTEN",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 6.16,
+    "P0_Jumlah_Sem2_September": 6.24,
+    "RLS_Laki_Laki": 9.48,
+    "RLS_Perempuan": 8.72,
+    "RLS_Rata_Rata": 9.1
+  },
+  {
+    "No": 242,
+    "Provinsi": "BENGKULU",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 14.62,
+    "P0_Jumlah_Sem2_September": 14.34,
+    "RLS_Laki_Laki": 9.2,
+    "RLS_Perempuan": 8.64,
+    "RLS_Rata_Rata": 8.92
+  },
+  {
+    "No": 243,
+    "Provinsi": "DI YOGYAKARTA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 11.34,
+    "P0_Jumlah_Sem2_September": 11.49,
+    "RLS_Laki_Laki": 10.06,
+    "RLS_Perempuan": 9.45,
+    "RLS_Rata_Rata": 9.755
+  },
+  {
+    "No": 244,
+    "Provinsi": "DKI JAKARTA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 4.69,
+    "P0_Jumlah_Sem2_September": 4.61,
+    "RLS_Laki_Laki": 11.64,
+    "RLS_Perempuan": 10.97,
+    "RLS_Rata_Rata": 11.305
+  },
+  {
+    "No": 245,
+    "Provinsi": "GORONTALO",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 15.42,
+    "P0_Jumlah_Sem2_September": 15.51,
+    "RLS_Laki_Laki": 7.59,
+    "RLS_Perempuan": 8.4,
+    "RLS_Rata_Rata": 7.995
+  },
+  {
+    "No": 246,
+    "Provinsi": "JAMBI",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 7.62,
+    "P0_Jumlah_Sem2_September": 7.7,
+    "RLS_Laki_Laki": 8.96,
+    "RLS_Perempuan": 8.39,
+    "RLS_Rata_Rata": 8.675
+  },
+  {
+    "No": 247,
+    "Provinsi": "JAWA BARAT",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 8.06,
+    "P0_Jumlah_Sem2_September": 7.98,
+    "RLS_Laki_Laki": 9.07,
+    "RLS_Perempuan": 8.48,
+    "RLS_Rata_Rata": 8.775
+  },
+  {
+    "No": 248,
+    "Provinsi": "JAWA TENGAH",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 10.93,
+    "P0_Jumlah_Sem2_September": 10.98,
+    "RLS_Laki_Laki": 8.31,
+    "RLS_Perempuan": 7.55,
+    "RLS_Rata_Rata": 7.93
+  },
+  {
+    "No": 249,
+    "Provinsi": "JAWA TIMUR",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 10.38,
+    "P0_Jumlah_Sem2_September": 10.49,
+    "RLS_Laki_Laki": 8.42,
+    "RLS_Perempuan": 7.65,
+    "RLS_Rata_Rata": 8.035
+  },
+  {
+    "No": 250,
+    "Provinsi": "KALIMANTAN BARAT",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 6.73,
+    "P0_Jumlah_Sem2_September": 6.81,
+    "RLS_Laki_Laki": 7.95,
+    "RLS_Perempuan": 7.18,
+    "RLS_Rata_Rata": 7.565
+  },
+  {
+    "No": 251,
+    "Provinsi": "KALIMANTAN SELATAN",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 4.49,
+    "P0_Jumlah_Sem2_September": 4.61,
+    "RLS_Laki_Laki": 8.78,
+    "RLS_Perempuan": 8.15,
+    "RLS_Rata_Rata": 8.465
+  },
+  {
+    "No": 252,
+    "Provinsi": "KALIMANTAN TENGAH",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 5.28,
+    "P0_Jumlah_Sem2_September": 5.22,
+    "RLS_Laki_Laki": 8.97,
+    "RLS_Perempuan": 8.43,
+    "RLS_Rata_Rata": 8.7
+  },
+  {
+    "No": 253,
+    "Provinsi": "KALIMANTAN TIMUR",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 6.31,
+    "P0_Jumlah_Sem2_September": 6.44,
+    "RLS_Laki_Laki": 10.24,
+    "RLS_Perempuan": 9.71,
+    "RLS_Rata_Rata": 9.975
+  },
+  {
+    "No": 254,
+    "Provinsi": "KALIMANTAN UTARA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 6.77,
+    "P0_Jumlah_Sem2_September": 6.86,
+    "RLS_Laki_Laki": 9.77,
+    "RLS_Perempuan": 9.09,
+    "RLS_Rata_Rata": 9.43
+  },
+  {
+    "No": 255,
+    "Provinsi": "KEP BANGKA BELITUNG",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 4.45,
+    "P0_Jumlah_Sem2_September": 4.61,
+    "RLS_Laki_Laki": 8.43,
+    "RLS_Perempuan": 7.87,
+    "RLS_Rata_Rata": 8.15
+  },
+  {
+    "No": 256,
+    "Provinsi": "KEPULAUAN RIAU",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 6.24,
+    "P0_Jumlah_Sem2_September": 6.03,
+    "RLS_Laki_Laki": 10.5,
+    "RLS_Perempuan": 10.23,
+    "RLS_Rata_Rata": 10.365
+  },
+  {
+    "No": 257,
+    "Provinsi": "LAMPUNG",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 11.57,
+    "P0_Jumlah_Sem2_September": 11.44,
+    "RLS_Laki_Laki": 8.47,
+    "RLS_Perempuan": 7.87,
+    "RLS_Rata_Rata": 8.17
+  },
+  {
+    "No": 258,
+    "Provinsi": "MALUKU",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 15.97,
+    "P0_Jumlah_Sem2_September": 16.23,
+    "RLS_Laki_Laki": 10.3,
+    "RLS_Perempuan": 10.07,
+    "RLS_Rata_Rata": 10.185
+  },
+  {
+    "No": 259,
+    "Provinsi": "MALUKU UTARA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 6.23,
+    "P0_Jumlah_Sem2_September": 6.37,
+    "RLS_Laki_Laki": 9.51,
+    "RLS_Perempuan": 8.93,
+    "RLS_Rata_Rata": 9.22
+  },
+  {
+    "No": 260,
+    "Provinsi": "NUSA TENGGARA BARAT",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 13.68,
+    "P0_Jumlah_Sem2_September": 13.82,
+    "RLS_Laki_Laki": 8.16,
+    "RLS_Perempuan": 6.92,
+    "RLS_Rata_Rata": 7.54
+  },
+  {
+    "No": 261,
+    "Provinsi": "NUSA TENGGARA TIMUR",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 20.05,
+    "P0_Jumlah_Sem2_September": 20.23,
+    "RLS_Laki_Laki": 8.13,
+    "RLS_Perempuan": 7.51,
+    "RLS_Rata_Rata": 7.82
+  },
+  {
+    "No": 262,
+    "Provinsi": "PAPUA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 26.56,
+    "P0_Jumlah_Sem2_September": 26.8,
+    "RLS_Laki_Laki": 7.54,
+    "RLS_Perempuan": 6.29,
+    "RLS_Rata_Rata": 6.915
+  },
+  {
+    "No": 263,
+    "Provinsi": "PAPUA BARAT",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 21.33,
+    "P0_Jumlah_Sem2_September": 21.43,
+    "RLS_Laki_Laki": 10.45,
+    "RLS_Perempuan": 7.72,
+    "RLS_Rata_Rata": 9.085
+  },
+  {
+    "No": 264,
+    "Provinsi": "RIAU",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 6.78,
+    "P0_Jumlah_Sem2_September": 6.84,
+    "RLS_Laki_Laki": 9.42,
+    "RLS_Perempuan": 9.08,
+    "RLS_Rata_Rata": 9.25
+  },
+  {
+    "No": 265,
+    "Provinsi": "SULAWESI BARAT",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 11.75,
+    "P0_Jumlah_Sem2_September": 11.92,
+    "RLS_Laki_Laki": 8.35,
+    "RLS_Perempuan": 7.81,
+    "RLS_Rata_Rata": 8.08
+  },
+  {
+    "No": 266,
+    "Provinsi": "SULAWESI SELATAN",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 8.63,
+    "P0_Jumlah_Sem2_September": 8.66,
+    "RLS_Laki_Laki": 8.77,
+    "RLS_Perempuan": 8.48,
+    "RLS_Rata_Rata": 8.625
+  },
+  {
+    "No": 267,
+    "Provinsi": "SULAWESI TENGAH",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 12.33,
+    "P0_Jumlah_Sem2_September": 12.3,
+    "RLS_Laki_Laki": 9.14,
+    "RLS_Perempuan": 8.76,
+    "RLS_Rata_Rata": 8.95
+  },
+  {
+    "No": 268,
+    "Provinsi": "SULAWESI TENGGARA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 11.17,
+    "P0_Jumlah_Sem2_September": 11.27,
+    "RLS_Laki_Laki": 9.56,
+    "RLS_Perempuan": 8.93,
+    "RLS_Rata_Rata": 9.245
+  },
+  {
+    "No": 269,
+    "Provinsi": "SULAWESI UTARA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 7.28,
+    "P0_Jumlah_Sem2_September": 7.34,
+    "RLS_Laki_Laki": 9.6,
+    "RLS_Perempuan": 9.76,
+    "RLS_Rata_Rata": 9.68
+  },
+  {
+    "No": 270,
+    "Provinsi": "SUMATERA BARAT",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 5.92,
+    "P0_Jumlah_Sem2_September": 6.04,
+    "RLS_Laki_Laki": 9.19,
+    "RLS_Perempuan": 9.17,
+    "RLS_Rata_Rata": 9.18
+  },
+  {
+    "No": 271,
+    "Provinsi": "SUMATERA SELATAN",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 11.9,
+    "P0_Jumlah_Sem2_September": 11.95,
+    "RLS_Laki_Laki": 8.59,
+    "RLS_Perempuan": 8.19,
+    "RLS_Rata_Rata": 8.39
+  },
+  {
+    "No": 272,
+    "Provinsi": "SUMATERA UTARA",
+    "Tahun": 2022,
+    "P0_Jumlah_Sem1_Maret": 8.42,
+    "P0_Jumlah_Sem2_September": 8.33,
+    "RLS_Laki_Laki": 9.94,
+    "RLS_Perempuan": 9.5,
+    "RLS_Rata_Rata": 9.72
+  }
+]

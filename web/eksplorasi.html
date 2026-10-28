@@ -714,6 +714,155 @@
           </div>
         </div>
 
+        <!-- 3B. VISUALISASI SCATTER PLOT AKTUAL VS PREDIKSI & RESIDUAL (MODEL TERBAIK F2: RLS PEREMPUAN) -->
+        <div class="card" style="margin-bottom: 40px;" id="visualisasi-scatter-residual">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 20px;">
+            <div>
+              <span class="section-tag" style="margin-bottom: 8px;">
+                <i data-lucide="scatter-chart" style="width: 14px; height: 14px;"></i>
+                Evaluasi Visual Model Terbaik (N = 56 Data Testing)
+              </span>
+              <h2 style="font-size: 20px; margin-bottom: 6px; color: var(--color-text-main);">
+                Visualisasi Perbandingan Nilai Aktual dan Prediksi serta Residual Model Linear Regression dengan Fitur RLS Perempuan pada Target Kemiskinan Maret dan September Menggunakan Scatter Plot
+              </h2>
+              <p style="font-size: 13px; color: var(--color-text-muted); margin: 0; max-width: 900px; line-height: 1.6;">
+                Evaluasi sebaran prediksi dan nilai residual (<code>Residual = Nilai Aktual − Nilai Prediksi</code>) dari model terbaik <strong>Linear Regression</strong> berfitur tunggal <code>F2: RLS_Perempuan</code> pada <strong>7 Provinsi Data Testing</strong> (56 observasi panel, 2015–2022) hasil pembagian <code>GroupShuffleSplit(test_size=0.20, random_state=42)</code>.
+              </p>
+            </div>
+
+            <!-- Filter Provinsi Testing -->
+            <div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-end;">
+              <span style="font-size: 11.5px; font-weight: 700; color: var(--color-text-muted);">Sorot Provinsi Testing:</span>
+              <div class="pill-group" role="tablist" style="flex-wrap: wrap;">
+                <button type="button" class="pill-btn scatter-prov-btn active" data-prov="all">Semua 7 Provinsi (56)</button>
+                <button type="button" class="pill-btn scatter-prov-btn" data-prov="JAWA BARAT">Jawa Barat</button>
+                <button type="button" class="pill-btn scatter-prov-btn" data-prov="KALIMANTAN UTARA">Kalimantan Utara</button>
+                <button type="button" class="pill-btn scatter-prov-btn" data-prov="MALUKU">Maluku</button>
+                <button type="button" class="pill-btn scatter-prov-btn" data-prov="NUSA TENGGARA BARAT">NTB</button>
+                <button type="button" class="pill-btn scatter-prov-btn" data-prov="PAPUA BARAT">Papua Barat</button>
+                <button type="button" class="pill-btn scatter-prov-btn" data-prov="SULAWESI BARAT">Sulawesi Barat</button>
+                <button type="button" class="pill-btn scatter-prov-btn" data-prov="SULAWESI SELATAN">Sulawesi Selatan</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ringkasan Persamaan Regresi & Metrik Model F2 -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-bottom: 24px;">
+            <div style="background: #F4F9FF; border: 1px solid #C4DCF7; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <div style="font-size: 11.5px; font-weight: 700; color: #0E52A0; text-transform: uppercase; letter-spacing: 0.04em;">
+                  Model Linear Regression — Target Maret (Sem 1)
+                </div>
+                <div style="font-size: 15px; font-weight: 800; color: #0B1B33; margin-top: 4px; font-family: monospace;">
+                  Ŷ_Maret = 32.7051 − 2.7390 × (RLS_Perempuan)
+                </div>
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="badge green" style="font-size: 11px;">MAE: 4.3519</span>
+                <span class="badge green" style="font-size: 11px;">RMSE: 6.0426</span>
+                <span class="badge amber" style="font-size: 11px;">R²: -0.1560</span>
+              </div>
+            </div>
+
+            <div style="background: #F4FBF7; border: 1px solid #B7E4C7; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <div style="font-size: 11.5px; font-weight: 700; color: #0D652D; text-transform: uppercase; letter-spacing: 0.04em;">
+                  Model Linear Regression — Target September (Sem 2)
+                </div>
+                <div style="font-size: 15px; font-weight: 800; color: #0B1B33; margin-top: 4px; font-family: monospace;">
+                  Ŷ_Sept = 32.4391 − 2.7211 × (RLS_Perempuan)
+                </div>
+              </div>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="badge green" style="font-size: 11px;">MAE: 4.2513</span>
+                <span class="badge green" style="font-size: 11px;">RMSE: 5.9449</span>
+                <span class="badge amber" style="font-size: 11px;">R²: -0.1803</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid 2x2: 4 Scatter Plot (Aktual vs Prediksi & Residual untuk Maret & September) -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 20px; margin-bottom: 24px;">
+            <!-- Plot 1: Aktual vs Prediksi Maret -->
+            <div style="border: 1px solid var(--color-border); border-radius: 14px; padding: 18px; background: #FFFFFF;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div>
+                  <span class="exp-period-badge maret" style="margin-bottom: 4px; display: inline-block;">Target Kemiskinan Maret (Sem 1)</span>
+                  <h4 style="font-size: 15px; font-weight: 800; color: #0B1B33; margin: 0;">
+                    1. Scatter Plot Nilai Aktual vs Prediksi (Maret)
+                  </h4>
+                </div>
+                <span style="font-size: 11.5px; color: #6E7C87; font-weight: 600;">Garis Putus-Putus: Ideal (Y = Ŷ)</span>
+              </div>
+              <div id="scatterActualPredMaret" style="width: 100%; height: 340px;"></div>
+            </div>
+
+            <!-- Plot 2: Residual Plot Maret -->
+            <div style="border: 1px solid var(--color-border); border-radius: 14px; padding: 18px; background: #FFFFFF;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div>
+                  <span class="exp-period-badge maret" style="margin-bottom: 4px; display: inline-block;">Target Kemiskinan Maret (Sem 1)</span>
+                  <h4 style="font-size: 15px; font-weight: 800; color: #0B1B33; margin: 0;">
+                    2. Scatter Plot Nilai Prediksi vs Residual (Maret)
+                  </h4>
+                </div>
+                <span style="font-size: 11.5px; color: #6E7C87; font-weight: 600;">Garis Merah: Residual = 0</span>
+              </div>
+              <div id="scatterResidualMaret" style="width: 100%; height: 340px;"></div>
+            </div>
+
+            <!-- Plot 3: Aktual vs Prediksi September -->
+            <div style="border: 1px solid var(--color-border); border-radius: 14px; padding: 18px; background: #FFFFFF;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div>
+                  <span class="exp-period-badge september" style="margin-bottom: 4px; display: inline-block;">Target Kemiskinan September (Sem 2)</span>
+                  <h4 style="font-size: 15px; font-weight: 800; color: #0B1B33; margin: 0;">
+                    3. Scatter Plot Nilai Aktual vs Prediksi (September)
+                  </h4>
+                </div>
+                <span style="font-size: 11.5px; color: #6E7C87; font-weight: 600;">Garis Putus-Putus: Ideal (Y = Ŷ)</span>
+              </div>
+              <div id="scatterActualPredSept" style="width: 100%; height: 340px;"></div>
+            </div>
+
+            <!-- Plot 4: Residual Plot September -->
+            <div style="border: 1px solid var(--color-border); border-radius: 14px; padding: 18px; background: #FFFFFF;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px;">
+                <div>
+                  <span class="exp-period-badge september" style="margin-bottom: 4px; display: inline-block;">Target Kemiskinan September (Sem 2)</span>
+                  <h4 style="font-size: 15px; font-weight: 800; color: #0B1B33; margin: 0;">
+                    4. Scatter Plot Nilai Prediksi vs Residual (September)
+                  </h4>
+                </div>
+                <span style="font-size: 11.5px; color: #6E7C87; font-weight: 600;">Garis Merah: Residual = 0</span>
+              </div>
+              <div id="scatterResidualSept" style="width: 100%; height: 340px;"></div>
+            </div>
+          </div>
+
+          <!-- Ringkasan Interpretasi Pola Scatter & Residual per Provinsi Testing -->
+          <div style="background: #F8FAFE; border: 1px solid #DCE6F4; border-radius: 12px; padding: 18px 20px;">
+            <div style="font-size: 14px; font-weight: 800; color: #0B1B33; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+              <i data-lucide="info" style="width: 16px; height: 16px; color: #1A6ED8;"></i>
+              Analisis Pola Sebaran Aktual vs Prediksi dan Residual pada 7 Provinsi Testing
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; font-size: 12.5px; line-height: 1.6; color: #3B4858;">
+              <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 12px 14px;">
+                <strong style="color: #0D652D; display: block; margin-bottom: 4px;">1. Akurasi Sangat Presisi (Dekat Garis Ideal Y = Ŷ)</strong>
+                Provinsi <strong>Nusa Tenggara Barat (NTB)</strong> berada tepat di atas garis diagonal <code>Y = Ŷ</code> dan garis <code>Residual = 0</code> (rata-rata aktual Maret <code>15.09%</code> vs prediksi <code>15.05%</code>, residual rata-rata hanya <strong>+0.05 poin</strong> pada Maret dan <strong>-0.14 poin</strong> pada September). Provinsi <strong>Sulawesi Barat</strong> juga terprediksi sangat dekat dengan residual rata-rata <strong>-1.21 poin</strong> (Maret) dan <strong>-1.06 poin</strong> (September).
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 12px 14px;">
+                <strong style="color: #0E52A0; display: block; margin-bottom: 4px;">2. Residual Negatif Ringan (Over-Prediction)</strong>
+                Provinsi <strong>Sulawesi Selatan</strong> (residual <code>-2.14</code>), <strong>Kalimantan Utara</strong> (residual <code>-2.15</code>), dan <strong>Jawa Barat</strong> (residual <code>-2.90</code>) berada sedikit di bawah garis <code>Residual = 0</code>. Hal ini menunjukkan tingkat kemiskinan aktual di ketiga provinsi tersebut lebih rendah (lebih baik) sekitar 2–3% dibandingkan ekspektasi linier berdasarkan capaian RLS Perempuan mereka.
+              </div>
+              <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 12px 14px;">
+                <strong style="color: #C5221F; display: block; margin-bottom: 4px;">3. Residual Positif Tinggi (Anomali Struktural Kepulauan/Timur)</strong>
+                Provinsi <strong>Maluku</strong> (residual rata-rata <code>+11.36</code>) dan <strong>Papua Barat</strong> (residual rata-rata <code>+10.15</code>) berada jauh di atas garis <code>Residual = 0</code> (under-prediction). Meskipun <code>RLS_Perempuan</code> Maluku tergolong tinggi (rata-rata <code>9.50 tahun</code> sehingga diprediksi miskin <code>6.67%</code>), kemiskinan aktualnya mencapai <code>18.03%</code> akibat faktor geografis kepulauan dan keterisolasian spasial yang tidak tertangkap oleh variabel pendidikan semata.
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- 4. METRIC ANCHOR STRIP -->
         <div class="hero-stats-bar" style="margin-bottom: 40px;" id="simulator">
           <div class="stat-pill">
@@ -754,29 +903,53 @@
           </div>
         </div>
 
-        <!-- 6. BENCHMARK TABLE 34 PROVINSI -->
+        <!-- 6. TABEL DATASET PANEL 34 PROVINSI (2015-2022, N = 272) -->
         <div class="card provinces-table-card" id="matriks">
-          <div class="table-toolbar">
-            <div>
-              <h2 style="font-size: 20px; margin-bottom: 4px; color: var(--color-text-main);">Matriks Proyeksi Skenario 34 Provinsi (+1.0 Tahun RLS)</h2>
-              <p style="font-size: 13px; color: var(--color-text-muted); margin: 0;">
-                Bandingkan kondisi baseline Maret 2023 dengan hasil proyeksi model jika masing-masing provinsi berhasil menaikkan RLS sebesar 1 tahun.
-              </p>
+          <div class="table-toolbar" style="flex-direction: column; align-items: stretch; gap: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+              <div>
+                <span class="section-tag" style="margin-bottom: 6px;">
+                  <i data-lucide="database" style="width: 13px; height: 13px;"></i>
+                  Dataset Panel Bersih (34 Provinsi × 8 Tahun)
+                </span>
+                <h2 style="font-size: 20px; margin-bottom: 4px; color: var(--color-text-main);">
+                  Tabel Data Kemiskinan (P0 Maret &amp; September) dan RLS Menurut Jenis Kelamin (2015–2022)
+                </h2>
+                <p style="font-size: 13px; color: var(--color-text-muted); margin: 0;">
+                  Menampilkan <strong id="datasetRowCount">272</strong> observasi dari total 272 baris data panel resmi BPS RI (<code>Provinsi</code>, <code>Tahun</code>, <code>P0_Jumlah_Sem1_Maret</code>, <code>P0_Jumlah_Sem2_September</code>, <code>RLS_Laki_Laki</code>, <code>RLS_Perempuan</code>, <code>RLS_Rata_Rata</code>).
+                </p>
+              </div>
+              <input type="text" id="tableSearchInput" class="table-search-input" placeholder="Cari nama provinsi..." aria-label="Cari provinsi">
             </div>
-            <input type="text" id="tableSearchInput" class="table-search-input" placeholder="Cari nama provinsi..." aria-label="Cari provinsi">
+
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <span style="font-size: 12px; font-weight: 700; color: var(--color-text-muted);">Filter Tahun:</span>
+              <div class="pill-group" role="tablist" style="flex-wrap: wrap;">
+                <button type="button" class="pill-btn panel-year-btn active" data-year="all">Semua (272)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2015">2015 (34)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2016">2016 (34)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2017">2017 (34)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2018">2018 (34)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2019">2019 (34)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2020">2020 (34)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2021">2021 (34)</button>
+                <button type="button" class="pill-btn panel-year-btn" data-year="2022">2022 (34)</button>
+              </div>
+            </div>
           </div>
 
-          <div class="provinces-table-wrapper">
+          <div class="provinces-table-wrapper" style="max-height: 640px; overflow-y: auto; border: 1px solid var(--color-border); border-radius: 12px;">
             <table class="provinces-table">
-              <thead>
+              <thead style="position: sticky; top: 0; z-index: 2; background: #F8FAFE;">
                 <tr>
-                  <th style="width: 40px; text-align: center;">No</th>
-                  <th>Provinsi &amp; Klaster</th>
-                  <th style="text-align: right;">RLS 2023</th>
-                  <th style="text-align: right;">Miskin 2023</th>
-                  <th style="text-align: right;">Target RLS (+1 th)</th>
-                  <th style="text-align: right;">Proyeksi Miskin</th>
-                  <th style="text-align: right;">Dampak Netto</th>
+                  <th style="width: 48px; text-align: center;">No</th>
+                  <th>Provinsi</th>
+                  <th style="text-align: center;">Tahun</th>
+                  <th style="text-align: right;"><code>P0_Jumlah_Sem1_Maret</code></th>
+                  <th style="text-align: right;"><code>P0_Jumlah_Sem2_September</code></th>
+                  <th style="text-align: right;"><code>RLS_Laki_Laki</code></th>
+                  <th style="text-align: right;"><code>RLS_Perempuan</code></th>
+                  <th style="text-align: right;"><code>RLS_Rata_Rata</code></th>
                 </tr>
               </thead>
               <tbody id="provincesTableBody">

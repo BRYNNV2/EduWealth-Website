@@ -10,25 +10,39 @@ async function getECharts() {
 }
 
 let histogramChart = null;
+let scatterActualMarChart = null;
+let scatterResMarChart = null;
+let scatterActualSepChart = null;
+let scatterResSepChart = null;
 let provincesList = [];
 let summaryData = null;
 let modelMetrics = [];
+let datasetPanel = [];
+let predictionsF2 = null;
 let currentYearFilter = 'all';
+let currentScatterProvFilter = 'all';
 
 async function loadEksplorasiData() {
   try {
-    const [sumResp, provResp, metResp] = await Promise.all([
+    const [sumResp, provResp, metResp, panelResp, predResp] = await Promise.all([
       fetch('./data/summary.json'),
       fetch('./data/provinsi.json'),
-      fetch('./data/model_metrics.json')
+      fetch('./data/model_metrics.json'),
+      fetch('./data/dataset_panel.json'),
+      fetch('./data/predictions_f2.json')
     ]);
 
     summaryData = await sumResp.json();
     provincesList = await provResp.json();
     modelMetrics = await metResp.json();
+    datasetPanel = await panelResp.json();
+    predictionsF2 = await predResp.json();
 
     // 0. Isi Tabel 16 Kali Percobaan
     populateExperimentsTable(modelMetrics);
+
+    // 0B. Inisialisasi 4 Scatter Plot Aktual vs Prediksi & Residual (Model F2)
+    await initScatterResidualCharts(predictionsF2);
 
     // 1. Inisialisasi Grafik Histogram
     await initHistogramChart();
@@ -36,8 +50,8 @@ async function loadEksplorasiData() {
     // 2. Inisialisasi Kontrol Simulator
     initSimulatorControls();
 
-    // 3. Isi Tabel Matriks 34 Provinsi
-    populateProvincesTable();
+    // 3. Isi Tabel Dataset Panel 272 Observasi (2015–2022)
+    populateProvincesTable(datasetPanel);
 
     // 4. Inisialisasi Navigasi & Ikon
     initMobileNav();
@@ -46,6 +60,10 @@ async function loadEksplorasiData() {
     // Resize listener
     window.addEventListener('resize', () => {
       if (histogramChart) histogramChart.resize();
+      if (scatterActualMarChart) scatterActualMarChart.resize();
+      if (scatterResMarChart) scatterResMarChart.resize();
+      if (scatterActualSepChart) scatterActualSepChart.resize();
+      if (scatterResSepChart) scatterResSepChart.resize();
     }, { passive: true });
 
   } catch (err) {
@@ -107,6 +125,272 @@ function populateExperimentsTable(metrics) {
       renderRows(btn.dataset.periode);
     });
   });
+}
+
+/**
+ * =========================================================================
+ * 0B. VISUALISASI SCATTER PLOT AKTUAL VS PREDIKSI & RESIDUAL (MODEL F2)
+ * =========================================================================
+ */
+const PROV_COLORS = {
+  'JAWA BARAT': '#2563EB',
+  'KALIMANTAN UTARA': '#0D9488',
+  'MALUKU': '#DC2626',
+  'NUSA TENGGARA BARAT': '#16A34A',
+  'PAPUA BARAT': '#9333EA',
+  'SULAWESI BARAT': '#D97706',
+  'SULAWESI SELATAN': '#0284C7'
+};
+
+async function initScatterResidualCharts(predData) {
+  if (!predData || !Array.isArray(predData.testing_points)) return;
+
+  const elActMar = document.getElementById('scatterActualPredMaret');
+  const elResMar = document.getElementById('scatterResidualMaret');
+  const elActSep = document.getElementById('scatterActualPredSept');
+  const elResSep = document.getElementById('scatterResidualSept');
+
+  if (!elActMar || !elResMar || !elActSep || !elResSep) return;
+
+  const ec = await getECharts();
+  scatterActualMarChart = ec.init(elActMar);
+  scatterResMarChart = ec.init(elResMar);
+  scatterActualSepChart = ec.init(elActSep);
+  scatterResSepChart = ec.init(elResSep);
+
+  const provBtns = document.querySelectorAll('.scatter-prov-btn');
+  provBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      provBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentScatterProvFilter = btn.dataset.prov;
+      renderAllScatterPlots(predData);
+    });
+  });
+
+  renderAllScatterPlots(predData);
+}
+
+function renderAllScatterPlots(predData) {
+  const points = predData.testing_points;
+  const provinces = Object.keys(PROV_COLORS);
+
+  function buildActualVsPredOption(periode) {
+    const isMaret = periode === 'maret';
+    const actKey = isMaret ? 'P0_Jumlah_Sem1_Maret' : 'P0_Jumlah_Sem2_September';
+    const predKey = isMaret ? 'Prediksi_Maret' : 'Prediksi_September';
+    const resKey = isMaret ? 'Residual_Maret' : 'Residual_September';
+    const labelPeriode = isMaret ? 'Maret (Sem 1)' : 'September (Sem 2)';
+
+    const seriesList = provinces.map(prov => {
+      const isSelected = currentScatterProvFilter === 'all' || currentScatterProvFilter === prov;
+      const provPoints = points.filter(p => p.Provinsi === prov);
+      return {
+        name: prov,
+        type: 'scatter',
+        symbolSize: isSelected ? 11 : 7,
+        itemStyle: {
+          color: PROV_COLORS[prov],
+          opacity: isSelected ? 0.92 : 0.18,
+          borderColor: '#FFFFFF',
+          borderWidth: 1.5
+        },
+        data: provPoints.map(p => ({
+          value: [p[actKey], p[predKey]],
+          meta: p
+        }))
+      };
+    });
+
+    // Garis Ideal Y = Y_hat (dari nilai 4% s.d. 28%)
+    seriesList.push({
+      name: 'Garis Ideal (Y = Ŷ)',
+      type: 'line',
+      symbol: 'none',
+      silent: true,
+      lineStyle: {
+        color: '#64748B',
+        width: 2,
+        type: 'dashed'
+      },
+      data: [[4, 4], [28, 28]]
+    });
+
+    return {
+      animationDuration: 500,
+      tooltip: {
+        trigger: 'item',
+        backgroundColor: 'rgba(255, 255, 255, 0.98)',
+        borderColor: '#E2E8F0',
+        borderWidth: 1,
+        padding: [12, 14],
+        textStyle: { color: '#0B1B33', fontFamily: 'Plus Jakarta Sans, sans-serif' },
+        formatter: (params) => {
+          if (!params.data || !params.data.meta) return '';
+          const m = params.data.meta;
+          const resVal = m[resKey];
+          const resColor = Math.abs(resVal) < 2 ? '#0D652D' : (resVal > 0 ? '#C5221F' : '#0E52A0');
+          return `
+            <div style="font-weight: 800; font-size: 13px; color: ${PROV_COLORS[m.Provinsi]}; margin-bottom: 4px;">
+              ${m.Provinsi} (${m.Tahun}) — ${labelPeriode}
+            </div>
+            <div style="font-size: 12px; line-height: 1.6;">
+              RLS Perempuan (F2): <strong>${m.RLS_Perempuan.toFixed(2)} tahun</strong><br/>
+              Nilai Aktual (Y): <strong>${m[actKey].toFixed(2)}%</strong><br/>
+              Nilai Prediksi (Ŷ): <strong>${m[predKey].toFixed(4)}%</strong><br/>
+              Residual (Y − Ŷ): <strong style="color: ${resColor};">${resVal > 0 ? '+' : ''}${resVal.toFixed(4)} poin</strong>
+            </div>
+          `;
+        }
+      },
+      legend: {
+        bottom: 0,
+        type: 'scroll',
+        icon: 'circle',
+        itemWidth: 9,
+        itemHeight: 9,
+        textStyle: { fontSize: 10.5, color: '#3B4858' }
+      },
+      grid: {
+        top: 24,
+        right: 24,
+        bottom: 68,
+        left: 52
+      },
+      xAxis: {
+        type: 'value',
+        name: `Nilai Aktual Kemiskinan ${isMaret ? 'Maret' : 'September'} (%)`,
+        nameLocation: 'middle',
+        nameGap: 28,
+        min: 4,
+        max: 28,
+        nameTextStyle: { color: '#475569', fontSize: 11.5, fontWeight: 700 },
+        splitLine: { lineStyle: { type: 'dashed', color: '#EDF2F7' } },
+        axisLabel: { color: '#3B4858', fontSize: 11, formatter: '{value}%' }
+      },
+      yAxis: {
+        type: 'value',
+        name: 'Nilai Prediksi Model (Ŷ %)',
+        min: 4,
+        max: 20,
+        nameTextStyle: { color: '#475569', fontSize: 11.5, fontWeight: 700 },
+        splitLine: { lineStyle: { type: 'dashed', color: '#EDF2F7' } },
+        axisLabel: { color: '#3B4858', fontSize: 11, formatter: '{value}%' }
+      },
+      series: seriesList
+    };
+  }
+
+  function buildResidualOption(periode) {
+    const isMaret = periode === 'maret';
+    const actKey = isMaret ? 'P0_Jumlah_Sem1_Maret' : 'P0_Jumlah_Sem2_September';
+    const predKey = isMaret ? 'Prediksi_Maret' : 'Prediksi_September';
+    const resKey = isMaret ? 'Residual_Maret' : 'Residual_September';
+    const labelPeriode = isMaret ? 'Maret (Sem 1)' : 'September (Sem 2)';
+
+    const seriesList = provinces.map(prov => {
+      const isSelected = currentScatterProvFilter === 'all' || currentScatterProvFilter === prov;
+      const provPoints = points.filter(p => p.Provinsi === prov);
+      return {
+        name: prov,
+        type: 'scatter',
+        symbolSize: isSelected ? 11 : 7,
+        itemStyle: {
+          color: PROV_COLORS[prov],
+          opacity: isSelected ? 0.92 : 0.18,
+          borderColor: '#FFFFFF',
+          borderWidth: 1.5
+        },
+        data: provPoints.map(p => ({
+          value: [p[predKey], p[resKey]],
+          meta: p
+        }))
+      };
+    });
+
+    // Garis Referensi Residual = 0
+    seriesList.push({
+      name: 'Residual = 0 (Tanpa Galat)',
+      type: 'line',
+      symbol: 'none',
+      silent: true,
+      lineStyle: {
+        color: '#E11D48',
+        width: 2,
+        type: 'dashed'
+      },
+      data: [[5, 0], [17, 0]]
+    });
+
+    return {
+      animationDuration: 500,
+      tooltip: {
+        trigger: 'item',
+        backgroundColor: 'rgba(255, 255, 255, 0.98)',
+        borderColor: '#E2E8F0',
+        borderWidth: 1,
+        padding: [12, 14],
+        textStyle: { color: '#0B1B33', fontFamily: 'Plus Jakarta Sans, sans-serif' },
+        formatter: (params) => {
+          if (!params.data || !params.data.meta) return '';
+          const m = params.data.meta;
+          const resVal = m[resKey];
+          const resColor = Math.abs(resVal) < 2 ? '#0D652D' : (resVal > 0 ? '#C5221F' : '#0E52A0');
+          return `
+            <div style="font-weight: 800; font-size: 13px; color: ${PROV_COLORS[m.Provinsi]}; margin-bottom: 4px;">
+              ${m.Provinsi} (${m.Tahun}) — Residual ${labelPeriode}
+            </div>
+            <div style="font-size: 12px; line-height: 1.6;">
+              RLS Perempuan (F2): <strong>${m.RLS_Perempuan.toFixed(2)} tahun</strong><br/>
+              Nilai Prediksi (Ŷ): <strong>${m[predKey].toFixed(4)}%</strong><br/>
+              Nilai Aktual (Y): <strong>${m[actKey].toFixed(2)}%</strong><br/>
+              Residual (Y − Ŷ): <strong style="color: ${resColor};">${resVal > 0 ? '+' : ''}${resVal.toFixed(4)} poin</strong>
+            </div>
+          `;
+        }
+      },
+      legend: {
+        bottom: 0,
+        type: 'scroll',
+        icon: 'circle',
+        itemWidth: 9,
+        itemHeight: 9,
+        textStyle: { fontSize: 10.5, color: '#3B4858' }
+      },
+      grid: {
+        top: 24,
+        right: 24,
+        bottom: 68,
+        left: 52
+      },
+      xAxis: {
+        type: 'value',
+        name: `Nilai Prediksi Kemiskinan ${isMaret ? 'Maret' : 'September'} (Ŷ %)`,
+        nameLocation: 'middle',
+        nameGap: 28,
+        min: 5,
+        max: 17,
+        nameTextStyle: { color: '#475569', fontSize: 11.5, fontWeight: 700 },
+        splitLine: { lineStyle: { type: 'dashed', color: '#EDF2F7' } },
+        axisLabel: { color: '#3B4858', fontSize: 11, formatter: '{value}%' }
+      },
+      yAxis: {
+        type: 'value',
+        name: 'Residual (Aktual − Prediksi)',
+        min: -6,
+        max: 16,
+        nameTextStyle: { color: '#475569', fontSize: 11.5, fontWeight: 700 },
+        splitLine: { lineStyle: { type: 'dashed', color: '#EDF2F7' } },
+        axisLabel: { color: '#3B4858', fontSize: 11 }
+      },
+      series: seriesList
+    };
+  }
+
+  scatterActualMarChart.setOption(buildActualVsPredOption('maret'), true);
+  scatterResMarChart.setOption(buildResidualOption('maret'), true);
+  scatterActualSepChart.setOption(buildActualVsPredOption('september'), true);
+  scatterResSepChart.setOption(buildResidualOption('september'), true);
 }
 
 /**
@@ -439,50 +723,63 @@ function initSimulatorControls() {
 
 /**
  * =========================================================================
- * 3. MATRIKS TABEL 34 PROVINSI
+ * 3. TABEL DATASET PANEL 34 PROVINSI × 8 TAHUN (N = 272 OBSERVASI)
  * =========================================================================
  */
-function populateProvincesTable() {
+function populateProvincesTable(panelData) {
   const tbody = document.getElementById('provincesTableBody');
   const searchInput = document.getElementById('tableSearchInput');
-  if (!tbody) return;
+  const yearBtns = document.querySelectorAll('.panel-year-btn');
+  const rowCountElem = document.getElementById('datasetRowCount');
+  if (!tbody || !Array.isArray(panelData)) return;
 
-  function renderRows(list) {
-    tbody.innerHTML = list.map((p, idx) => {
-      const targetRls = p.latest_rls + 1.0;
-      const predPlusOne = predict(targetRls);
-      const diffPoin = predPlusOne - p.latest_kemiskinan;
+  let activeYear = 'all';
+  let searchQuery = '';
 
-      return `
-        <tr>
-          <td style="color: #6E7C87; font-size: 12px; text-align: center;">${idx + 1}</td>
-          <td>
-            <strong>${p.nama}</strong>
-            <div style="font-size: 11px; color: #6E7C87;">${p.cluster_name}</div>
-          </td>
-          <td class="tabular-nums" style="text-align: right;">${p.latest_rls} th</td>
-          <td class="tabular-nums" style="text-align: right; font-weight: 600;">${p.latest_kemiskinan}%</td>
-          <td class="tabular-nums" style="text-align: right; color: #0E52A0; font-weight: 600;">${targetRls.toFixed(1)} th</td>
-          <td class="tabular-nums" style="text-align: right; color: #136B36; font-weight: 700;">${predPlusOne.toFixed(2)}%</td>
-          <td class="tabular-nums" style="text-align: right;">
-            <span class="badge ${diffPoin < 0 ? 'green' : 'amber'}" style="font-size: 11px; padding: 2px 8px;">
-              ${diffPoin < 0 ? '' : '+'}${diffPoin.toFixed(2)}%
-            </span>
-          </td>
-        </tr>
-      `;
-    }).join('');
+  function filterAndRender() {
+    const filtered = panelData.filter(row => {
+      const matchYear = activeYear === 'all' || String(row.Tahun) === String(activeYear);
+      const matchSearch = !searchQuery || row.Provinsi.toLowerCase().includes(searchQuery);
+      return matchYear && matchSearch;
+    });
+
+    if (rowCountElem) {
+      rowCountElem.textContent = String(filtered.length);
+    }
+
+    tbody.innerHTML = filtered.map((row, idx) => `
+      <tr>
+        <td class="tabular-nums" style="color: #6E7C87; font-size: 12px; text-align: center; font-weight: 700;">${idx + 1}</td>
+        <td><strong>${row.Provinsi}</strong></td>
+        <td class="tabular-nums" style="text-align: center;">
+          <span class="badge green" style="font-size: 11px; padding: 2px 8px;">${row.Tahun}</span>
+        </td>
+        <td class="tabular-nums" style="text-align: right; font-weight: 600;">${row.P0_Jumlah_Sem1_Maret.toFixed(2)}</td>
+        <td class="tabular-nums" style="text-align: right; font-weight: 600;">${row.P0_Jumlah_Sem2_September.toFixed(2)}</td>
+        <td class="tabular-nums" style="text-align: right; color: #0E52A0; font-weight: 600;">${row.RLS_Laki_Laki.toFixed(2)}</td>
+        <td class="tabular-nums" style="text-align: right; color: #136B36; font-weight: 700;">${row.RLS_Perempuan.toFixed(2)}</td>
+        <td class="tabular-nums" style="text-align: right; font-weight: 700;">${Number(row.RLS_Rata_Rata.toFixed(4))}</td>
+      </tr>
+    `).join('');
   }
 
-  renderRows(provincesList);
+  filterAndRender();
 
   if (searchInput) {
     searchInput.addEventListener('input', (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      const filtered = provincesList.filter(p => p.nama.toLowerCase().includes(q) || p.cluster_name.toLowerCase().includes(q));
-      renderRows(filtered);
+      searchQuery = e.target.value.toLowerCase().trim();
+      filterAndRender();
     });
   }
+
+  yearBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      yearBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeYear = btn.dataset.year;
+      filterAndRender();
+    });
+  });
 }
 
 function initMobileNav() {
